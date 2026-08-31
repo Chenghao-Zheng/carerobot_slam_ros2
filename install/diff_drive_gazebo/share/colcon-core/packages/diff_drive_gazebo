@@ -1,0 +1,1 @@
+gazebo_plugins:gazebo_ros:geometry_msgs:joint_state_publisher:nav2_lifecycle_manager:nav2_map_server:nav_msgs:rclcpp:robot_state_publisher:rviz2:sensor_msgs:std_msgs:std_srvs:tf2:tf2_ros:urdf:visualization_msgs:xacro

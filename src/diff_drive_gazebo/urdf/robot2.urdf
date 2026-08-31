@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<robot name="diff_drive">
+
+  <!-- ======= 虚拟基座 ======= -->
+  <link name="base_footprint">
+    <inertial>
+      <mass value="0.001"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+  </link>
+
+  <!-- ======= 底盘 ======= -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0.11676" rpy="0 0 0" />
+      <mass value="1.7652" />
+      <inertia ixx="0.010632" ixy="9.8514E-06" ixz="-1.4455E-05" iyy="0.01085" iyz="-1.0957E-06" izz="0.008973" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://diff_drive_gazebo/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.115" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.105" length="0.23" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 左轮 ======= -->
+  <link name="wheel1">
+    <inertial>
+      <origin xyz="-4.785E-12 0.008116 1.4731E-11" rpy="0 0 0" />
+      <mass value="0.052039" />
+      <inertia ixx="1.7758E-05" ixy="4.1811E-16" ixz="-2.8064E-14" iyy="3.2466E-05" iyz="-2.5217E-15" izz="1.7758E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://diff_drive_gazebo/meshes/wheel1.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.024" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="joint1" type="continuous">
+    <origin xyz="-0.013618 0.1186 0.01715" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel1" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- ======= 右轮 ======= -->
+  <link name="wheel2">
+    <inertial>
+      <origin xyz="8.0422E-15 -0.008116 -4.2688E-14" rpy="0 0 0" />
+      <mass value="0.052039" />
+      <inertia ixx="1.7758E-05" ixy="6.0139E-20" ixz="-2.5647E-20" iyy="3.2466E-05" iyz="3.8403E-21" izz="1.7758E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://diff_drive_gazebo/meshes/wheel2.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.024" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint2" type="continuous">
+    <origin xyz="-0.013618 -0.1186 0.01715" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel2" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- ======= 前万向轮 ======= -->
+  <link name="front_caster">
+    <inertial>
+      <mass value="0.02"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-5" ixy="0" ixz="0" iyy="1e-5" iyz="0" izz="1e-5"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="front_caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="front_caster"/>
+    <origin xyz="0.12 0 0.0025" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 后万向轮 ======= -->
+  <link name="rear_caster">
+    <inertial>
+      <mass value="0.02"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-5" ixy="0" ixz="0" iyy="1e-5" iyz="0" izz="1e-5"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <material name="Black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rear_caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="rear_caster"/>
+    <origin xyz="-0.11 0 0.0025" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ======= 激光雷达 ======= -->
+  <link name="laser">
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.05" />
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.6 0.6 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.05" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="laser_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="laser" />
+    <origin xyz="0.15 0 0.1" rpy="0 0 0" />
+  </joint>
+
+  <!-- ========== Gazebo ROS 2 激光雷达插件 ========== -->
+  <gazebo reference="laser">
+    <sensor type="ray" name="laser_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>10.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <visualize>false</visualize>
+      <!-- ROS 2 雷达插件 -->
+      <plugin name="gazebo_rplidar" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <remapping>~/out:=/not_true_scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>laser</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- 轮子物理属性 -->
+  <gazebo reference="wheel1">
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <minDepth>0.001</minDepth>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="wheel2">
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <minDepth>0.001</minDepth>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="front_caster">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1e6</kp>
+    <kd>50</kd>
+    <minDepth>0.001</minDepth>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rear_caster">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1e6</kp>
+    <kd>50</kd>
+    <minDepth>0.001</minDepth>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <!-- ========== Gazebo ROS 2 差速驱动插件 ========== -->
+  <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <left_joint>joint1</left_joint>
+      <right_joint>joint2</right_joint>
+      <wheel_separation>0.2372</wheel_separation>
+      <wheel_diameter>0.07</wheel_diameter>
+      <max_wheel_torque>20.0</max_wheel_torque>
+      <max_wheel_acceleration>5.0</max_wheel_acceleration>
+      <command_topic>cmd_vel</command_topic>
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <update_rate>100.0</update_rate>
+    </plugin>
+  </gazebo>
+
+</robot>

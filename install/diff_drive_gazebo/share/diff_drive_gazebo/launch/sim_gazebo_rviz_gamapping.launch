@@ -1,0 +1,36 @@
+<launch>
+    <!-- 是否使用仿真时间 -->
+    <param name="use_sim_time" value="true"/>
+
+    <!-- 加载机器人模型参数 -->
+    <param name="robot_description" textfile="$(find diff_drive_gazebo)/urdf/robot2.urdf"/>
+    <!-- 发布机器人关节TF -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" launch-prefix="bash -c 'sleep 5; $0 $@' ">
+    <param name="publish_frequency" type="double" value="50.0" />
+    </node>
+z
+    <!-- 启动 joint_state_publisher -->
+    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" /> -->
+
+    <!-- 启动 RViz 可视化 -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find diff_drive_gazebo)/rviz/diff_drive.rviz" required="true" />
+
+    <!-- 加载指定世界 -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="paused" value="false"/>
+      <arg name="use_sim_time" value="true"/>
+      <arg name="gui" value="true"/>
+      <arg name="headless" value="false"/>
+      <arg name="debug" value="false"/>
+      <!-- 指定你自己的 world -->
+      <arg name="world_name" value="$(find diff_drive_gazebo)/worlds/kexueguan205.world"/>
+  </include>
+
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_model" output="screen"
+    args="-urdf -param robot_description -model diff_drive
+          -x 1.0 -y 0.0 -z 0.0"/>
+          
+
+  
+</launch>

@@ -1,0 +1,4 @@
+{
+    "xml.downloadExternalResources.enabled": true,
+    "cmake.sourceDirectory": "/home/zheng/carerobot_slam_ros2/src/diff_drive_gazebo"
+}
