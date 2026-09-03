@@ -1,0 +1,661 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 4.9.2 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found tf2: 0.25.22 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.22 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.22 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found tf2_sensor_msgs: 0.25.22 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.25
+-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.12  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+-- Found PCL_MODELER: /usr/include/pcl-1.12  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+-- Found OpenCV: /usr (found version "4.5.4") 
+-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+-- Found nav2_costmap_2d: 1.1.20 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'nlopt'
+--   Found nlopt, version 2.7.1
+-- Found robot_communication: 0.0.0 (/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake)
+-- Found robot_costmap: 0.0.0 (/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zheng/carerobot_slam_ros2/build/robot_navigation
+[  4%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/math_tools/curve_fitting.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/nodes/motionPlan_node.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/math_tools/filter.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/math_tools/curve_fitting.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/nodes/differential_DWA_node.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/math_tools/filter.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/motionPlan/motionPlan.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/motionPlan/motionPlan.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/math_tools/curve_fitting.cpp:[m[K In member function ‘[01m[Kdouble math_tools::curve_fitting::calDerivative(Eigen::MatrixXd, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/math_tools/curve_fitting.cpp:97:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Klast[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   97 |     [01;35m[Kif[m[K(derivatives < 0)
+      |     [01;35m[K^~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/math_tools/curve_fitting.cpp:[m[K In member function ‘[01m[Kdouble math_tools::curve_fitting::calDerivative(Eigen::MatrixXd, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/math_tools/curve_fitting.cpp:97:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Klast[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   97 |     [01;35m[Kif[m[K(derivatives < 0)
+      |     [01;35m[K^~[m[K
+[ 26%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_follow/pid_follow.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/BSpline.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_follow/pid_follow.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:[m[K In constructor ‘[01m[Kpid_follow::pid_follow(double, double, double, double, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow([01;35m[Kdouble _kp[m[K, double _ki,double _kd, double _speedLimit, double _forwardDistance)
+      |                        [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow(double _kp, [01;35m[Kdouble _ki[m[K,double _kd, double _speedLimit, double _forwardDistance)
+      |                                    [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow(double _kp, double _ki,[01;35m[Kdouble _kd[m[K, double _speedLimit, double _forwardDistance)
+      |                                               [01;35m[K~~~~~~~^~~[m[K
+[ 33%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/BSpline.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/bezier_curve.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:[m[K In constructor ‘[01m[Kpid_follow::pid_follow(double, double, double, double, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow([01;35m[Kdouble _kp[m[K, double _ki,double _kd, double _speedLimit, double _forwardDistance)
+      |                        [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow(double _kp, [01;35m[Kdouble _ki[m[K,double _kd, double _speedLimit, double _forwardDistance)
+      |                                    [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_follow/pid_follow.cpp:17:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | pid_follow::pid_follow(double _kp, double _ki,[01;35m[Kdouble _kd[m[K, double _speedLimit, double _forwardDistance)
+      |                                               [01;35m[K~~~~~~~^~~[m[K
+[ 38%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/bezier_curve.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/bspline_optimizer.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:[m[K In member function ‘[01m[Kvoid motionPlan::staticMapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:409:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  409 |   for (unsigned int i = 0; [01;35m[Ki < pathNav.width[m[K; i++)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:411:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  411 |     for (unsigned int j = 0; [01;35m[Kj < pathNav.height[m[K; j++)
+      |                              [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:[m[K In member function ‘[01m[Kvoid motionPlan::staticMapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:409:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  409 |   for (unsigned int i = 0; [01;35m[Ki < pathNav.width[m[K; i++)
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:411:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  411 |     for (unsigned int j = 0; [01;35m[Kj < pathNav.height[m[K; j++)
+      |                              [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[ 42%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/corridor_optimizer.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/fast_security.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/bspline_optimizer.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/bspline_optimizer.cpp:[m[K In member function ‘[01m[Kvoid dyn_planner::BsplineOptimizer::optimize(int, bool, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/bspline_optimizer.cpp:134:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |       nlopt::result [01;35m[Kresult[m[K = opt.optimize(q, final_cost);
+      |                     [01;35m[K^~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::ContinuExtension_Extract(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:557:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  557 |     for(int i=start;[01;35m[Ki<continuNum.size()[m[K;i++)
+      |                     [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Continu_Extension(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:584:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  584 |     for (int i = 0; [01;35m[Ki < continuDivid.size()-1[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:598:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  598 |     for (int i = 0; [01;35m[Ki < continuDivid.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:609:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  609 |     for (int i = 0; [01;35m[Ki < continuNum.size()-1[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:635:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  635 |       for(int i=0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:661:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  661 |             if([01;35m[Ktime >= continu_add_search.size()[m[K)
+      |                [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Interrupt_Extension(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:699:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  699 |     for(int i=1;[01;35m[Ki<=dividNodes.size()-1[m[K;i++)
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:714:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  714 |       if(i%2 == 1 && [01;35m[Ki<=dividNodes.size()-2[m[K)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:750:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  750 |     for (int i = 0; [01;35m[Ki < frontToafterVec.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:757:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  757 |       for (int i = 0; [01;35m[Ki < frontToafterVec.size()[m[K; i++)
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::SampleGridPath(std::vector<Eigen::Matrix<int, 2, 1> >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:882:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  882 |   for (int i = 0; [01;35m[Ki < tempcontinDiv.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:900:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  900 |   for (int num = 0; [01;35m[Knum < flagOK.size()[m[K; num++)
+      |                     [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:902:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  902 |     for (int i = 0; [01;35m[Ki < tempcontinDiv.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:828:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinflectnum[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  828 |   int [01;35m[Kinflectnum[m[K = 0;
+      |       [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::FindContinueLimitExten(std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:926:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  926 |     for(int i=0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::FindInflectLimitExten(int)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1056:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1056 |   for (int i = 0; [01;35m[Ki < inflect_add_search.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::CalDivideNodes(std::vector<Eigen::Matrix<int, 2, 1> >&, std::vector<Eigen::Matrix<double, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1075:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1075 |     for(int i = 0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1083:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1083 |     for(int i = 1;[01;35m[Ki<continuDivid.size()[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1091:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1091 |     for (int i = 0; [01;35m[Ki < afterpoints.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::CheckInflectNum(std::vector<Eigen::Matrix<int, 2, 1> >, Eigen::Vector2i, Eigen::Vector2i, int&, int&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1150:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1150 |   for (int length = 0; [01;35m[Klength < gridPath.size()[m[K; length++)
+      |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<int> Fast_Security::CollinearPosition(std::vector<Eigen::Matrix<int, 2, 1> >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1167:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1167 |   for (int i = 1; [01;35m[Ki < gridPath.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::DividPath(std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<int>, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1190:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1190 |   for (int i = 0; [01;35m[Ki < dividvec.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1192:9:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1192 |     if([01;35m[Ki<dividvec.size()-1[m[K)
+      |        [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1196:12:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1196 |       if([01;35m[Ki == dividvec.size()-2[m[K)
+      |          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1219:9:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1219 |     if([01;35m[Ki==dividvec.size()-1[m[K)
+      |        [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1222:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1222 |       for (int j = dividvec[i]; [01;35m[Kj < gridPath.size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > Fast_Security::BezierPathOpt(std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1237:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1237 |   for (int i = 0; [01;35m[Ki < needoptpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1240:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1240 |     for (int j = 0; [01;35m[Kj < needoptpath[i].size()[m[K; j++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1247:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1247 |   for (int i = 0; [01;35m[Ki < needoptpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1254:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1254 |       for (int num = 0; [01;35m[Knum < newoptpath.size()[m[K; num++)
+      |                         [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1270:37:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1270 |         for (int length = 0; [01;35m[Klength < newoptpath.size()[m[K; length++)
+      |                              [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1285:37:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1285 |         for (int length = 0; [01;35m[Klength < newoptpath.size()[m[K; length++)
+      |                              [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1300:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1300 |   for (int i = 0; [01;35m[Ki < lastpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1316:10:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1316 |     if([01;35m[Ki == lastpath.size()-1[m[K)
+      |        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Setlength_DividPath(double, std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<Eigen::Matrix<int, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1378:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1378 |   for (int i = 0; [01;35m[Ki < oldpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1394:10:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1394 |     if([01;35m[Ki == oldpath.size()-1[m[K)
+      |        [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1375:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1375 | void Fast_Security::Setlength_DividPath([01;35m[Kdouble step[m[K,vector<Vector2i> oldpath,vector<Vector2i> &newpath)
+      |                                         [01;35m[K~~~~~~~^~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Setlength_Interpolation_Path(double, std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<Eigen::Matrix<int, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1408:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1408 |   for (int i = 0; [01;35m[Ki < oldpath.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > Fast_Security::PathOptimization(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >, std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1448:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1448 |   for (int i = 0; [01;35m[Ki < continu.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1459:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1459 |     if(i%4 == 0 && [01;35m[Ki/2+1 < dividNodes.size()[m[K)
+      |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1461:12:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1461 |       if([01;35m[Ki < continu.size()-1[m[K)
+      |          [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1505:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1505 |     if(i%4 == 1 && [01;35m[K(i-1)*4+3 < inflect.size()[m[K)
+      |                    [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1532:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, std::vector<Eigen::Matrix<int, 2, 1> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1532 |   for (int i = 0; [01;35m[Ki < optimiPoints.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1537:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Knowvisit[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+ 1537 |       double [01;35m[Knowvisit[m[K;
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1603:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Knowvisit[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+ 1603 |       double [01;35m[Knowvisit[m[K;
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/bspline_optimizer.cpp:[m[K In member function ‘[01m[Kvoid dyn_planner::BsplineOptimizer::optimize(int, bool, double)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/bspline_optimizer.cpp:134:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |       nlopt::result [01;35m[Kresult[m[K = opt.optimize(q, final_cost);
+      |                     [01;35m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/boost/math/tools/cxx03_warn.hpp:9[m[K,
+                 from [01m[K/usr/include/boost/math/constants/constants.hpp:11[m[K,
+                 from [01m[K/usr/include/boost/geometry/util/math.hpp:29[m[K,
+                 from [01m[K/usr/include/boost/geometry/core/radian_access.hpp:33[m[K,
+                 from [01m[K/usr/include/boost/geometry/geometry.hpp:51[m[K,
+                 from [01m[K/usr/include/boost/geometry.hpp:17[m[K,
+                 from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/path_optimization/corridor_optimizer.h:10[m[K,
+                 from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:1[m[K:
+[01m[K/usr/include/boost/detail/no_exceptions_support.hpp:17:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Use <boost/core/no_exceptions_support.hpp> instead.[m[K’
+   17 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K("<boost/core/no_exceptions_support.hpp>")
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:[m[K In member function ‘[01m[Kstd::vector<std::pair<int, int> > Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg&, int, int)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:307:108:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmin_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  307 | std::vector<std::pair<int, int>> Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg& poly, [01;35m[Kint min_x[m[K, int min_y)
+      |                                                                                                        [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:307:119:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmin_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  307 | std::vector<std::pair<int, int>> Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg& poly, int min_x, [01;35m[Kint min_y[m[K)
+      |                                                                                                                   [01;35m[K~~~~^~~~~[m[K
+[ 50%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/minimum_snap.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:[m[K In member function ‘[01m[Kstd::pair<double, double> Corridor_Optimizer::polygonCentroid(const Polygon_bg&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:269:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kc.boost::geometry::model::d2::point_xy<double, boost::geometry::cs::cartesian>::<unnamed>.boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>::m_values[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+  269 |     Point_bg [01;35m[Kc[m[K; bg::centroid(poly, c);
+      |              [01;35m[K^[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:269:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kc.boost::geometry::model::d2::point_xy<double, boost::geometry::cs::cartesian>::<unnamed>.boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>::m_values[1][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[ 52%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/non_uniform_bspline.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/Hybrid_astar.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kbool dyn_planner::NonUniformBspline::checkFeasibility(bool)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:202:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double [01;35m[Kratio[m[K = max(fabs(max_vel) / limit_vel_, sqrt(fabs(max_acc) / limit_acc_));
+      |            [01;35m[K^~~~~[m[K
+[ 57%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/Astar_searcher.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/Hybrid_astar.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/non_uniform_bspline.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/Astar_searcher.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_optimization/minimum_snap.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kvoid dyn_planner::NonUniformBspline::recomputeInit()[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:474:6:[m[K [01;35m[Kwarning: [m[Karray subscript 4 is outside array bounds of ‘[01m[KEigen::Matrix2d [1][m[K’ {aka ‘[01m[KEigen::Matrix<double, 2, 2> [1][m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Warray-bounds-Warray-bounds]8;;[m[K]
+  474 |     [01;35m[KA(2, 1)[m[K = -6.0 * ((t1 - t4) + (t2 - t5)) / ((t1 - t4) * (t2 - t4) * (t2 - t5));
+      |     [01;35m[K~^~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:461:21:[m[K [01;36m[Knote: [m[Kwhile referencing ‘[01m[KA[m[K’
+  461 |     Eigen::Matrix2d [01;36m[KA[m[K;
+      |                     [01;36m[K^[m[K
+[ 69%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/fast_security.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/JPS_searcher.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_optimization/corridor_optimizer.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/Astar_searcher.cpp:[m[K In member function ‘[01m[Kint AstarPathFinder::AstarGraphSearch(Eigen::Vector2i, Eigen::Vector2i)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/Astar_searcher.cpp:557:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_shot_succ_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  557 |                 bool [01;35m[Kis_shot_succ_[m[K = false;
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kbool dyn_planner::NonUniformBspline::checkFeasibility(bool)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:202:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double [01;35m[Kratio[m[K = max(fabs(max_vel) / limit_vel_, sqrt(fabs(max_acc) / limit_acc_));
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/Astar_searcher.cpp:[m[K In member function ‘[01m[Kint AstarPathFinder::AstarGraphSearch(Eigen::Vector2i, Eigen::Vector2i)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/Astar_searcher.cpp:557:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_shot_succ_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  557 |                 bool [01;35m[Kis_shot_succ_[m[K = false;
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_searcher.cpp:[m[K In member function ‘[01m[Kint JPSPathFinder::JPSGraphSearch(Eigen::Vector2i, Eigen::Vector2i)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_searcher.cpp:314:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_shot_succ_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  314 |                 bool [01;35m[Kis_shot_succ_[m[K = false;
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::ContinuExtension_Extract(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:557:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  557 |     for(int i=start;[01;35m[Ki<continuNum.size()[m[K;i++)
+      |                     [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Continu_Extension(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:584:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  584 |     for (int i = 0; [01;35m[Ki < continuDivid.size()-1[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:598:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  598 |     for (int i = 0; [01;35m[Ki < continuDivid.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:609:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  609 |     for (int i = 0; [01;35m[Ki < continuNum.size()-1[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:635:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  635 |       for(int i=0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:661:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  661 |             if([01;35m[Ktime >= continu_add_search.size()[m[K)
+      |                [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Interrupt_Extension(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:699:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  699 |     for(int i=1;[01;35m[Ki<=dividNodes.size()-1[m[K;i++)
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:714:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  714 |       if(i%2 == 1 && [01;35m[Ki<=dividNodes.size()-2[m[K)
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:750:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  750 |     for (int i = 0; [01;35m[Ki < frontToafterVec.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:757:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  757 |       for (int i = 0; [01;35m[Ki < frontToafterVec.size()[m[K; i++)
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::SampleGridPath(std::vector<Eigen::Matrix<int, 2, 1> >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:882:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  882 |   for (int i = 0; [01;35m[Ki < tempcontinDiv.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:900:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  900 |   for (int num = 0; [01;35m[Knum < flagOK.size()[m[K; num++)
+      |                     [01;35m[K~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:902:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  902 |     for (int i = 0; [01;35m[Ki < tempcontinDiv.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:828:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinflectnum[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  828 |   int [01;35m[Kinflectnum[m[K = 0;
+      |       [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::FindContinueLimitExten(std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:926:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  926 |     for(int i=0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::FindInflectLimitExten(int)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1056:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1056 |   for (int i = 0; [01;35m[Ki < inflect_add_search.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::CalDivideNodes(std::vector<Eigen::Matrix<int, 2, 1> >&, std::vector<Eigen::Matrix<double, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1075:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1075 |     for(int i = 0;[01;35m[Ki<continuDivid.size()-1[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1083:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1083 |     for(int i = 1;[01;35m[Ki<continuDivid.size()[m[K;i++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1091:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1091 |     for (int i = 0; [01;35m[Ki < afterpoints.size()[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::CheckInflectNum(std::vector<Eigen::Matrix<int, 2, 1> >, Eigen::Vector2i, Eigen::Vector2i, int&, int&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1150:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1150 |   for (int length = 0; [01;35m[Klength < gridPath.size()[m[K; length++)
+      |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<int> Fast_Security::CollinearPosition(std::vector<Eigen::Matrix<int, 2, 1> >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1167:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1167 |   for (int i = 1; [01;35m[Ki < gridPath.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::DividPath(std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<int>, std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1190:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1190 |   for (int i = 0; [01;35m[Ki < dividvec.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1192:9:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1192 |     if([01;35m[Ki<dividvec.size()-1[m[K)
+      |        [01;35m[K~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1196:12:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1196 |       if([01;35m[Ki == dividvec.size()-2[m[K)
+      |          [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1219:9:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1219 |     if([01;35m[Ki==dividvec.size()-1[m[K)
+      |        [01;35m[K~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1222:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1222 |       for (int j = dividvec[i]; [01;35m[Kj < gridPath.size()[m[K; j++)
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > Fast_Security::BezierPathOpt(std::vector<std::vector<Eigen::Matrix<double, 2, 1> > >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1237:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1237 |   for (int i = 0; [01;35m[Ki < needoptpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1240:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1240 |     for (int j = 0; [01;35m[Kj < needoptpath[i].size()[m[K; j++)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1247:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1247 |   for (int i = 0; [01;35m[Ki < needoptpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1254:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1254 |       for (int num = 0; [01;35m[Knum < newoptpath.size()[m[K; num++)
+      |                         [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1270:37:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1270 |         for (int length = 0; [01;35m[Klength < newoptpath.size()[m[K; length++)
+      |                              [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1285:37:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1285 |         for (int length = 0; [01;35m[Klength < newoptpath.size()[m[K; length++)
+      |                              [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1300:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1300 |   for (int i = 0; [01;35m[Ki < lastpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1316:10:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1316 |     if([01;35m[Ki == lastpath.size()-1[m[K)
+      |        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Setlength_DividPath(double, std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<Eigen::Matrix<int, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1378:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1378 |   for (int i = 0; [01;35m[Ki < oldpath.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1394:10:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1394 |     if([01;35m[Ki == oldpath.size()-1[m[K)
+      |        [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1375:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+ 1375 | void Fast_Security::Setlength_DividPath([01;35m[Kdouble step[m[K,vector<Vector2i> oldpath,vector<Vector2i> &newpath)
+      |                                         [01;35m[K~~~~~~~^~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kvoid Fast_Security::Setlength_Interpolation_Path(double, std::vector<Eigen::Matrix<int, 2, 1> >, std::vector<Eigen::Matrix<int, 2, 1> >&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1408:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1408 |   for (int i = 0; [01;35m[Ki < oldpath.size()-1[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:[m[K In member function ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> > Fast_Security::PathOptimization(std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >, std::vector<std::vector<Eigen::Matrix<int, 2, 1> > >)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1448:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1448 |   for (int i = 0; [01;35m[Ki < continu.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1459:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1459 |     if(i%4 == 0 && [01;35m[Ki/2+1 < dividNodes.size()[m[K)
+      |                    [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1461:12:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1461 |       if([01;35m[Ki < continu.size()-1[m[K)
+      |          [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1505:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<int, 2, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1505 |     if(i%4 == 1 && [01;35m[K(i-1)*4+3 < inflect.size()[m[K)
+      |                    [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1532:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, std::vector<Eigen::Matrix<int, 2, 1> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+ 1532 |   for (int i = 0; [01;35m[Ki < optimiPoints.size()[m[K; i++)
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1537:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Knowvisit[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+ 1537 |       double [01;35m[Knowvisit[m[K;
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/fast_security.cpp:1603:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Knowvisit[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+ 1603 |       double [01;35m[Knowvisit[m[K;
+      |              [01;35m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/math/tools/cxx03_warn.hpp:9[m[K,
+                 from [01m[K/usr/include/boost/math/constants/constants.hpp:11[m[K,
+                 from [01m[K/usr/include/boost/geometry/util/math.hpp:29[m[K,
+                 from [01m[K/usr/include/boost/geometry/core/radian_access.hpp:33[m[K,
+                 from [01m[K/usr/include/boost/geometry/geometry.hpp:51[m[K,
+                 from [01m[K/usr/include/boost/geometry.hpp:17[m[K,
+                 from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/path_optimization/corridor_optimizer.h:10[m[K,
+                 from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:1[m[K:
+[01m[K/usr/include/boost/detail/no_exceptions_support.hpp:17:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Use <boost/core/no_exceptions_support.hpp> instead.[m[K’
+   17 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K("<boost/core/no_exceptions_support.hpp>")
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:[m[K In member function ‘[01m[Kstd::vector<std::pair<int, int> > Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg&, int, int)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:307:108:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmin_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  307 | std::vector<std::pair<int, int>> Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg& poly, [01;35m[Kint min_x[m[K, int min_y)
+      |                                                                                                        [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:307:119:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmin_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  307 | std::vector<std::pair<int, int>> Corridor_Optimizer::polygonObstaclesInSubgrid(const Polygon_bg& poly, int min_x, [01;35m[Kint min_y[m[K)
+      |                                                                                                                   [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kvoid dyn_planner::NonUniformBspline::recomputeInit()[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:474:6:[m[K [01;35m[Kwarning: [m[Karray subscript 4 is outside array bounds of ‘[01m[KEigen::Matrix2d [1][m[K’ {aka ‘[01m[KEigen::Matrix<double, 2, 2> [1][m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Warray-bounds-Warray-bounds]8;;[m[K]
+  474 |     [01;35m[KA(2, 1)[m[K = -6.0 * ((t1 - t4) + (t2 - t5)) / ((t1 - t4) * (t2 - t4) * (t2 - t5));
+      |     [01;35m[K~^~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/non_uniform_bspline.cpp:461:21:[m[K [01;36m[Knote: [m[Kwhile referencing ‘[01m[KA[m[K’
+  461 |     Eigen::Matrix2d [01;36m[KA[m[K;
+      |                     [01;36m[K^[m[K
+[ 76%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/two_way_rrt.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:[m[K In member function ‘[01m[Kstd::pair<double, double> Corridor_Optimizer::polygonCentroid(const Polygon_bg&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:269:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kc.boost::geometry::model::d2::point_xy<double, boost::geometry::cs::cartesian>::<unnamed>.boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>::m_values[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+  269 |     Point_bg [01;35m[Kc[m[K; bg::centroid(poly, c);
+      |              [01;35m[K^[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_optimization/corridor_optimizer.cpp:269:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kc.boost::geometry::model::d2::point_xy<double, boost::geometry::cs::cartesian>::<unnamed>.boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>::m_values[1][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:[m[K In member function ‘[01m[Kvoid RRTstarPlanner::getPathFromTree(std::vector<Node>&, std::vector<Node>&, Node&, std::vector<Eigen::Matrix<double, 2, 1> >&, GetPlanMode)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:87:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::x[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   87 |     Node [01;35m[Kcurrent_node[m[K;
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:87:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::y[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:114:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::parent_id[m[K’ may be used uninitialized in this function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  114 |     while ([01;35m[Kcurrent_node.parent_id != tree1[0].parent_id[m[K)
+      |            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[ 78%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/nav_app.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/path_searcher/JPS_utils.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:[m[K In member function ‘[01m[Kvoid JPS2DNeib::Neib(int, int, int, int, int&, int&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:39:7:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   39 |       [01;35m[Kswitch[m[K(dev)
+      |       [01;35m[K^~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:50:5:[m[K [01;36m[Knote: [m[Khere
+   50 |     [01;36m[Kcase[m[K 1:
+      |     [01;36m[K^~~~[m[K
+[ 83%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/vel_transform/vel_transform.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/nav_app.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/vel_transform/vel_transform.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/two_way_rrt.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/JPS_utils.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:[m[K In member function ‘[01m[Kvoid JPS2DNeib::Neib(int, int, int, int, int&, int&)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:39:7:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+   39 |       [01;35m[Kswitch[m[K(dev)
+      |       [01;35m[K^~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_utils.cpp:50:5:[m[K [01;36m[Knote: [m[Khere
+   50 |     [01;36m[Kcase[m[K 1:
+      |     [01;36m[K^~~~[m[K
+[ 95%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/path_searcher/JPS_searcher.cpp.o[0m
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:[m[K In member function ‘[01m[Kvoid RRTstarPlanner::getPathFromTree(std::vector<Node>&, std::vector<Node>&, Node&, std::vector<Eigen::Matrix<double, 2, 1> >&, GetPlanMode)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:87:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::x[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   87 |     Node [01;35m[Kcurrent_node[m[K;
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:87:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::y[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/two_way_rrt.cpp:114:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcurrent_node.Node::parent_id[m[K’ may be used uninitialized in this function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  114 |     while ([01;35m[Kcurrent_node.parent_id != tree1[0].parent_id[m[K)
+      |            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_searcher.cpp:[m[K In member function ‘[01m[Kint JPSPathFinder::JPSGraphSearch(Eigen::Vector2i, Eigen::Vector2i)[m[K’:
+[01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/path_searcher/JPS_searcher.cpp:314:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kis_shot_succ_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  314 |                 bool [01;35m[Kis_shot_succ_[m[K = false;
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K
+[ 97%] [32m[1mLinking CXX executable Differential_DWA_node[0m
+[100%] [32m[1mLinking CXX executable motionPlan_node[0m
+[100%] Built target Differential_DWA_node
+[100%] Built target motionPlan_node
+-- Install configuration: "Release"
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/motionPlan_node
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/motionPlan_node" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/Differential_DWA_node
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/Differential_DWA_node" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include/
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform/vel_transform.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/node.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Hybrid_astar.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/nav_app.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Astar_searcher.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_searcher.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/two_way_rrt.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_utils.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan/motionPlan.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/type.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/math_function.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/filter.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/curve_fitting.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/fast_security.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/minimum_snap.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bspline_optimizer.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bezier_curve.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/corridor_optimizer.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/non_uniform_bspline.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/BSpline.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow/pid_follow.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan/differential_dwa.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/dwa_param.yaml
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/navigation_param.yaml
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/pid_param.yaml
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/motionPlan.launch.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/Differential_DWA.launch
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/package_run_dependencies/robot_navigation
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/parent_prefix_path/robot_navigation
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.bash
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.zsh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/packages/robot_navigation
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig-version.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.xml

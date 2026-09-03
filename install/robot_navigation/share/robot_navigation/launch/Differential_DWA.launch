@@ -1,0 +1,22 @@
+<launch>
+
+  <arg name="hz" default="20"/>
+  <arg name="use_scan_as_input" default="false"/>
+  <arg name="robot_param" default="$(find robot_navigation)/config/differential_robot_param.yaml"/>
+  <arg name="dwa_param" default="$(find robot_navigation)/config/differential_dwa_param.yaml"/>
+
+  <node name="Differential_DWA_node" pkg="robot_navigation" type="Differential_DWA_node" output="screen">
+    <rosparam command="load" file="$(arg robot_param)"/>
+    <rosparam command="load" file="$(arg dwa_param)"/>
+    <param name="HZ" value="$(arg hz)"/>
+
+  <!-- 将代码中订阅的 /carto_odom 重映射到实际的 /odom -->
+  <remap from="/carto_odom" to="/odom"/>
+  <!-- 将代码中发布的 /cmd_vel_auto 重映射到差速插件订阅的 /cmd_vel -->
+  <remap from="/cmd_vel_auto" to="/cmd_vel"/>
+
+  <!-- <remap from="/local_map_inflate" to="/map"/> -->
+  
+  </node>
+  
+</launch>

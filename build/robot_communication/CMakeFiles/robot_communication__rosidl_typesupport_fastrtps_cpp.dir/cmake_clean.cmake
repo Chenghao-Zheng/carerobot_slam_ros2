@@ -1,0 +1,37 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/dds_fastrtps/do_dishes__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/dds_fastrtps/do_dishes__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/bspline__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/bspline__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/chassis_control__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/chassis_control__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/esdf_map__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/esdf_map__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/goal__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/goal__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/localization_info_broadcast__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/localization_info_broadcast__type_support.cpp.o.d"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/sensor_data__type_support.cpp.o"
+  "CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/sensor_data__type_support.cpp.o.d"
+  "librobot_communication__rosidl_typesupport_fastrtps_cpp.pdb"
+  "librobot_communication__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/dds_fastrtps/do_dishes__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/bspline__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/chassis_control__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/esdf_map__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/goal__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/localization_info_broadcast__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/sensor_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

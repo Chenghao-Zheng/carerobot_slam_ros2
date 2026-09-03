@@ -1,0 +1,946 @@
+[0.000000] (-) TimerEvent: {}
+[0.000359] (diff_drive_gazebo) JobQueued: {'identifier': 'diff_drive_gazebo', 'dependencies': OrderedDict()}
+[0.000699] (robot_communication) JobQueued: {'identifier': 'robot_communication', 'dependencies': OrderedDict()}
+[0.000875] (robot_costmap) JobQueued: {'identifier': 'robot_costmap', 'dependencies': OrderedDict([('robot_communication', '/home/zheng/carerobot_slam_ros2/install/robot_communication')])}
+[0.001154] (robot_pid_local_planner) JobQueued: {'identifier': 'robot_pid_local_planner', 'dependencies': OrderedDict([('robot_communication', '/home/zheng/carerobot_slam_ros2/install/robot_communication')])}
+[0.001283] (robot_navigation) JobQueued: {'identifier': 'robot_navigation', 'dependencies': OrderedDict([('robot_communication', '/home/zheng/carerobot_slam_ros2/install/robot_communication'), ('robot_costmap', '/home/zheng/carerobot_slam_ros2/install/robot_costmap')])}
+[0.001364] (robot_communication) JobStarted: {'identifier': 'robot_communication'}
+[0.011348] (diff_drive_gazebo) JobStarted: {'identifier': 'diff_drive_gazebo'}
+[0.018049] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'cmake'}
+[0.018871] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'build'}
+[0.019871] (robot_communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/robot_communication', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.025338] (diff_drive_gazebo) JobProgress: {'identifier': 'diff_drive_gazebo', 'progress': 'cmake'}
+[0.026078] (diff_drive_gazebo) JobProgress: {'identifier': 'diff_drive_gazebo', 'progress': 'build'}
+[0.026751] (diff_drive_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.085921] (diff_drive_gazebo) CommandEnded: {'returncode': 0}
+[0.086966] (diff_drive_gazebo) JobProgress: {'identifier': 'diff_drive_gazebo', 'progress': 'install'}
+[0.100548] (diff_drive_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.101314] (-) TimerEvent: {}
+[0.101729] (robot_communication) StdoutLine: {'line': b'[  1%] Built target robot_communication__rs\n'}
+[0.102310] (robot_communication) StdoutLine: {'line': b'[  2%] Built target robot_communication__cpp\n'}
+[0.108217] (robot_communication) StdoutLine: {'line': b'[ 13%] Built target robot_communication__rosidl_generator_c\n'}
+[0.109238] (diff_drive_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.109436] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch\n'}
+[0.111161] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz_gamapping.launch\n'}
+[0.111437] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz.launch.py\n'}
+[0.111627] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/urdf\n'}
+[0.111758] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/urdf/robot2.urdf\n'}
+[0.111878] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes\n'}
+[0.111993] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/wheel2.STL\n'}
+[0.113618] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/wheel1.STL\n'}
+[0.113800] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/base_link.STL\n'}
+[0.113938] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds\n'}
+[0.114101] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/test_world01.world\n'}
+[0.114303] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/big_house.world\n'}
+[0.114555] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/Realworld.dae\n'}
+[0.114866] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/tri_steer.world\n'}
+[0.117701] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/kexueguan205.world\n'}
+[0.121404] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map\n'}
+[0.121647] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/kexueguan205.pgm\n'}
+[0.121933] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapf.pgm\n'}
+[0.122209] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_map.pgm\n'}
+[0.122811] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/big_house.pgm\n'}
+[0.123107] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapf.yaml\n'}
+[0.126724] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/kexueguan205.yaml\n'}
+[0.127089] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mape.pgm\n'}
+[0.127425] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/test_world01.yaml\n'}
+[0.127742] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapc.yaml\n'}
+[0.128045] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapb.pgm\n'}
+[0.130849] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mape.yaml\n'}
+[0.132109] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapc.pgm\n'}
+[0.132498] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/big_house.yaml\n'}
+[0.132816] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/test_world01.pgm\n'}
+[0.133119] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_map.yaml\n'}
+[0.133461] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapb.yaml\n'}
+[0.133750] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz\n'}
+[0.134100] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz/diff_drive.rviz\n'}
+[0.134416] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/package_run_dependencies/diff_drive_gazebo\n'}
+[0.135380] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/parent_prefix_path/diff_drive_gazebo\n'}
+[0.135753] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/ament_prefix_path.sh\n'}
+[0.136108] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/ament_prefix_path.dsv\n'}
+[0.136971] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/path.sh\n'}
+[0.137322] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/path.dsv\n'}
+[0.137668] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.bash\n'}
+[0.140331] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.sh\n'}
+[0.140516] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.zsh\n'}
+[0.140646] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.dsv\n'}
+[0.140773] (diff_drive_gazebo) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.dsv\n'}
+[0.140899] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/packages/diff_drive_gazebo\n'}
+[0.141036] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/cmake/diff_drive_gazeboConfig.cmake\n'}
+[0.141177] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/cmake/diff_drive_gazeboConfig-version.cmake\n'}
+[0.141300] (diff_drive_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.xml\n'}
+[0.141392] (robot_communication) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_copy_robot_communication\n'}
+[0.141496] (diff_drive_gazebo) CommandEnded: {'returncode': 0}
+[0.155961] (robot_communication) StdoutLine: {'line': b'[ 25%] Built target robot_communication__rosidl_typesupport_fastrtps_cpp\n'}
+[0.169396] (robot_communication) StdoutLine: {'line': b'[ 38%] Built target robot_communication__rosidl_typesupport_introspection_c\n'}
+[0.169693] (robot_communication) StdoutLine: {'line': b'[ 47%] Built target robot_communication__rosidl_typesupport_c\n'}
+[0.169829] (robot_communication) StdoutLine: {'line': b'[ 58%] Built target robot_communication__rosidl_typesupport_introspection_cpp\n'}
+[0.171210] (robot_communication) StdoutLine: {'line': b'[ 70%] Built target robot_communication__rosidl_typesupport_cpp\n'}
+[0.172048] (robot_communication) StdoutLine: {'line': b'[ 81%] Built target robot_communication__rosidl_typesupport_fastrtps_c\n'}
+[0.177708] (diff_drive_gazebo) JobEnded: {'identifier': 'diff_drive_gazebo', 'rc': 0}
+[0.194525] (robot_communication) StdoutLine: {'line': b'[ 81%] Built target robot_communication\n'}
+[0.201466] (-) TimerEvent: {}
+[0.222357] (robot_communication) StdoutLine: {'line': b'[ 82%] Built target robot_communication__py\n'}
+[0.256875] (robot_communication) StdoutLine: {'line': b'[ 92%] Built target robot_communication__rosidl_generator_py\n'}
+[0.289088] (robot_communication) StdoutLine: {'line': b'[ 95%] Built target robot_communication__rosidl_typesupport_c__pyext\n'}
+[0.289308] (robot_communication) StdoutLine: {'line': b'[100%] Built target robot_communication__rosidl_typesupport_introspection_c__pyext\n'}
+[0.289407] (robot_communication) StdoutLine: {'line': b'[100%] Built target robot_communication__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.301561] (-) TimerEvent: {}
+[0.401881] (-) TimerEvent: {}
+[0.476674] (robot_communication) StdoutLine: {'line': b'running egg_info\n'}
+[0.477697] (robot_communication) StdoutLine: {'line': b'writing robot_communication.egg-info/PKG-INFO\n'}
+[0.478011] (robot_communication) StdoutLine: {'line': b'writing dependency_links to robot_communication.egg-info/dependency_links.txt\n'}
+[0.478272] (robot_communication) StdoutLine: {'line': b'writing top-level names to robot_communication.egg-info/top_level.txt\n'}
+[0.481269] (robot_communication) StdoutLine: {'line': b"reading manifest file 'robot_communication.egg-info/SOURCES.txt'\n"}
+[0.481954] (robot_communication) StdoutLine: {'line': b"writing manifest file 'robot_communication.egg-info/SOURCES.txt'\n"}
+[0.502024] (-) TimerEvent: {}
+[0.523329] (robot_communication) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_communication_egg\n'}
+[0.540405] (robot_communication) CommandEnded: {'returncode': 0}
+[0.541918] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'install'}
+[0.542628] (robot_communication) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/robot_communication'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.553668] (robot_communication) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.553998] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rosidl_interfaces/robot_communication\n'}
+[0.554155] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.554396] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.554527] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.h\n'}
+[0.554655] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.554822] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.c\n'}
+[0.555053] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.h\n'}
+[0.555197] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.h\n'}
+[0.555308] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.h\n'}
+[0.555400] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.555493] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.h\n'}
+[0.555576] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.h\n'}
+[0.555676] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.h\n'}
+[0.555781] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.h\n'}
+[0.555884] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.555977] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.h\n'}
+[0.556070] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.h\n'}
+[0.556359] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.556487] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.c\n'}
+[0.556626] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.c\n'}
+[0.556775] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.h\n'}
+[0.556875] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.h\n'}
+[0.556982] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.h\n'}
+[0.557094] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.h\n'}
+[0.557729] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.h\n'}
+[0.557890] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.h\n'}
+[0.558193] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.h\n'}
+[0.558372] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.c\n'}
+[0.558517] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.h\n'}
+[0.558644] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.h\n'}
+[0.558757] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.h\n'}
+[0.558879] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.h\n'}
+[0.559038] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.h\n'}
+[0.559210] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.h\n'}
+[0.559359] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.c\n'}
+[0.559489] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.c\n'}
+[0.559623] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.h\n'}
+[0.559750] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.h\n'}
+[0.559884] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.c\n'}
+[0.560057] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.h\n'}
+[0.560455] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.h\n'}
+[0.560662] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.h\n'}
+[0.560967] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.sh\n'}
+[0.561102] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.dsv\n'}
+[0.561457] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so\n'}
+[0.561602] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.561724] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.561849] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.561978] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562097] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.562258] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.562367] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.562496] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562622] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562747] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562872] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.562995] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_c.h\n'}
+[0.563106] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.563297] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so\n'}
+[0.563417] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.563566] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.563676] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.563825] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_c.h\n'}
+[0.563960] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.c\n'}
+[0.564096] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.567630] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.567757] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.567865] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_c.h\n'}
+[0.567971] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.c\n'}
+[0.568082] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_c.h\n'}
+[0.568206] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_c.h\n'}
+[0.568331] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_c.h\n'}
+[0.568438] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.c\n'}
+[0.568546] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.c\n'}
+[0.568655] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.c\n'}
+[0.568765] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.c\n'}
+[0.568873] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h\n'}
+[0.568980] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.c\n'}
+[0.569087] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_c.h\n'}
+[0.569210] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so\n'}
+[0.569319] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so\n'}
+[0.569433] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.569539] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.569646] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.hpp\n'}
+[0.569752] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.569858] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.hpp\n'}
+[0.569972] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__builder.hpp\n'}
+[0.570080] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__traits.hpp\n'}
+[0.570204] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.hpp\n'}
+[0.570312] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.570419] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.hpp\n'}
+[0.570526] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.hpp\n'}
+[0.570632] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.hpp\n'}
+[0.570738] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.hpp\n'}
+[0.570844] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.570950] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.hpp\n'}
+[0.571057] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.hpp\n'}
+[0.571180] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.571304] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__traits.hpp\n'}
+[0.571410] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__builder.hpp\n'}
+[0.571517] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__traits.hpp\n'}
+[0.571626] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__builder.hpp\n'}
+[0.571733] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.hpp\n'}
+[0.571839] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__builder.hpp\n'}
+[0.571945] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__builder.hpp\n'}
+[0.572051] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.hpp\n'}
+[0.572168] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__builder.hpp\n'}
+[0.572279] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.hpp\n'}
+[0.572386] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.hpp\n'}
+[0.572492] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__traits.hpp\n'}
+[0.572598] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.hpp\n'}
+[0.572712] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__builder.hpp\n'}
+[0.572823] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__traits.hpp\n'}
+[0.572930] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.hpp\n'}
+[0.573036] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__traits.hpp\n'}
+[0.573153] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.hpp\n'}
+[0.573270] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.hpp\n'}
+[0.573376] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__traits.hpp\n'}
+[0.573482] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.hpp\n'}
+[0.573588] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.hpp\n'}
+[0.573701] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.hpp\n'}
+[0.573807] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.hpp\n'}
+[0.573910] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.574010] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.574099] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.574208] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.574298] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/dds_fastrtps\n'}
+[0.574386] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.574485] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.574594] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.574701] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.574810] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.574917] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.575023] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/dds_fastrtps\n'}
+[0.575135] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.575252] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.575366] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.575473] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.575582] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[0.575687] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[0.575793] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[0.575898] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.576006] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.cpp\n'}
+[0.576118] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[0.576235] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[0.576341] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.576446] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.576552] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.576658] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.cpp\n'}
+[0.576774] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.576880] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.cpp\n'}
+[0.576986] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp\n'}
+[0.577092] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.cpp\n'}
+[0.577212] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.577320] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.cpp\n'}
+[0.577425] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.577539] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.cpp\n'}
+[0.577645] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so\n'}
+[0.577757] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so\n'}
+[0.577869] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.sh\n'}
+[0.577975] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.dsv\n'}
+[0.578080] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info\n'}
+[0.578203] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.578312] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.578418] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.578523] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.578629] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication\n'}
+[0.578734] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action\n'}
+[0.578840] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py\n'}
+[0.578945] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes_s.c\n'}
+[0.579050] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py\n'}
+[0.579169] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.579280] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.579386] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py\n'}
+[0.579491] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.579614] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.579721] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.579828] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/librobot_communication__rosidl_generator_py.so\n'}
+[0.579934] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c\n'}
+[0.580039] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg\n'}
+[0.580155] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal_s.c\n'}
+[0.580269] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py\n'}
+[0.580376] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py\n'}
+[0.580488] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py\n'}
+[0.580594] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py\n'}
+[0.580699] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast_s.c\n'}
+[0.580804] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control_s.c\n'}
+[0.580909] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data_s.c\n'}
+[0.581014] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map_s.c\n'}
+[0.581125] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py\n'}
+[0.581242] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py\n'}
+[0.581348] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline_s.c\n'}
+[0.581454] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py\n'}
+[0.602126] (-) TimerEvent: {}
+[0.604648] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication'...\n"}
+[0.604919] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action'...\n"}
+[0.605054] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg'...\n"}
+[0.613078] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.613586] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.613978] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.614412] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so\n'}
+[0.614654] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rust_packages/robot_communication\n'}
+[0.614780] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust\n'}
+[0.614846] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src\n'}
+[0.614940] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action\n'}
+[0.615071] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action/rmw.rs\n'}
+[0.615268] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action.rs\n'}
+[0.615412] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg.rs\n'}
+[0.615648] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/lib.rs\n'}
+[0.615744] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg\n'}
+[0.615827] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg/rmw.rs\n'}
+[0.615919] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/build.rs\n'}
+[0.616012] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/Cargo.toml\n'}
+[0.616119] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.idl\n'}
+[0.616194] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.idl\n'}
+[0.616247] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.idl\n'}
+[0.616303] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.idl\n'}
+[0.616352] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.idl\n'}
+[0.616401] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.idl\n'}
+[0.616450] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.idl\n'}
+[0.616539] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.msg\n'}
+[0.616720] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.msg\n'}
+[0.616829] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.msg\n'}
+[0.616935] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.msg\n'}
+[0.617041] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.msg\n'}
+[0.617190] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.msg\n'}
+[0.617324] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.action\n'}
+[0.617431] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/package_run_dependencies/robot_communication\n'}
+[0.617550] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/parent_prefix_path/robot_communication\n'}
+[0.617651] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.sh\n'}
+[0.617739] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.dsv\n'}
+[0.617822] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.sh\n'}
+[0.617906] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.dsv\n'}
+[0.617988] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.bash\n'}
+[0.618081] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.sh\n'}
+[0.618180] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.zsh\n'}
+[0.618278] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.dsv\n'}
+[0.618390] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv\n'}
+[0.618531] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/packages/robot_communication\n'}
+[0.618718] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport.cmake\n'}
+[0.618815] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.618953] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.619048] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.619246] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.619427] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.619543] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport.cmake\n'}
+[0.619676] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.619798] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cppExport.cmake\n'}
+[0.619905] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.620010] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.620135] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.620254] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.620370] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport.cmake\n'}
+[0.620484] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.620597] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport.cmake\n'}
+[0.620715] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.620842] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake-extras.cmake\n'}
+[0.621077] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.621215] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.621338] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.621463] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.621580] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.621694] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.621807] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[0.621925] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig.cmake\n'}
+[0.622048] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig-version.cmake\n'}
+[0.622179] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.xml\n'}
+[0.622982] (robot_communication) CommandEnded: {'returncode': 0}
+[0.658040] (robot_communication) JobEnded: {'identifier': 'robot_communication', 'rc': 0}
+[0.660244] (robot_costmap) JobStarted: {'identifier': 'robot_costmap'}
+[0.665950] (robot_pid_local_planner) JobStarted: {'identifier': 'robot_pid_local_planner'}
+[0.671172] (robot_costmap) JobProgress: {'identifier': 'robot_costmap', 'progress': 'cmake'}
+[0.672334] (robot_costmap) JobProgress: {'identifier': 'robot_costmap', 'progress': 'build'}
+[0.673027] (robot_costmap) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/robot_costmap', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_costmap', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_costmap'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.676023] (robot_pid_local_planner) JobProgress: {'identifier': 'robot_pid_local_planner', 'progress': 'cmake'}
+[0.676640] (robot_pid_local_planner) JobProgress: {'identifier': 'robot_pid_local_planner', 'progress': 'build'}
+[0.677164] (robot_pid_local_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.703179] (-) TimerEvent: {}
+[0.748901] (robot_pid_local_planner) StdoutLine: {'line': b'[100%] Built target differential_pid_local_planner_node\n'}
+[0.766201] (robot_pid_local_planner) CommandEnded: {'returncode': 0}
+[0.767119] (robot_pid_local_planner) JobProgress: {'identifier': 'robot_pid_local_planner', 'progress': 'install'}
+[0.767690] (robot_pid_local_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.770315] (robot_costmap) StdoutLine: {'line': b'[ 66%] Built target robot_costmap\n'}
+[0.776077] (robot_pid_local_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.776407] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib/robot_pid_local_planner/differential_pid_local_planner_node\n'}
+[0.776597] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/launch\n'}
+[0.776735] (robot_pid_local_planner) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/launch/differential_PID.launch.py\n'}
+[0.776864] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/config\n'}
+[0.777012] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/config/differential_pid_param.yaml\n'}
+[0.777194] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/ament_index/resource_index/package_run_dependencies/robot_pid_local_planner\n'}
+[0.777287] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/ament_index/resource_index/parent_prefix_path/robot_pid_local_planner\n'}
+[0.777380] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/environment/ament_prefix_path.sh\n'}
+[0.777509] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/environment/ament_prefix_path.dsv\n'}
+[0.777629] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/environment/path.sh\n'}
+[0.777710] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/environment/path.dsv\n'}
+[0.777794] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/local_setup.bash\n'}
+[0.777876] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/local_setup.sh\n'}
+[0.777963] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/local_setup.zsh\n'}
+[0.778047] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/local_setup.dsv\n'}
+[0.778214] (robot_pid_local_planner) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.dsv\n'}
+[0.778343] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/ament_index/resource_index/packages/robot_pid_local_planner\n'}
+[0.778434] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/cmake/robot_pid_local_plannerConfig.cmake\n'}
+[0.778522] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/cmake/robot_pid_local_plannerConfig-version.cmake\n'}
+[0.778608] (robot_pid_local_planner) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.xml\n'}
+[0.779941] (robot_pid_local_planner) CommandEnded: {'returncode': 0}
+[0.800702] (robot_pid_local_planner) JobEnded: {'identifier': 'robot_pid_local_planner', 'rc': 0}
+[0.803273] (-) TimerEvent: {}
+[0.831223] (robot_costmap) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/map_deal/map_deal.cpp.o\x1b[0m\n'}
+[0.903372] (-) TimerEvent: {}
+[1.003678] (-) TimerEvent: {}
+[1.104031] (-) TimerEvent: {}
+[1.204548] (-) TimerEvent: {}
+[1.304990] (-) TimerEvent: {}
+[1.405317] (-) TimerEvent: {}
+[1.505682] (-) TimerEvent: {}
+[1.606125] (-) TimerEvent: {}
+[1.707022] (-) TimerEvent: {}
+[1.807380] (-) TimerEvent: {}
+[1.907819] (-) TimerEvent: {}
+[2.008501] (-) TimerEvent: {}
+[2.108999] (-) TimerEvent: {}
+[2.209357] (-) TimerEvent: {}
+[2.309687] (-) TimerEvent: {}
+[2.409973] (-) TimerEvent: {}
+[2.510230] (-) TimerEvent: {}
+[2.610512] (-) TimerEvent: {}
+[2.710768] (-) TimerEvent: {}
+[2.811146] (-) TimerEvent: {}
+[2.911475] (-) TimerEvent: {}
+[3.011779] (-) TimerEvent: {}
+[3.112123] (-) TimerEvent: {}
+[3.212440] (-) TimerEvent: {}
+[3.312884] (-) TimerEvent: {}
+[3.413242] (-) TimerEvent: {}
+[3.513696] (-) TimerEvent: {}
+[3.613956] (-) TimerEvent: {}
+[3.714293] (-) TimerEvent: {}
+[3.814536] (-) TimerEvent: {}
+[3.914824] (-) TimerEvent: {}
+[4.015143] (-) TimerEvent: {}
+[4.115453] (-) TimerEvent: {}
+[4.215791] (-) TimerEvent: {}
+[4.316157] (-) TimerEvent: {}
+[4.416592] (-) TimerEvent: {}
+[4.516930] (-) TimerEvent: {}
+[4.617308] (-) TimerEvent: {}
+[4.717652] (-) TimerEvent: {}
+[4.817999] (-) TimerEvent: {}
+[4.918362] (-) TimerEvent: {}
+[5.018706] (-) TimerEvent: {}
+[5.119022] (-) TimerEvent: {}
+[5.219314] (-) TimerEvent: {}
+[5.319615] (-) TimerEvent: {}
+[5.419938] (-) TimerEvent: {}
+[5.520239] (-) TimerEvent: {}
+[5.620590] (-) TimerEvent: {}
+[5.720912] (-) TimerEvent: {}
+[5.821310] (-) TimerEvent: {}
+[5.921735] (-) TimerEvent: {}
+[6.022183] (-) TimerEvent: {}
+[6.122668] (-) TimerEvent: {}
+[6.223140] (-) TimerEvent: {}
+[6.323642] (-) TimerEvent: {}
+[6.424126] (-) TimerEvent: {}
+[6.524557] (-) TimerEvent: {}
+[6.625151] (-) TimerEvent: {}
+[6.725450] (-) TimerEvent: {}
+[6.825772] (-) TimerEvent: {}
+[6.926043] (-) TimerEvent: {}
+[7.026345] (-) TimerEvent: {}
+[7.126587] (-) TimerEvent: {}
+[7.226911] (-) TimerEvent: {}
+[7.327217] (-) TimerEvent: {}
+[7.427509] (-) TimerEvent: {}
+[7.527815] (-) TimerEvent: {}
+[7.628155] (-) TimerEvent: {}
+[7.728466] (-) TimerEvent: {}
+[7.828759] (-) TimerEvent: {}
+[7.929047] (-) TimerEvent: {}
+[8.029440] (-) TimerEvent: {}
+[8.129730] (-) TimerEvent: {}
+[8.230025] (-) TimerEvent: {}
+[8.330385] (-) TimerEvent: {}
+[8.430675] (-) TimerEvent: {}
+[8.530966] (-) TimerEvent: {}
+[8.631319] (-) TimerEvent: {}
+[8.731610] (-) TimerEvent: {}
+[8.831900] (-) TimerEvent: {}
+[8.932194] (-) TimerEvent: {}
+[9.032549] (-) TimerEvent: {}
+[9.132888] (-) TimerEvent: {}
+[9.233168] (-) TimerEvent: {}
+[9.333466] (-) TimerEvent: {}
+[9.433781] (-) TimerEvent: {}
+[9.534071] (-) TimerEvent: {}
+[9.634366] (-) TimerEvent: {}
+[9.734666] (-) TimerEvent: {}
+[9.834968] (-) TimerEvent: {}
+[9.935253] (-) TimerEvent: {}
+[10.035526] (-) TimerEvent: {}
+[10.135862] (-) TimerEvent: {}
+[10.236291] (-) TimerEvent: {}
+[10.336681] (-) TimerEvent: {}
+[10.436992] (-) TimerEvent: {}
+[10.537317] (-) TimerEvent: {}
+[10.637642] (-) TimerEvent: {}
+[10.737995] (-) TimerEvent: {}
+[10.838330] (-) TimerEvent: {}
+[10.938655] (-) TimerEvent: {}
+[11.039040] (-) TimerEvent: {}
+[11.139362] (-) TimerEvent: {}
+[11.239803] (-) TimerEvent: {}
+[11.340460] (-) TimerEvent: {}
+[11.440967] (-) TimerEvent: {}
+[11.541441] (-) TimerEvent: {}
+[11.642084] (-) TimerEvent: {}
+[11.742470] (-) TimerEvent: {}
+[11.842788] (-) TimerEvent: {}
+[11.943074] (-) TimerEvent: {}
+[12.043362] (-) TimerEvent: {}
+[12.143695] (-) TimerEvent: {}
+[12.243975] (-) TimerEvent: {}
+[12.344284] (-) TimerEvent: {}
+[12.444586] (-) TimerEvent: {}
+[12.544910] (-) TimerEvent: {}
+[12.645247] (-) TimerEvent: {}
+[12.745545] (-) TimerEvent: {}
+[12.845831] (-) TimerEvent: {}
+[12.946170] (-) TimerEvent: {}
+[13.046448] (-) TimerEvent: {}
+[13.146732] (-) TimerEvent: {}
+[13.247023] (-) TimerEvent: {}
+[13.347355] (-) TimerEvent: {}
+[13.447640] (-) TimerEvent: {}
+[13.547952] (-) TimerEvent: {}
+[13.648265] (-) TimerEvent: {}
+[13.748581] (-) TimerEvent: {}
+[13.848916] (-) TimerEvent: {}
+[13.949203] (-) TimerEvent: {}
+[14.049579] (-) TimerEvent: {}
+[14.149885] (-) TimerEvent: {}
+[14.250236] (-) TimerEvent: {}
+[14.350569] (-) TimerEvent: {}
+[14.450865] (-) TimerEvent: {}
+[14.551173] (-) TimerEvent: {}
+[14.651452] (-) TimerEvent: {}
+[14.751764] (-) TimerEvent: {}
+[14.852054] (-) TimerEvent: {}
+[14.952406] (-) TimerEvent: {}
+[15.052678] (-) TimerEvent: {}
+[15.152990] (-) TimerEvent: {}
+[15.253269] (-) TimerEvent: {}
+[15.353534] (-) TimerEvent: {}
+[15.453867] (-) TimerEvent: {}
+[15.554176] (-) TimerEvent: {}
+[15.654581] (-) TimerEvent: {}
+[15.754888] (-) TimerEvent: {}
+[15.855220] (-) TimerEvent: {}
+[15.955576] (-) TimerEvent: {}
+[16.055936] (-) TimerEvent: {}
+[16.156322] (-) TimerEvent: {}
+[16.256574] (-) TimerEvent: {}
+[16.356969] (-) TimerEvent: {}
+[16.457339] (-) TimerEvent: {}
+[16.557666] (-) TimerEvent: {}
+[16.657963] (-) TimerEvent: {}
+[16.758343] (-) TimerEvent: {}
+[16.858664] (-) TimerEvent: {}
+[16.959055] (-) TimerEvent: {}
+[17.059376] (-) TimerEvent: {}
+[17.159706] (-) TimerEvent: {}
+[17.260023] (-) TimerEvent: {}
+[17.360387] (-) TimerEvent: {}
+[17.461176] (-) TimerEvent: {}
+[17.561503] (-) TimerEvent: {}
+[17.661837] (-) TimerEvent: {}
+[17.762222] (-) TimerEvent: {}
+[17.862543] (-) TimerEvent: {}
+[17.962861] (-) TimerEvent: {}
+[18.063156] (-) TimerEvent: {}
+[18.163466] (-) TimerEvent: {}
+[18.263799] (-) TimerEvent: {}
+[18.364100] (-) TimerEvent: {}
+[18.464422] (-) TimerEvent: {}
+[18.564723] (-) TimerEvent: {}
+[18.665023] (-) TimerEvent: {}
+[18.765306] (-) TimerEvent: {}
+[18.865599] (-) TimerEvent: {}
+[18.966038] (-) TimerEvent: {}
+[19.066354] (-) TimerEvent: {}
+[19.166680] (-) TimerEvent: {}
+[19.266936] (-) TimerEvent: {}
+[19.367188] (-) TimerEvent: {}
+[19.469191] (-) TimerEvent: {}
+[19.571231] (-) TimerEvent: {}
+[19.671761] (-) TimerEvent: {}
+[19.772279] (-) TimerEvent: {}
+[19.872553] (-) TimerEvent: {}
+[19.972881] (-) TimerEvent: {}
+[20.073242] (-) TimerEvent: {}
+[20.173536] (-) TimerEvent: {}
+[20.273896] (-) TimerEvent: {}
+[20.374210] (-) TimerEvent: {}
+[20.474517] (-) TimerEvent: {}
+[20.574821] (-) TimerEvent: {}
+[20.675395] (-) TimerEvent: {}
+[20.775712] (-) TimerEvent: {}
+[20.876134] (-) TimerEvent: {}
+[20.976614] (-) TimerEvent: {}
+[21.076913] (-) TimerEvent: {}
+[21.177205] (-) TimerEvent: {}
+[21.277671] (-) TimerEvent: {}
+[21.377976] (-) TimerEvent: {}
+[21.478276] (-) TimerEvent: {}
+[21.578559] (-) TimerEvent: {}
+[21.678823] (-) TimerEvent: {}
+[21.779094] (-) TimerEvent: {}
+[21.879432] (-) TimerEvent: {}
+[21.979737] (-) TimerEvent: {}
+[22.080020] (-) TimerEvent: {}
+[22.180277] (-) TimerEvent: {}
+[22.280549] (-) TimerEvent: {}
+[22.380839] (-) TimerEvent: {}
+[22.481164] (-) TimerEvent: {}
+[22.581501] (-) TimerEvent: {}
+[22.681906] (-) TimerEvent: {}
+[22.782631] (-) TimerEvent: {}
+[22.882950] (-) TimerEvent: {}
+[22.983277] (-) TimerEvent: {}
+[23.083640] (-) TimerEvent: {}
+[23.183933] (-) TimerEvent: {}
+[23.284199] (-) TimerEvent: {}
+[23.384614] (-) TimerEvent: {}
+[23.484955] (-) TimerEvent: {}
+[23.585301] (-) TimerEvent: {}
+[23.685713] (-) TimerEvent: {}
+[23.786202] (-) TimerEvent: {}
+[23.886527] (-) TimerEvent: {}
+[23.986786] (-) TimerEvent: {}
+[24.087079] (-) TimerEvent: {}
+[24.187394] (-) TimerEvent: {}
+[24.287739] (-) TimerEvent: {}
+[24.388057] (-) TimerEvent: {}
+[24.488349] (-) TimerEvent: {}
+[24.588680] (-) TimerEvent: {}
+[24.689079] (-) TimerEvent: {}
+[24.789557] (-) TimerEvent: {}
+[24.889834] (-) TimerEvent: {}
+[24.990096] (-) TimerEvent: {}
+[25.090371] (-) TimerEvent: {}
+[25.190763] (-) TimerEvent: {}
+[25.291271] (-) TimerEvent: {}
+[25.391706] (-) TimerEvent: {}
+[25.492206] (-) TimerEvent: {}
+[25.592555] (-) TimerEvent: {}
+[25.692861] (-) TimerEvent: {}
+[25.793159] (-) TimerEvent: {}
+[25.893592] (-) TimerEvent: {}
+[25.994161] (-) TimerEvent: {}
+[26.094530] (-) TimerEvent: {}
+[26.194803] (-) TimerEvent: {}
+[26.295097] (-) TimerEvent: {}
+[26.395557] (-) TimerEvent: {}
+[26.495933] (-) TimerEvent: {}
+[26.596256] (-) TimerEvent: {}
+[26.696532] (-) TimerEvent: {}
+[26.796812] (-) TimerEvent: {}
+[26.897087] (-) TimerEvent: {}
+[26.997367] (-) TimerEvent: {}
+[27.097636] (-) TimerEvent: {}
+[27.197905] (-) TimerEvent: {}
+[27.298215] (-) TimerEvent: {}
+[27.398543] (-) TimerEvent: {}
+[27.498879] (-) TimerEvent: {}
+[27.599186] (-) TimerEvent: {}
+[27.699787] (-) TimerEvent: {}
+[27.800098] (-) TimerEvent: {}
+[27.900435] (-) TimerEvent: {}
+[28.000743] (-) TimerEvent: {}
+[28.101101] (-) TimerEvent: {}
+[28.201417] (-) TimerEvent: {}
+[28.301743] (-) TimerEvent: {}
+[28.402053] (-) TimerEvent: {}
+[28.502340] (-) TimerEvent: {}
+[28.602650] (-) TimerEvent: {}
+[28.702940] (-) TimerEvent: {}
+[28.803244] (-) TimerEvent: {}
+[28.903531] (-) TimerEvent: {}
+[29.003803] (-) TimerEvent: {}
+[29.104080] (-) TimerEvent: {}
+[29.204384] (-) TimerEvent: {}
+[29.304697] (-) TimerEvent: {}
+[29.405003] (-) TimerEvent: {}
+[29.505357] (-) TimerEvent: {}
+[29.605665] (-) TimerEvent: {}
+[29.705980] (-) TimerEvent: {}
+[29.806400] (-) TimerEvent: {}
+[29.906891] (-) TimerEvent: {}
+[30.007522] (-) TimerEvent: {}
+[30.108013] (-) TimerEvent: {}
+[30.208645] (-) TimerEvent: {}
+[30.309185] (-) TimerEvent: {}
+[30.409647] (-) TimerEvent: {}
+[30.510405] (-) TimerEvent: {}
+[30.610970] (-) TimerEvent: {}
+[30.711284] (-) TimerEvent: {}
+[30.811566] (-) TimerEvent: {}
+[30.911846] (-) TimerEvent: {}
+[31.012135] (-) TimerEvent: {}
+[31.112464] (-) TimerEvent: {}
+[31.212742] (-) TimerEvent: {}
+[31.313064] (-) TimerEvent: {}
+[31.413411] (-) TimerEvent: {}
+[31.513720] (-) TimerEvent: {}
+[31.614033] (-) TimerEvent: {}
+[31.714350] (-) TimerEvent: {}
+[31.814625] (-) TimerEvent: {}
+[31.914972] (-) TimerEvent: {}
+[32.015379] (-) TimerEvent: {}
+[32.115921] (-) TimerEvent: {}
+[32.216177] (-) TimerEvent: {}
+[32.316436] (-) TimerEvent: {}
+[32.416819] (-) TimerEvent: {}
+[32.517191] (-) TimerEvent: {}
+[32.617632] (-) TimerEvent: {}
+[32.717900] (-) TimerEvent: {}
+[32.818208] (-) TimerEvent: {}
+[32.918526] (-) TimerEvent: {}
+[33.018838] (-) TimerEvent: {}
+[33.119141] (-) TimerEvent: {}
+[33.219458] (-) TimerEvent: {}
+[33.319822] (-) TimerEvent: {}
+[33.420225] (-) TimerEvent: {}
+[33.520478] (-) TimerEvent: {}
+[33.620914] (-) TimerEvent: {}
+[33.721215] (-) TimerEvent: {}
+[33.821557] (-) TimerEvent: {}
+[33.921838] (-) TimerEvent: {}
+[34.022215] (-) TimerEvent: {}
+[34.122596] (-) TimerEvent: {}
+[34.223073] (-) TimerEvent: {}
+[34.323564] (-) TimerEvent: {}
+[34.424203] (-) TimerEvent: {}
+[34.524698] (-) TimerEvent: {}
+[34.625271] (-) TimerEvent: {}
+[34.725772] (-) TimerEvent: {}
+[34.826334] (-) TimerEvent: {}
+[34.926764] (-) TimerEvent: {}
+[35.027518] (-) TimerEvent: {}
+[35.127896] (-) TimerEvent: {}
+[35.228215] (-) TimerEvent: {}
+[35.328497] (-) TimerEvent: {}
+[35.428931] (-) TimerEvent: {}
+[35.529203] (-) TimerEvent: {}
+[35.629479] (-) TimerEvent: {}
+[35.729739] (-) TimerEvent: {}
+[35.830008] (-) TimerEvent: {}
+[35.930292] (-) TimerEvent: {}
+[36.030626] (-) TimerEvent: {}
+[36.130996] (-) TimerEvent: {}
+[36.231279] (-) TimerEvent: {}
+[36.331580] (-) TimerEvent: {}
+[36.431905] (-) TimerEvent: {}
+[36.532217] (-) TimerEvent: {}
+[36.632523] (-) TimerEvent: {}
+[36.732797] (-) TimerEvent: {}
+[36.833046] (-) TimerEvent: {}
+[36.933755] (-) TimerEvent: {}
+[37.036627] (-) TimerEvent: {}
+[37.074266] (robot_costmap) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable map_deal_node\x1b[0m\n'}
+[37.136704] (-) TimerEvent: {}
+[37.237060] (-) TimerEvent: {}
+[37.337391] (-) TimerEvent: {}
+[37.437895] (-) TimerEvent: {}
+[37.538290] (-) TimerEvent: {}
+[37.639043] (-) TimerEvent: {}
+[37.739379] (-) TimerEvent: {}
+[37.839666] (-) TimerEvent: {}
+[37.940066] (-) TimerEvent: {}
+[38.040467] (-) TimerEvent: {}
+[38.141283] (-) TimerEvent: {}
+[38.243206] (-) TimerEvent: {}
+[38.343719] (-) TimerEvent: {}
+[38.444293] (-) TimerEvent: {}
+[38.545057] (-) TimerEvent: {}
+[38.645556] (-) TimerEvent: {}
+[38.746002] (-) TimerEvent: {}
+[38.846766] (-) TimerEvent: {}
+[38.947396] (-) TimerEvent: {}
+[39.047712] (-) TimerEvent: {}
+[39.148070] (-) TimerEvent: {}
+[39.248500] (-) TimerEvent: {}
+[39.348847] (-) TimerEvent: {}
+[39.449285] (-) TimerEvent: {}
+[39.549690] (-) TimerEvent: {}
+[39.650026] (-) TimerEvent: {}
+[39.750373] (-) TimerEvent: {}
+[39.850717] (-) TimerEvent: {}
+[39.951088] (-) TimerEvent: {}
+[40.051390] (-) TimerEvent: {}
+[40.151684] (-) TimerEvent: {}
+[40.251999] (-) TimerEvent: {}
+[40.352307] (-) TimerEvent: {}
+[40.454401] (-) TimerEvent: {}
+[40.555015] (-) TimerEvent: {}
+[40.655348] (-) TimerEvent: {}
+[40.755645] (-) TimerEvent: {}
+[40.855940] (-) TimerEvent: {}
+[40.956300] (-) TimerEvent: {}
+[41.056745] (-) TimerEvent: {}
+[41.157201] (-) TimerEvent: {}
+[41.257670] (-) TimerEvent: {}
+[41.358233] (-) TimerEvent: {}
+[41.458541] (-) TimerEvent: {}
+[41.559038] (-) TimerEvent: {}
+[41.659364] (-) TimerEvent: {}
+[41.759664] (-) TimerEvent: {}
+[41.860002] (-) TimerEvent: {}
+[41.960262] (-) TimerEvent: {}
+[42.060630] (-) TimerEvent: {}
+[42.160916] (-) TimerEvent: {}
+[42.261224] (-) TimerEvent: {}
+[42.361533] (-) TimerEvent: {}
+[42.461763] (-) TimerEvent: {}
+[42.562108] (-) TimerEvent: {}
+[42.662478] (-) TimerEvent: {}
+[42.729940] (robot_costmap) StdoutLine: {'line': b'[100%] Built target map_deal_node\n'}
+[42.742757] (robot_costmap) CommandEnded: {'returncode': 0}
+[42.743508] (robot_costmap) JobProgress: {'identifier': 'robot_costmap', 'progress': 'install'}
+[42.744039] (robot_costmap) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/robot_costmap'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_costmap', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_costmap'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[42.751659] (robot_costmap) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[42.752030] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include\n'}
+[42.752166] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal\n'}
+[42.752361] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/global_map_deal.h\n'}
+[42.752456] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/map_deal.h\n'}
+[42.752548] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/signed_distance_field_2d.h\n'}
+[42.752664] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/edt_environment.h\n'}
+[42.752755] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/local_map_deal.h\n'}
+[42.752845] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/grid_map_2d.h\n'}
+[42.752934] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common\n'}
+[42.753024] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base\n'}
+[42.753119] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/state.h\n'}
+[42.753184] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/trajectory.h\n'}
+[42.753295] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/type.h\n'}
+[42.753398] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch\n'}
+[42.753495] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal.launch.py\n'}
+[42.753596] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal_real.launch\n'}
+[42.753683] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/librobot_costmap.a\n'}
+[42.753769] (robot_costmap) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node\n'}
+[42.762595] (-) TimerEvent: {}
+[42.811823] (robot_costmap) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node" to ""\n'}
+[42.812157] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.sh\n'}
+[42.812326] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.dsv\n'}
+[42.812460] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/package_run_dependencies/robot_costmap\n'}
+[42.812607] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/parent_prefix_path/robot_costmap\n'}
+[42.812699] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.sh\n'}
+[42.812814] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.dsv\n'}
+[42.812911] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.sh\n'}
+[42.813043] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.dsv\n'}
+[42.813224] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.bash\n'}
+[42.813363] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.sh\n'}
+[42.813462] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.zsh\n'}
+[42.813580] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.dsv\n'}
+[42.813675] (robot_costmap) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv\n'}
+[42.813778] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/packages/robot_costmap\n'}
+[42.813875] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport.cmake\n'}
+[42.813970] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport-debug.cmake\n'}
+[42.814065] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[42.814185] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[42.814279] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[42.814370] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig.cmake\n'}
+[42.814462] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig-version.cmake\n'}
+[42.814571] (robot_costmap) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.xml\n'}
+[42.815307] (robot_costmap) CommandEnded: {'returncode': 0}
+[42.830528] (robot_costmap) JobEnded: {'identifier': 'robot_costmap', 'rc': 0}
+[42.830928] (robot_navigation) JobStarted: {'identifier': 'robot_navigation'}
+[42.842311] (robot_navigation) JobProgress: {'identifier': 'robot_navigation', 'progress': 'cmake'}
+[42.844201] (robot_navigation) JobProgress: {'identifier': 'robot_navigation', 'progress': 'build'}
+[42.845255] (robot_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/robot_navigation', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_navigation', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[42.862718] (-) TimerEvent: {}
+[42.963014] (-) TimerEvent: {}
+[42.974930] (robot_navigation) StdoutLine: {'line': b'[ 50%] Built target Differential_DWA_node\n'}
+[42.979766] (robot_navigation) StdoutLine: {'line': b'[100%] Built target motionPlan_node\n'}
+[42.997510] (robot_navigation) CommandEnded: {'returncode': 0}
+[42.998058] (robot_navigation) JobProgress: {'identifier': 'robot_navigation', 'progress': 'install'}
+[42.998733] (robot_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/robot_navigation'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_navigation', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/zheng/carerobot_slam_ros2'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '107485'), ('COLCON_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-5a5a3820785b0371.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble')]), 'shell': False}
+[43.011803] (robot_navigation) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[43.012269] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/motionPlan_node\n'}
+[43.012756] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/Differential_DWA_node\n'}
+[43.013063] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include/\n'}
+[43.013307] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform\n'}
+[43.013504] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform/vel_transform.h\n'}
+[43.013615] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher\n'}
+[43.013712] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/node.h\n'}
+[43.013807] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Hybrid_astar.h\n'}
+[43.013897] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/nav_app.h\n'}
+[43.013960] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Astar_searcher.h\n'}
+[43.014037] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_searcher.h\n'}
+[43.014117] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/two_way_rrt.h\n'}
+[43.014276] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_utils.h\n'}
+[43.014406] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan\n'}
+[43.014603] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan/motionPlan.h\n'}
+[43.014882] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility\n'}
+[43.015096] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/type.h\n'}
+[43.015294] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/math_function.h\n'}
+[43.015423] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools\n'}
+[43.015600] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/filter.h\n'}
+[43.015749] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/curve_fitting.h\n'}
+[43.015859] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization\n'}
+[43.015955] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/fast_security.h\n'}
+[43.016063] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/minimum_snap.h\n'}
+[43.016188] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bspline_optimizer.h\n'}
+[43.016320] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bezier_curve.h\n'}
+[43.016433] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/corridor_optimizer.h\n'}
+[43.016563] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/non_uniform_bspline.h\n'}
+[43.016812] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/BSpline.h\n'}
+[43.016940] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow\n'}
+[43.017066] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow/pid_follow.h\n'}
+[43.017209] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan\n'}
+[43.017352] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan/differential_dwa.h\n'}
+[43.017456] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config\n'}
+[43.017653] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/dwa_param.yaml\n'}
+[43.017867] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/navigation_param.yaml\n'}
+[43.018422] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/pid_param.yaml\n'}
+[43.019369] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch\n'}
+[43.019568] (robot_navigation) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/motionPlan.launch.py\n'}
+[43.019796] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/Differential_DWA.launch\n'}
+[43.020073] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/package_run_dependencies/robot_navigation\n'}
+[43.020323] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/parent_prefix_path/robot_navigation\n'}
+[43.020477] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.sh\n'}
+[43.020636] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.dsv\n'}
+[43.020796] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.sh\n'}
+[43.020965] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.dsv\n'}
+[43.021119] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.bash\n'}
+[43.021314] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.sh\n'}
+[43.021493] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.zsh\n'}
+[43.021616] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.dsv\n'}
+[43.021774] (robot_navigation) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.dsv\n'}
+[43.021909] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/packages/robot_navigation\n'}
+[43.022066] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig.cmake\n'}
+[43.022232] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig-version.cmake\n'}
+[43.022378] (robot_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.xml\n'}
+[43.022537] (robot_navigation) CommandEnded: {'returncode': 0}
+[43.039216] (robot_navigation) JobEnded: {'identifier': 'robot_navigation', 'rc': 0}
+[43.039963] (-) EventReactorShutdown: {}

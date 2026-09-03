@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-79a729087e0aee9ad311.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robot_costmap",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "map_deal_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_deal_node-Debug-1fbd7e5db1b315ae88ec.json",
+					"name" : "map_deal_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_costmap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_costmap-Debug-b3ab61c0ce80379742e3.json",
+					"name" : "robot_costmap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_costmap_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_costmap_uninstall-Debug-58943cf0799765fdf1c9.json",
+					"name" : "robot_costmap_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-4cc758be30ae3c206899.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zheng/carerobot_slam_ros2/build/robot_costmap",
+		"source" : "/home/zheng/carerobot_slam_ros2/src/robot_costmap"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

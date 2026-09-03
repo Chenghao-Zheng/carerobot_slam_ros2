@@ -1,0 +1,73 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "robot_communication__rs::@69997cc8f4e4c4519d47",
+	"name" : "robot_communication__rs",
+	"paths" : 
+	{
+		"build" : "robot_communication__rs",
+		"source" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs/CMakeFiles/robot_communication__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs/CMakeFiles/robot_communication__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_generator_rs/robot_communication/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

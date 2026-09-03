@@ -1,0 +1,47 @@
+[ 66%] Built target robot_costmap
+[ 77%] [32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/nodes/map_deal_node.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/map_deal/map_deal.cpp.o[0m
+[100%] [32m[1mLinking CXX executable map_deal_node[0m
+[100%] Built target map_deal_node
+-- Install configuration: "Debug"
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/global_map_deal.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/map_deal.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/signed_distance_field_2d.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/edt_environment.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/local_map_deal.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/grid_map_2d.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/state.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/trajectory.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/type.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal.launch.py
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal_real.launch
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/librobot_costmap.a
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.sh
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.dsv
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/package_run_dependencies/robot_costmap
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/parent_prefix_path/robot_costmap
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.sh
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.sh
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.dsv
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.bash
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.sh
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.zsh
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/packages/robot_costmap
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport-debug.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig-version.cmake
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.xml

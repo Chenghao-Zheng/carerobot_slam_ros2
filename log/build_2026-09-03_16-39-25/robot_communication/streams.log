@@ -1,0 +1,294 @@
+[0.021s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_communication -- -j8 -l8
+[0.105s] [  1%] Built target robot_communication__rs
+[0.107s] [  2%] Built target robot_communication__cpp
+[0.111s] [ 13%] Built target robot_communication__rosidl_generator_c
+[0.137s] [ 13%] Built target ament_cmake_python_copy_robot_communication
+[0.171s] [ 26%] Built target robot_communication__rosidl_typesupport_introspection_cpp
+[0.172s] [ 36%] Built target robot_communication__rosidl_typesupport_cpp
+[0.182s] [ 53%] Built target robot_communication__rosidl_typesupport_c
+[0.182s] [ 60%] Built target robot_communication__rosidl_typesupport_fastrtps_c
+[0.186s] [ 71%] Built target robot_communication__rosidl_typesupport_fastrtps_cpp
+[0.187s] [ 81%] Built target robot_communication__rosidl_typesupport_introspection_c
+[0.209s] [ 81%] Built target robot_communication
+[0.237s] [ 82%] Built target robot_communication__py
+[0.272s] [ 92%] Built target robot_communication__rosidl_generator_py
+[0.299s] [ 95%] Built target robot_communication__rosidl_typesupport_fastrtps_c__pyext
+[0.303s] [ 97%] Built target robot_communication__rosidl_typesupport_introspection_c__pyext
+[0.305s] [100%] Built target robot_communication__rosidl_typesupport_c__pyext
+[0.540s] running egg_info
+[0.542s] writing robot_communication.egg-info/PKG-INFO
+[0.542s] writing dependency_links to robot_communication.egg-info/dependency_links.txt
+[0.542s] writing top-level names to robot_communication.egg-info/top_level.txt
+[0.546s] reading manifest file 'robot_communication.egg-info/SOURCES.txt'
+[0.546s] writing manifest file 'robot_communication.egg-info/SOURCES.txt'
+[0.586s] [100%] Built target ament_cmake_python_build_robot_communication_egg
+[0.598s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_communication -- -j8 -l8
+[0.600s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_communication
+[0.609s] -- Install configuration: ""
+[0.609s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rosidl_interfaces/robot_communication
+[0.609s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.610s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.610s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.h
+[0.610s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.610s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.c
+[0.610s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.h
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.h
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.h
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.h
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.h
+[0.611s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.h
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.h
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_c__visibility_control.h
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.h
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.h
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.c
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.c
+[0.612s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.h
+[0.613s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.c
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.h
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.c
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.c
+[0.614s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.h
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.h
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.c
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.h
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.h
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.h
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.sh
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.dsv
+[0.615s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so
+[0.616s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.616s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.616s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.616s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_c.h
+[0.616s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_c.h
+[0.617s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_c.h
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.c
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.618s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_c.h
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.c
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_c.h
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_c.h
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_c.h
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.c
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.c
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.c
+[0.619s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.c
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.c
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_c.h
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.620s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.hpp
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.hpp
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__builder.hpp
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__traits.hpp
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.hpp
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.621s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.hpp
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.622s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__traits.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__builder.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__traits.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__builder.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__builder.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__builder.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__builder.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.hpp
+[0.623s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__traits.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__builder.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__traits.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__traits.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.hpp
+[0.624s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__traits.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_cpp.hpp
+[0.625s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/dds_fastrtps
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_cpp.hpp
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_cpp.hpp
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/dds_fastrtps
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_cpp.hpp
+[0.626s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_cpp.hpp
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.cpp
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+[0.627s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.cpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.cpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.cpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.cpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_cpp.hpp
+[0.628s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.cpp
+[0.629s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so
+[0.629s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so
+[0.629s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.sh
+[0.629s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.dsv
+[0.629s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info
+[0.629s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.629s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/PKG-INFO
+[0.629s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/top_level.txt
+[0.629s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes_s.c
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.630s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/librobot_communication__rosidl_generator_py.so
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal_s.c
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py
+[0.631s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast_s.c
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control_s.c
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data_s.c
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map_s.c
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py
+[0.632s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py
+[0.633s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline_s.c
+[0.633s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py
+[0.670s] Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication'...
+[0.670s] Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action'...
+[0.670s] Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg'...
+[0.676s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.676s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.677s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.677s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rust_packages/robot_communication
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action/rmw.rs
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action.rs
+[0.678s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg.rs
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/lib.rs
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg/rmw.rs
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/build.rs
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/Cargo.toml
+[0.679s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.idl
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.msg
+[0.680s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.msg
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.msg
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.msg
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.msg
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.msg
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.action
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/package_run_dependencies/robot_communication
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/parent_prefix_path/robot_communication
+[0.681s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.sh
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.dsv
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.sh
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.dsv
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.bash
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.sh
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.zsh
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.dsv
+[0.682s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv
+[0.682s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/packages/robot_communication
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport-noconfig.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cppExport.cmake
+[0.683s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport-noconfig.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport-noconfig.cmake
+[0.684s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake-extras.cmake
+[0.685s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.685s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.686s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_libraries-extras.cmake
+[0.686s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_targets-extras.cmake
+[0.686s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.686s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.687s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[0.687s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig.cmake
+[0.687s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig-version.cmake
+[0.687s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.xml
+[0.687s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_communication

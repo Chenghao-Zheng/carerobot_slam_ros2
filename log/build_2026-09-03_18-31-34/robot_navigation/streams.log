@@ -1,0 +1,82 @@
+[0.015s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': AMENT_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[0.201s] [  2%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/motionPlan/motionPlan.cpp.o[0m
+[0.219s] [  4%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/motionPlan/motionPlan.cpp.o[0m
+[8.647s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:[m[K In member function ‘[01m[Kvoid motionPlan::staticMapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.648s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:410:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.648s]   410 |   for (unsigned int i = 0; [01;35m[Ki < pathNav.width[m[K; i++)
+[8.648s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[8.648s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:412:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.648s]   412 |     for (unsigned int j = 0; [01;35m[Kj < pathNav.height[m[K; j++)
+[8.648s]       |                              [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[8.696s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:[m[K In member function ‘[01m[Kvoid motionPlan::staticMapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.697s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:410:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.697s]   410 |   for (unsigned int i = 0; [01;35m[Ki < pathNav.width[m[K; i++)
+[8.697s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[8.697s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/motionPlan/motionPlan.cpp:412:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.697s]   412 |     for (unsigned int j = 0; [01;35m[Kj < pathNav.height[m[K; j++)
+[8.699s]       |                              [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[37.110s] [  7%] [32m[1mLinking CXX executable motionPlan_node[0m
+[37.382s] [  9%] [32m[1mLinking CXX executable Differential_DWA_node[0m
+[40.733s] [ 54%] Built target motionPlan_node
+[40.956s] [100%] Built target Differential_DWA_node
+[40.967s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '0': AMENT_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[40.970s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': AMENT_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_navigation
+[40.977s] -- Install configuration: "Release"
+[40.977s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/motionPlan_node
+[41.004s] -- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/motionPlan_node" to ""
+[41.004s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/Differential_DWA_node
+[41.033s] -- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/robot_navigation/Differential_DWA_node" to ""
+[41.033s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include/
+[41.033s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform
+[41.034s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//vel_transform/vel_transform.h
+[41.034s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher
+[41.034s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/node.h
+[41.034s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Hybrid_astar.h
+[41.034s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/nav_app.h
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/Astar_searcher.h
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_searcher.h
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/two_way_rrt.h
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_searcher/JPS_utils.h
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan
+[41.035s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//motionPlan/motionPlan.h
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/type.h
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//utility/math_function.h
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/filter.h
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//math_tools/curve_fitting.h
+[41.036s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/fast_security.h
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/minimum_snap.h
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bspline_optimizer.h
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/bezier_curve.h
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/corridor_optimizer.h
+[41.037s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/non_uniform_bspline.h
+[41.039s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_optimization/BSpline.h
+[41.039s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow
+[41.039s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow/pid_follow.h
+[41.040s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan
+[41.040s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan/differential_dwa.h
+[41.040s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config
+[41.040s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/dwa_param.yaml
+[41.040s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/navigation_param.yaml
+[41.041s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/pid_param.yaml
+[41.041s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch
+[41.041s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/motionPlan.launch.py
+[41.041s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/Differential_DWA.launch
+[41.041s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/package_run_dependencies/robot_navigation
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/parent_prefix_path/robot_navigation
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.sh
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.dsv
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.sh
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/path.dsv
+[41.042s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.bash
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.sh
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.zsh
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/local_setup.dsv
+[41.043s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.dsv
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/packages/robot_navigation
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig.cmake
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/cmake/robot_navigationConfig-version.cmake
+[41.043s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.xml
+[41.043s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '0': AMENT_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_navigation

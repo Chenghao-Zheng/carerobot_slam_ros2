@@ -221,7 +221,7 @@
       <!-- ROS 2 雷达插件 -->
       <plugin name="gazebo_rplidar" filename="libgazebo_ros_ray_sensor.so">
         <ros>
-          <remapping>~/out:=/not_true_scan</remapping>
+          <remapping>~/out:=/scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
         <frame_name>laser</frame_name>
@@ -266,22 +266,35 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <!-- ========== Gazebo ROS 2 差速驱动插件 ========== -->
+<!-- ========== Gazebo ROS 2 差速驱动插件（适配 Humble 规范） ========== -->
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <!-- ROS 2 命名空间定义 -->
       <ros>
         <namespace>/</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
       </ros>
+
+      <!-- 关节定义（ROS 2 强制使用下划线风格） -->
       <left_joint>joint1</left_joint>
       <right_joint>joint2</right_joint>
+
+      <!-- 轮子物理尺寸（单位：米） -->
       <wheel_separation>0.2372</wheel_separation>
       <wheel_diameter>0.07</wheel_diameter>
+
+      <!-- 极限参数 -->
       <max_wheel_torque>20.0</max_wheel_torque>
       <max_wheel_acceleration>5.0</max_wheel_acceleration>
+
+      <!-- 话题配置 -->
       <command_topic>cmd_vel</command_topic>
       <odometry_topic>odom</odometry_topic>
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
+
+      <!-- 广播 TF 变换与更新频率 -->
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
       <publish_wheel_tf>true</publish_wheel_tf>

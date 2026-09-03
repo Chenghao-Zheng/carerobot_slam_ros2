@@ -1,0 +1,575 @@
+[0.000000] (-) TimerEvent: {}
+[0.000684] (-) JobUnselected: {'identifier': 'diff_drive_gazebo'}
+[0.000821] (-) JobUnselected: {'identifier': 'robot_costmap'}
+[0.000855] (-) JobUnselected: {'identifier': 'robot_navigation'}
+[0.000885] (-) JobUnselected: {'identifier': 'robot_pid_local_planner'}
+[0.000918] (robot_communication) JobQueued: {'identifier': 'robot_communication', 'dependencies': OrderedDict()}
+[0.000951] (robot_communication) JobStarted: {'identifier': 'robot_communication'}
+[0.013828] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'cmake'}
+[0.013983] (robot_communication) Command: {'cmd': ['/usr/bin/cmake', '/home/zheng/carerobot_slam_ros2/src/robot_communication', '-DCMAKE_INSTALL_PREFIX=/home/zheng/carerobot_slam_ros2/install/robot_communication'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16113'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-85e0bbdd27a237cb.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099558] (-) TimerEvent: {}
+[0.200090] (-) TimerEvent: {}
+[0.300434] (-) TimerEvent: {}
+[0.400864] (-) TimerEvent: {}
+[0.501133] (-) TimerEvent: {}
+[0.502318] (robot_communication) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601241] (-) TimerEvent: {}
+[0.701474] (-) TimerEvent: {}
+[0.789059] (robot_communication) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.801566] (-) TimerEvent: {}
+[0.802836] (robot_communication) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.901695] (-) TimerEvent: {}
+[0.950209] (robot_communication) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.967217] (robot_communication) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.967749] (robot_communication) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.977609] (robot_communication) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.985236] (robot_communication) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.001765] (-) TimerEvent: {}
+[1.101991] (-) TimerEvent: {}
+[1.104776] (robot_communication) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.114509] (robot_communication) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.114828] (robot_communication) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.115288] (robot_communication) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.135244] (robot_communication) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.202111] (-) TimerEvent: {}
+[1.302370] (-) TimerEvent: {}
+[1.341707] (robot_communication) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.402461] (-) TimerEvent: {}
+[1.501214] (robot_communication) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.502544] (-) TimerEvent: {}
+[1.532057] (robot_communication) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.562561] (robot_communication) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.602659] (-) TimerEvent: {}
+[1.666377] (robot_communication) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.702760] (-) TimerEvent: {}
+[1.767930] (robot_communication) StdoutLine: {'line': b'-- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.802851] (-) TimerEvent: {}
+[1.847358] (robot_communication) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.885708] (robot_communication) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.902973] (-) TimerEvent: {}
+[1.928877] (robot_communication) StdoutLine: {'line': b'-- Found action_msgs: 1.2.3 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[2.003060] (-) TimerEvent: {}
+[2.103370] (-) TimerEvent: {}
+[2.205646] (-) TimerEvent: {}
+[2.305918] (-) TimerEvent: {}
+[2.406166] (-) TimerEvent: {}
+[2.414432] (robot_communication) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.506261] (-) TimerEvent: {}
+[2.606527] (-) TimerEvent: {}
+[2.706752] (-) TimerEvent: {}
+[2.785213] (robot_communication) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.806840] (-) TimerEvent: {}
+[2.907101] (-) TimerEvent: {}
+[3.007352] (-) TimerEvent: {}
+[3.107579] (-) TimerEvent: {}
+[3.207030] (robot_communication) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.207663] (-) TimerEvent: {}
+[3.240481] (robot_communication) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.254500] (robot_communication) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.306498] (robot_communication) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.306754] (robot_communication) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.306853] (robot_communication) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.306938] (robot_communication) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.307732] (-) TimerEvent: {}
+[3.328930] (robot_communication) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.407871] (-) TimerEvent: {}
+[3.508132] (-) TimerEvent: {}
+[3.532659] (robot_communication) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.608270] (-) TimerEvent: {}
+[3.612143] (robot_communication) StdoutLine: {'line': b'-- Generating done\n'}
+[3.632439] (robot_communication) StdoutLine: {'line': b'-- Build files have been written to: /home/zheng/carerobot_slam_ros2/build/robot_communication\n'}
+[3.645157] (robot_communication) CommandEnded: {'returncode': 0}
+[3.645985] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'build'}
+[3.647227] (robot_communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zheng/carerobot_slam_ros2/build/robot_communication', '--', '-j8', '-l8'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16113'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-85e0bbdd27a237cb.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.687520] (robot_communication) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.703130] (robot_communication) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.704684] (robot_communication) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.708348] (-) TimerEvent: {}
+[3.708847] (robot_communication) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_robot_communication\n'}
+[3.808644] (-) TimerEvent: {}
+[3.908921] (-) TimerEvent: {}
+[4.009215] (-) TimerEvent: {}
+[4.028126] (robot_communication) StdoutLine: {'line': b'running egg_info\n'}
+[4.028578] (robot_communication) StdoutLine: {'line': b'creating robot_communication.egg-info\n'}
+[4.028843] (robot_communication) StdoutLine: {'line': b'writing robot_communication.egg-info/PKG-INFO\n'}
+[4.029063] (robot_communication) StdoutLine: {'line': b'writing dependency_links to robot_communication.egg-info/dependency_links.txt\n'}
+[4.029340] (robot_communication) StdoutLine: {'line': b'writing top-level names to robot_communication.egg-info/top_level.txt\n'}
+[4.029864] (robot_communication) StdoutLine: {'line': b"writing manifest file 'robot_communication.egg-info/SOURCES.txt'\n"}
+[4.032872] (robot_communication) StdoutLine: {'line': b"reading manifest file 'robot_communication.egg-info/SOURCES.txt'\n"}
+[4.033406] (robot_communication) StdoutLine: {'line': b"writing manifest file 'robot_communication.egg-info/SOURCES.txt'\n"}
+[4.063280] (robot_communication) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_robot_communication_egg\n'}
+[4.109308] (-) TimerEvent: {}
+[4.209574] (-) TimerEvent: {}
+[4.309835] (-) TimerEvent: {}
+[4.410073] (-) TimerEvent: {}
+[4.510292] (-) TimerEvent: {}
+[4.576730] (robot_communication) StdoutLine: {'line': b'[  3%] Built target robot_communication__rs\n'}
+[4.610390] (-) TimerEvent: {}
+[4.710674] (-) TimerEvent: {}
+[4.810965] (-) TimerEvent: {}
+[4.911652] (-) TimerEvent: {}
+[4.956510] (robot_communication) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/localization_info_broadcast__functions.c.o\x1b[0m\n'}
+[4.956760] (robot_communication) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/chassis_control__functions.c.o\x1b[0m\n'}
+[4.956868] (robot_communication) StdoutLine: {'line': b'[  6%] Built target robot_communication__cpp\n'}
+[4.956957] (robot_communication) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/bspline__functions.c.o\x1b[0m\n'}
+[4.957102] (robot_communication) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/sensor_data__functions.c.o\x1b[0m\n'}
+[4.961536] (robot_communication) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/goal__functions.c.o\x1b[0m\n'}
+[4.963025] (robot_communication) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/esdf_map__functions.c.o\x1b[0m\n'}
+[4.965783] (robot_communication) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/action/detail/do_dishes__functions.c.o\x1b[0m\n'}
+[4.969212] (robot_communication) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.013646] (-) TimerEvent: {}
+[5.113961] (-) TimerEvent: {}
+[5.214194] (-) TimerEvent: {}
+[5.314395] (-) TimerEvent: {}
+[5.415010] (-) TimerEvent: {}
+[5.508711] (robot_communication) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.510981] (robot_communication) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.515105] (-) TimerEvent: {}
+[5.608410] (robot_communication) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library librobot_communication__rosidl_generator_c.so\x1b[0m\n'}
+[5.615194] (-) TimerEvent: {}
+[5.715443] (-) TimerEvent: {}
+[5.727966] (robot_communication) StdoutLine: {'line': b'[ 17%] Built target robot_communication__rosidl_generator_c\n'}
+[5.742700] (robot_communication) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.745725] (robot_communication) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.745988] (robot_communication) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.815535] (-) TimerEvent: {}
+[5.915804] (-) TimerEvent: {}
+[6.016048] (-) TimerEvent: {}
+[6.116317] (-) TimerEvent: {}
+[6.209819] (robot_communication) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/chassis_control__type_support.cpp.o\x1b[0m\n'}
+[6.211289] (robot_communication) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/localization_info_broadcast__type_support.cpp.o\x1b[0m\n'}
+[6.212586] (robot_communication) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/sensor_data__type_support.cpp.o\x1b[0m\n'}
+[6.216418] (-) TimerEvent: {}
+[6.318645] (-) TimerEvent: {}
+[6.421117] (-) TimerEvent: {}
+[6.522639] (-) TimerEvent: {}
+[6.622887] (-) TimerEvent: {}
+[6.725642] (-) TimerEvent: {}
+[6.831007] (-) TimerEvent: {}
+[6.934657] (-) TimerEvent: {}
+[7.022773] (robot_communication) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/localization_info_broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.038027] (-) TimerEvent: {}
+[7.137037] (robot_communication) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.138109] (-) TimerEvent: {}
+[7.179748] (robot_communication) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/localization_info_broadcast__type_support.cpp.o\x1b[0m\n'}
+[7.238208] (-) TimerEvent: {}
+[7.303136] (robot_communication) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/chassis_control__type_support.cpp.o\x1b[0m\n'}
+[7.338314] (-) TimerEvent: {}
+[7.362325] (robot_communication) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/sensor_data__type_support.cpp.o\x1b[0m\n'}
+[7.432081] (robot_communication) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/localization_info_broadcast__type_support.c.o\x1b[0m\n'}
+[7.439096] (robot_communication) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/chassis_control__type_support.cpp.o\x1b[0m\n'}
+[7.439317] (-) TimerEvent: {}
+[7.444712] (robot_communication) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/bspline__type_support.cpp.o\x1b[0m\n'}
+[7.487369] (robot_communication) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/esdf_map__type_support.cpp.o\x1b[0m\n'}
+[7.526138] (robot_communication) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/goal__type_support.cpp.o\x1b[0m\n'}
+[7.535757] (robot_communication) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/action/do_dishes__type_support.cpp.o\x1b[0m\n'}
+[7.537344] (robot_communication) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/chassis_control__type_support.cpp.o\x1b[0m\n'}
+[7.540452] (-) TimerEvent: {}
+[7.591951] (robot_communication) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/localization_info_broadcast__type_support_c.cpp.o\x1b[0m\n'}
+[7.597828] (robot_communication) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/sensor_data__type_support.cpp.o\x1b[0m\n'}
+[7.598042] (robot_communication) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/chassis_control__type_support.c.o\x1b[0m\n'}
+[7.598933] (robot_communication) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/bspline__type_support.cpp.o\x1b[0m\n'}
+[7.640563] (-) TimerEvent: {}
+[7.673366] (robot_communication) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/sensor_data__type_support.c.o\x1b[0m\n'}
+[7.729946] (robot_communication) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/bspline__type_support.c.o\x1b[0m\n'}
+[7.740670] (-) TimerEvent: {}
+[7.769650] (robot_communication) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/sensor_data__type_support.cpp.o\x1b[0m\n'}
+[7.818286] (robot_communication) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/bspline__type_support.cpp.o\x1b[0m\n'}
+[7.840766] (-) TimerEvent: {}
+[7.941043] (-) TimerEvent: {}
+[7.953618] (robot_communication) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/esdf_map__type_support.c.o\x1b[0m\n'}
+[7.963309] (robot_communication) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library librobot_communication__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.041653] (-) TimerEvent: {}
+[8.042908] (robot_communication) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/goal__type_support.c.o\x1b[0m\n'}
+[8.058202] (robot_communication) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/esdf_map__type_support.cpp.o\x1b[0m\n'}
+[8.085278] (robot_communication) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/bspline__type_support.cpp.o\x1b[0m\n'}
+[8.101691] (robot_communication) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/action/detail/do_dishes__type_support.c.o\x1b[0m\n'}
+[8.142672] (-) TimerEvent: {}
+[8.177990] (robot_communication) StdoutLine: {'line': b'[ 57%] Built target robot_communication__rosidl_typesupport_c\n'}
+[8.213664] (robot_communication) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/esdf_map__type_support.cpp.o\x1b[0m\n'}
+[8.234317] (robot_communication) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library librobot_communication__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.242777] (-) TimerEvent: {}
+[8.345195] (-) TimerEvent: {}
+[8.357022] (robot_communication) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/chassis_control__type_support_c.cpp.o\x1b[0m\n'}
+[8.416938] (robot_communication) StdoutLine: {'line': b'[ 61%] Built target robot_communication__rosidl_typesupport_introspection_c\n'}
+[8.424682] (robot_communication) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/goal__type_support.cpp.o\x1b[0m\n'}
+[8.444294] (robot_communication) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/action/detail/do_dishes__type_support.cpp.o\x1b[0m\n'}
+[8.445276] (-) TimerEvent: {}
+[8.483729] (robot_communication) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/esdf_map__type_support.cpp.o\x1b[0m\n'}
+[8.545882] (-) TimerEvent: {}
+[8.585041] (robot_communication) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/goal__type_support.cpp.o\x1b[0m\n'}
+[8.640756] (robot_communication) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/sensor_data__type_support_c.cpp.o\x1b[0m\n'}
+[8.645989] (-) TimerEvent: {}
+[8.745543] (robot_communication) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/goal__type_support.cpp.o\x1b[0m\n'}
+[8.746064] (-) TimerEvent: {}
+[8.825420] (robot_communication) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/action/do_dishes__type_support.cpp.o\x1b[0m\n'}
+[8.847568] (-) TimerEvent: {}
+[8.948768] (-) TimerEvent: {}
+[8.977927] (robot_communication) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/bspline__type_support_c.cpp.o\x1b[0m\n'}
+[9.048862] (-) TimerEvent: {}
+[9.049480] (robot_communication) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/dds_fastrtps/do_dishes__type_support.cpp.o\x1b[0m\n'}
+[9.096083] (robot_communication) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/esdf_map__type_support_c.cpp.o\x1b[0m\n'}
+[9.148965] (-) TimerEvent: {}
+[9.209799] (robot_communication) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/goal__type_support_c.cpp.o\x1b[0m\n'}
+[9.249077] (-) TimerEvent: {}
+[9.351778] (-) TimerEvent: {}
+[9.364526] (robot_communication) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/action/detail/do_dishes__type_support_c.cpp.o\x1b[0m\n'}
+[9.451885] (-) TimerEvent: {}
+[9.552192] (-) TimerEvent: {}
+[9.604702] (robot_communication) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librobot_communication__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.652314] (-) TimerEvent: {}
+[9.677575] (robot_communication) StdoutLine: {'line': b'[ 77%] Built target robot_communication__rosidl_typesupport_cpp\n'}
+[9.752427] (-) TimerEvent: {}
+[9.852732] (-) TimerEvent: {}
+[9.854159] (robot_communication) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library librobot_communication__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.908070] (robot_communication) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library librobot_communication__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.952835] (-) TimerEvent: {}
+[9.953044] (robot_communication) StdoutLine: {'line': b'[ 80%] Built target robot_communication__rosidl_typesupport_introspection_cpp\n'}
+[10.010735] (robot_communication) StdoutLine: {'line': b'[ 80%] Built target robot_communication__rosidl_typesupport_fastrtps_c\n'}
+[10.026557] (robot_communication) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library librobot_communication__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.052932] (-) TimerEvent: {}
+[10.127300] (robot_communication) StdoutLine: {'line': b'[ 81%] Built target robot_communication__rosidl_typesupport_fastrtps_cpp\n'}
+[10.147198] (robot_communication) StdoutLine: {'line': b'[ 81%] Built target robot_communication\n'}
+[10.153025] (-) TimerEvent: {}
+[10.170338] (robot_communication) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.253645] (-) TimerEvent: {}
+[10.353940] (-) TimerEvent: {}
+[10.454168] (-) TimerEvent: {}
+[10.554429] (-) TimerEvent: {}
+[10.654640] (-) TimerEvent: {}
+[10.754879] (-) TimerEvent: {}
+[10.855132] (-) TimerEvent: {}
+[10.955400] (-) TimerEvent: {}
+[11.055647] (-) TimerEvent: {}
+[11.155885] (-) TimerEvent: {}
+[11.256108] (-) TimerEvent: {}
+[11.356347] (-) TimerEvent: {}
+[11.456632] (-) TimerEvent: {}
+[11.556865] (-) TimerEvent: {}
+[11.657109] (-) TimerEvent: {}
+[11.757353] (-) TimerEvent: {}
+[11.857618] (-) TimerEvent: {}
+[11.957875] (-) TimerEvent: {}
+[12.058140] (-) TimerEvent: {}
+[12.160783] (-) TimerEvent: {}
+[12.195038] (robot_communication) StdoutLine: {'line': b'[ 82%] Built target robot_communication__py\n'}
+[12.220290] (robot_communication) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_chassis_control_s.c.o\x1b[0m\n'}
+[12.221654] (robot_communication) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_sensor_data_s.c.o\x1b[0m\n'}
+[12.221901] (robot_communication) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_bspline_s.c.o\x1b[0m\n'}
+[12.222018] (robot_communication) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_esdf_map_s.c.o\x1b[0m\n'}
+[12.222423] (robot_communication) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_goal_s.c.o\x1b[0m\n'}
+[12.224988] (robot_communication) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_localization_info_broadcast_s.c.o\x1b[0m\n'}
+[12.226822] (robot_communication) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/action/_do_dishes_s.c.o\x1b[0m\n'}
+[12.260876] (-) TimerEvent: {}
+[12.361149] (-) TimerEvent: {}
+[12.461362] (-) TimerEvent: {}
+[12.561610] (-) TimerEvent: {}
+[12.580979] (robot_communication) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_communication/librobot_communication__rosidl_generator_py.so\x1b[0m\n'}
+[12.631803] (robot_communication) StdoutLine: {'line': b'[ 92%] Built target robot_communication__rosidl_generator_py\n'}
+[12.651002] (robot_communication) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.651480] (robot_communication) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.658058] (robot_communication) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.661695] (-) TimerEvent: {}
+[12.761976] (-) TimerEvent: {}
+[12.814058] (robot_communication) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.821563] (robot_communication) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.862079] (-) TimerEvent: {}
+[12.862314] (robot_communication) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.862522] (robot_communication) StdoutLine: {'line': b'[100%] Built target robot_communication__rosidl_typesupport_introspection_c__pyext\n'}
+[12.872927] (robot_communication) StdoutLine: {'line': b'[100%] Built target robot_communication__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.913221] (robot_communication) StdoutLine: {'line': b'[100%] Built target robot_communication__rosidl_typesupport_c__pyext\n'}
+[12.925383] (robot_communication) CommandEnded: {'returncode': 0}
+[12.926309] (robot_communication) JobProgress: {'identifier': 'robot_communication', 'progress': 'install'}
+[12.934782] (robot_communication) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zheng/carerobot_slam_ros2/build/robot_communication'], 'cwd': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'zheng'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zheng'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.135.0'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1463'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1745'), ('BUNDLED_DEBUGPY_PATH', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16113'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zheng'), ('JOURNAL_STREAM', '8:9109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/zheng/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/zheng-Lenovo-Product:@/tmp/.ICE-unix/1722,unix/zheng-Lenovo-Product:/tmp/.ICE-unix/1722'), ('INVOCATION_ID', 'ac074399a22843219e3ebd3049ddf590'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/zheng/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-85e0bbdd27a237cb.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/zheng/.config/Code/User/workspaceStorage/7c1638c18d6b6e2173098eecef125327/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f64114791b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zheng/carerobot_slam_ros2/build/robot_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('COPILOT_DEBUG_NONCE', 'b2678e8931ad5b1b6842b5b0f9197177'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.943245] (robot_communication) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.943520] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rosidl_interfaces/robot_communication\n'}
+[12.943802] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.944008] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.944221] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.h\n'}
+[12.944395] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.944456] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.c\n'}
+[12.944604] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.h\n'}
+[12.944794] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.h\n'}
+[12.944936] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.h\n'}
+[12.945192] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.945427] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.h\n'}
+[12.945581] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.h\n'}
+[12.945674] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.h\n'}
+[12.945855] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.h\n'}
+[12.946039] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.946107] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.h\n'}
+[12.946205] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.h\n'}
+[12.946257] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.946329] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.c\n'}
+[12.946396] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.c\n'}
+[12.946475] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.h\n'}
+[12.946577] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.h\n'}
+[12.946799] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.h\n'}
+[12.946922] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.h\n'}
+[12.947036] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.h\n'}
+[12.947154] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.h\n'}
+[12.947243] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.h\n'}
+[12.947339] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.c\n'}
+[12.947436] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.h\n'}
+[12.947529] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.h\n'}
+[12.947634] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.h\n'}
+[12.947819] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.h\n'}
+[12.947932] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.h\n'}
+[12.948048] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.h\n'}
+[12.948168] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.c\n'}
+[12.948264] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.c\n'}
+[12.948361] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.h\n'}
+[12.948454] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.h\n'}
+[12.948548] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.c\n'}
+[12.948651] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.h\n'}
+[12.948745] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.h\n'}
+[12.948842] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.h\n'}
+[12.949033] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.sh\n'}
+[12.949159] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.dsv\n'}
+[12.949350] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so\n'}
+[12.949938] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so" to ""\n'}
+[12.950126] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.950186] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.950242] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.950296] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950371] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.950469] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.950542] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.950598] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950668] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950719] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950770] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950834] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950905] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_c.h\n'}
+[12.950983] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so\n'}
+[12.951439] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.951560] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.951684] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.951784] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.951877] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_c.h\n'}
+[12.951990] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.c\n'}
+[12.952079] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.952137] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.952213] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.952298] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_c.h\n'}
+[12.952351] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.c\n'}
+[12.952428] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_c.h\n'}
+[12.952532] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_c.h\n'}
+[12.952634] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_c.h\n'}
+[12.952716] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.c\n'}
+[12.952873] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.c\n'}
+[12.953003] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.c\n'}
+[12.953075] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.c\n'}
+[12.953131] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h\n'}
+[12.953223] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.c\n'}
+[12.953310] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_c.h\n'}
+[12.953404] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so\n'}
+[12.953759] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.953852] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so\n'}
+[12.954200] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so" to ""\n'}
+[12.954286] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.954362] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.954435] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.hpp\n'}
+[12.954508] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.954581] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.hpp\n'}
+[12.954659] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__builder.hpp\n'}
+[12.954722] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__traits.hpp\n'}
+[12.954905] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.hpp\n'}
+[12.955033] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.955108] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.hpp\n'}
+[12.955180] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.hpp\n'}
+[12.955269] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.hpp\n'}
+[12.955367] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.hpp\n'}
+[12.955474] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.955574] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.hpp\n'}
+[12.955686] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.hpp\n'}
+[12.955777] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.955850] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__traits.hpp\n'}
+[12.955938] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__builder.hpp\n'}
+[12.956041] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__traits.hpp\n'}
+[12.956154] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__builder.hpp\n'}
+[12.956260] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.hpp\n'}
+[12.956374] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__builder.hpp\n'}
+[12.956483] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__builder.hpp\n'}
+[12.956600] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.hpp\n'}
+[12.956709] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__builder.hpp\n'}
+[12.956817] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.hpp\n'}
+[12.956920] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.hpp\n'}
+[12.957032] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__traits.hpp\n'}
+[12.957145] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.hpp\n'}
+[12.957256] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__builder.hpp\n'}
+[12.957368] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__traits.hpp\n'}
+[12.957481] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.hpp\n'}
+[12.957590] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__traits.hpp\n'}
+[12.957741] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.hpp\n'}
+[12.957901] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.hpp\n'}
+[12.958034] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__traits.hpp\n'}
+[12.958212] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.hpp\n'}
+[12.958384] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.hpp\n'}
+[12.958566] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.hpp\n'}
+[12.958786] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.hpp\n'}
+[12.959019] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.959174] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.959324] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.959430] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959542] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/dds_fastrtps\n'}
+[12.959656] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.959727] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.959842] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.959934] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959988] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.960073] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.960217] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/dds_fastrtps\n'}
+[12.960383] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.960555] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.960736] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.960984] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.961780] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.961896] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication\n'}
+[12.962104] (-) TimerEvent: {}
+[12.962265] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action\n'}
+[12.962420] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail\n'}
+[12.962607] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.962782] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.cpp\n'}
+[12.962949] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg\n'}
+[12.963099] (robot_communication) StdoutLine: {'line': b'-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail\n'}
+[12.963278] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.963442] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.963600] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.963765] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.cpp\n'}
+[12.963902] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.964076] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.cpp\n'}
+[12.964237] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp\n'}
+[12.964399] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.cpp\n'}
+[12.964556] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.964716] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.cpp\n'}
+[12.964815] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.964979] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.cpp\n'}
+[12.965106] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so\n'}
+[12.965605] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.965797] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so\n'}
+[12.966285] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so" to ""\n'}
+[12.966464] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.sh\n'}
+[12.966615] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.dsv\n'}
+[12.966791] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info\n'}
+[12.967039] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.967206] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.967384] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.967541] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.967766] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication\n'}
+[12.967923] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action\n'}
+[12.968089] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py\n'}
+[12.968272] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes_s.c\n'}
+[12.968389] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py\n'}
+[12.968523] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.968658] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.968843] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py\n'}
+[12.969000] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.969205] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.969366] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.969517] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/librobot_communication__rosidl_generator_py.so\n'}
+[12.969783] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c\n'}
+[12.970050] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg\n'}
+[12.970256] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal_s.c\n'}
+[12.970451] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py\n'}
+[12.970702] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py\n'}
+[12.970968] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py\n'}
+[12.971226] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py\n'}
+[12.971452] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast_s.c\n'}
+[12.971669] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control_s.c\n'}
+[12.971843] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data_s.c\n'}
+[12.972017] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map_s.c\n'}
+[12.972214] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py\n'}
+[12.972401] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py\n'}
+[12.972571] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline_s.c\n'}
+[12.972731] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py\n'}
+[13.020157] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication'...\n"}
+[13.020362] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py'...\n"}
+[13.020424] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action'...\n"}
+[13.020478] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py'...\n"}
+[13.020568] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py'...\n"}
+[13.020719] (robot_communication) StdoutLine: {'line': b"Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg'...\n"}
+[13.020773] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py'...\n"}
+[13.020830] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py'...\n"}
+[13.020878] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py'...\n"}
+[13.020926] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py'...\n"}
+[13.020972] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py'...\n"}
+[13.021018] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py'...\n"}
+[13.021064] (robot_communication) StdoutLine: {'line': b"Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py'...\n"}
+[13.024806] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.025351] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.025730] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.026280] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.026613] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.027190] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[13.027351] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so\n'}
+[13.028046] (robot_communication) StdoutLine: {'line': b'-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so" to ""\n'}
+[13.028244] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rust_packages/robot_communication\n'}
+[13.028383] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust\n'}
+[13.028461] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src\n'}
+[13.028563] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action\n'}
+[13.028755] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action/rmw.rs\n'}
+[13.028884] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action.rs\n'}
+[13.029010] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg.rs\n'}
+[13.029136] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/lib.rs\n'}
+[13.029274] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg\n'}
+[13.029372] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg/rmw.rs\n'}
+[13.029521] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/build.rs\n'}
+[13.029673] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/Cargo.toml\n'}
+[13.029823] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.idl\n'}
+[13.029955] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.idl\n'}
+[13.030064] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.idl\n'}
+[13.030193] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.idl\n'}
+[13.030322] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.idl\n'}
+[13.030429] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.idl\n'}
+[13.030556] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.idl\n'}
+[13.030691] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.msg\n'}
+[13.030815] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.msg\n'}
+[13.030949] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.msg\n'}
+[13.031082] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.msg\n'}
+[13.031220] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.msg\n'}
+[13.031329] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.msg\n'}
+[13.031428] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.action\n'}
+[13.031540] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/package_run_dependencies/robot_communication\n'}
+[13.031679] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/parent_prefix_path/robot_communication\n'}
+[13.031871] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.sh\n'}
+[13.032018] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.dsv\n'}
+[13.032161] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.sh\n'}
+[13.032297] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.dsv\n'}
+[13.032419] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.bash\n'}
+[13.032528] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.sh\n'}
+[13.032686] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.zsh\n'}
+[13.032864] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.dsv\n'}
+[13.033001] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv\n'}
+[13.033142] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/packages/robot_communication\n'}
+[13.033296] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport.cmake\n'}
+[13.033423] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.033557] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.033777] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.033928] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.034067] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.034209] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport.cmake\n'}
+[13.034336] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.034475] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cppExport.cmake\n'}
+[13.034670] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.034833] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.034994] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.035142] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.035267] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport.cmake\n'}
+[13.035390] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.035529] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport.cmake\n'}
+[13.035738] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.035904] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake-extras.cmake\n'}
+[13.036077] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.036195] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.036326] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.036446] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.036558] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.036767] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.036892] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[13.037040] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig.cmake\n'}
+[13.037186] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig-version.cmake\n'}
+[13.037306] (robot_communication) StdoutLine: {'line': b'-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.xml\n'}
+[13.039496] (robot_communication) CommandEnded: {'returncode': 0}
+[13.060238] (robot_communication) JobEnded: {'identifier': 'robot_communication', 'rc': 0}
+[13.061019] (-) EventReactorShutdown: {}

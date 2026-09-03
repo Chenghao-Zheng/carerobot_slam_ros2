@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robot_communication/msg/Goal.msg
+// generated code does not contain a copyright notice
+
+
+module robot_communication {
+  module msg {
+    @verbatim (language="comment", text=
+      "目标点信息" "\n"
+      "x位置信息")
+    struct Goal {
+      float position_x;
+
+      @verbatim (language="comment", text=
+        "y位置信息")
+      float position_y;
+
+      @verbatim (language="comment", text=
+        "yaw轴角度信息")
+      float position_yaw;
+    };
+  };
+};

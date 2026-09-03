@@ -1,0 +1,39 @@
+Differential_DWA_node:
+  ros__parameters:
+    # 核心参数调整
+    HZ: 20
+    PREDICT_TIME: 2.0
+    VELOCITY_RESOLUTION: 0.05
+    YAWRATE_RESOLUTION: 0.1
+
+    # 代价权重 
+    TO_GOAL_COST_GAIN: 0.3
+    SPEED_COST_GAIN: 0.2
+    OBSTACLE_COST_GAIN: 2.5
+
+    TEMP_GOAL_RADIUS: 1.5
+    GOAL_THRESHOLD: 0.2
+
+    # 机器人车体与限制参数
+    ROBOT_FRAME: "base_footprint"
+    MAX_VELOCITY: 0.6
+    MIN_VELOCITY: 0.0
+    MAX_YAWRATE: 1.0
+    MAX_ACCELERATION: 0.5
+    MAX_D_YAWRATE: 2.0
+    MAX_DIST: 5.0
+    ROBOT_RADIUS: 0.3
+    SAFETY_MARGIN: 0.1
+
+    # 巡航固定点
+    cruise_num: 5
+    first_point_x: 1.22
+    first_point_y: 5.32
+    second_point_x: 5.77
+    second_point_y: 5.39
+    third_point_x: 6.14
+    third_point_y: -1.14
+    forth_point_x: -29.00
+    forth_point_y: -11.01
+    fifth_point_x: -29.66
+    fifth_point_y: 20.43

@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robot_communication__cpp"
+  "rosidl_generator_cpp/robot_communication/action/detail/do_dishes__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/action/detail/do_dishes__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/action/detail/do_dishes__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/action/detail/do_dishes__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/action/do_dishes.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/bspline.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/chassis_control.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/bspline__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/bspline__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/bspline__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/bspline__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/chassis_control__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/chassis_control__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/chassis_control__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/chassis_control__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/esdf_map__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/esdf_map__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/esdf_map__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/esdf_map__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/goal__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/goal__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/goal__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/goal__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/localization_info_broadcast__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/localization_info_broadcast__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/localization_info_broadcast__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/localization_info_broadcast__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/sensor_data__builder.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/sensor_data__struct.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/sensor_data__traits.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/detail/sensor_data__type_support.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/esdf_map.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/goal.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/localization_info_broadcast.hpp"
+  "rosidl_generator_cpp/robot_communication/msg/sensor_data.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_communication__cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

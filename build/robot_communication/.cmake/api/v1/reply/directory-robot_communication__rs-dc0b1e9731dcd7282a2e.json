@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robot_communication__rs",
+		"source" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs"
+	}
+}

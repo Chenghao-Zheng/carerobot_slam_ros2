@@ -1,0 +1,7 @@
+[ 11%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/signed_distance_field_2d.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/global_map_deal.cpp.o[0m
+[ 33%] [32m[1mLinking CXX static library librobot_costmap.a[0m
+[ 66%] Built target robot_costmap
+[35m[1mConsolidate compiler generated dependencies of target map_deal_node[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/map_deal/map_deal.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable map_deal_node[0m

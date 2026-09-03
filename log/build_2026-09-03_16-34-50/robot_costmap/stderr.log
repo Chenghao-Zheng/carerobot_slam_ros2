@@ -1,0 +1,6 @@
+/usr/bin/ld: librobot_costmap.a(signed_distance_field_2d.cpp.o): undefined reference to symbol 'omp_set_num_threads@@OMP_1.0'
+/usr/bin/ld: /lib/x86_64-linux-gnu/libgomp.so.1: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/map_deal_node.dir/build.make:510：map_deal_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/map_deal_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

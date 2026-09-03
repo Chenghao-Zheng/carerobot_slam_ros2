@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_communication/action/DoDishes.action
+// generated code does not contain a copyright notice
+
+
+module robot_communication {
+  module action {
+    @verbatim (language="comment", text=
+      "Define the goal")
+    struct DoDishes_Goal {
+      @verbatim (language="comment", text=
+        "Specify which dishwasher we want to use")
+      uint32 dishwasher_id;
+    };
+    @verbatim (language="comment", text=
+      "Define the result")
+    struct DoDishes_Result {
+      uint32 total_dishes_cleaned;
+    };
+    @verbatim (language="comment", text=
+      "Define a feedback message")
+    struct DoDishes_Feedback {
+      float percent_complete;
+    };
+  };
+};

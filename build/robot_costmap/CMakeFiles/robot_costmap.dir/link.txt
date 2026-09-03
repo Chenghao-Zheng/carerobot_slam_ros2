@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobot_costmap.a CMakeFiles/robot_costmap.dir/src/map_deal/edt_environment.cpp.o CMakeFiles/robot_costmap.dir/src/map_deal/grid_map_2d.cpp.o CMakeFiles/robot_costmap.dir/src/map_deal/signed_distance_field_2d.cpp.o CMakeFiles/robot_costmap.dir/src/map_deal/global_map_deal.cpp.o CMakeFiles/robot_costmap.dir/src/map_deal/local_map_deal.cpp.o
+/usr/bin/ranlib librobot_costmap.a

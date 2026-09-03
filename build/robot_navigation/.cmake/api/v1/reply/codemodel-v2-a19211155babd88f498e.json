@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-8f5259d8be576f2288b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robot_navigation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Differential_DWA_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Differential_DWA_node-Release-8f8a9f1c1bd17a36a439.json",
+					"name" : "Differential_DWA_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motionPlan_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motionPlan_node-Release-51d34762554b977bf95a.json",
+					"name" : "motionPlan_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_navigation_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_navigation_uninstall-Release-8d18fb5c3b21d29dfc55.json",
+					"name" : "robot_navigation_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-90015e0b2ade2c851986.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zheng/carerobot_slam_ros2/build/robot_navigation",
+		"source" : "/home/zheng/carerobot_slam_ros2/src/robot_navigation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

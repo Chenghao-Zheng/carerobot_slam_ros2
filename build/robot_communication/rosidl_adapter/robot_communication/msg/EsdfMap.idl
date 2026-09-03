@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robot_communication/msg/EsdfMap.msg
+// generated code does not contain a copyright notice
+
+
+module robot_communication {
+  module msg {
+    @verbatim (language="comment", text=
+      "栅格地图的原点x值(相对世界坐标系),单位为m")
+    struct EsdfMap {
+      float origin_x;
+
+      @verbatim (language="comment", text=
+        "栅格地图的原点y值(相对世界坐标系),单位为m")
+      float origin_y;
+
+      @verbatim (language="comment", text=
+        "栅格地图的分辨率")
+      float resolution;
+
+      @verbatim (language="comment", text=
+        "栅格地图的宽")
+      float width;
+
+      @verbatim (language="comment", text=
+        "栅格地图的高")
+      float height;
+
+      @verbatim (language="comment", text=
+        "一维数组，数组内的数据表示为对应栅格的占用概率。" "\n"
+        "栅格地图中每一个小格的坐标对应一维数组中的一个数据。" "\n"
+        "栅格数据大小代表当前点到障碍物的距离数值" "\n"
+        "-值表示未知区域")
+      sequence<int32> data;
+    };
+  };
+};

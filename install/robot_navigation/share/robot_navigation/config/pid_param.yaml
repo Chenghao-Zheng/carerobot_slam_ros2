@@ -1,0 +1,11 @@
+motionPlan_node:
+  ros__parameters:
+    pid_p: 50.0
+    pid_i: 0.0
+    pid_d: 1.0
+    pid_outmax: 1.0
+    pid_outmin: -1.0
+    pid_intmax: 3.0
+    pid_intdt: 0.01
+
+    forwardDistance: 0.1

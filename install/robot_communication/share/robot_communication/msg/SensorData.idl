@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robot_communication/msg/SensorData.msg
+// generated code does not contain a copyright notice
+
+
+module robot_communication {
+  module msg {
+    @verbatim (language="comment", text=
+      "接收到下位机发送的消息，轮速计、IMU、时间戳等" "\n"
+      "局部速度")
+    struct SensorData {
+      float local_x_veloc;
+
+      float local_y_veloc;
+
+      @verbatim (language="comment", text=
+        "局部加速度")
+      float local_x_accel;
+
+      float local_y_accel;
+
+      @verbatim (language="comment", text=
+        "yaw轴数值")
+      float yaw;
+
+      @verbatim (language="comment", text=
+        "时间戳 10us是时间戳的分辨率")
+      uint32 timestamp_10us;
+    };
+  };
+};

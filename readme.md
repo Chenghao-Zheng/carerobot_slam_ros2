@@ -23,6 +23,9 @@ rosrun tri_steer_gazebo odom_tf_basefootprint
 rostopic echo -n 1 /joint_states
 rosrun tf tf_echo base_link turn1
 
+# 当ros topic list等无法进行时
+ros2 daemon stop
+ros2 daemon start
 
 
 <!-- 编译 -->

@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cdb32866401bdd4e8151.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "robot_communication__py",
+					"jsonFile" : "directory-robot_communication__py-8c670847ad2bf9be0d04.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "robot_communication__rs",
+					"jsonFile" : "directory-robot_communication__rs-dc0b1e9731dcd7282a2e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zheng/carerobot_slam_ros2/build/robot_communication/robot_communication__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "robot_communication",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robot_communication_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robot_communication_egg-6b01df18d3f23378c8b9.json",
+					"name" : "ament_cmake_python_build_robot_communication_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_robot_communication::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_robot_communication-2eeba98385f00b8a2d2d.json",
+					"name" : "ament_cmake_python_copy_robot_communication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication-917e0b7cc06a1482a263.json",
+					"name" : "robot_communication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__cpp-34c9de369c8aec2a116d.json",
+					"name" : "robot_communication__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robot_communication__py::@27858668425649cc7468",
+					"jsonFile" : "target-robot_communication__py-de46a1b9533fe45fcd24.json",
+					"name" : "robot_communication__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_generator_c-9921be8066e018f77b8e.json",
+					"name" : "robot_communication__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_generator_py-8f599bb7c1a741b77e5f.json",
+					"name" : "robot_communication__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_c-aefea067415105bc9a86.json",
+					"name" : "robot_communication__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_c__pyext-cff5dfeb71d905c3fda3.json",
+					"name" : "robot_communication__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_cpp-88c81116887e7c79c28e.json",
+					"name" : "robot_communication__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_fastrtps_c-61214de8db359c0c9f1a.json",
+					"name" : "robot_communication__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_fastrtps_c__pyext-25c62d3a2aadbde2d131.json",
+					"name" : "robot_communication__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_fastrtps_cpp-b443a0d917d5d3829a25.json",
+					"name" : "robot_communication__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_introspection_c-ba4f6ef82f1f01237a20.json",
+					"name" : "robot_communication__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_introspection_c__pyext-bf351903c20f9f5f0c2a.json",
+					"name" : "robot_communication__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication__rosidl_typesupport_introspection_cpp-917304e3317e17c3fdea.json",
+					"name" : "robot_communication__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "robot_communication__rs::@69997cc8f4e4c4519d47",
+					"jsonFile" : "target-robot_communication__rs-54c06dc6da0ab5880a87.json",
+					"name" : "robot_communication__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_communication_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_communication_uninstall-1dbe4967460e1f5d16b1.json",
+					"name" : "robot_communication_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6582e24751a68b3c8cc9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zheng/carerobot_slam_ros2/build/robot_communication",
+		"source" : "/home/zheng/carerobot_slam_ros2/src/robot_communication"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

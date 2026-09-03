@@ -1,0 +1,7 @@
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/LocalizationInfoBroadcast.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/ChassisControl.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/SensorData.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/Bspline.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/EsdfMap.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:msg/Goal.idl
+/home/zheng/carerobot_slam_ros2/build/robot_communication/rosidl_adapter/robot_communication:action/DoDishes.idl

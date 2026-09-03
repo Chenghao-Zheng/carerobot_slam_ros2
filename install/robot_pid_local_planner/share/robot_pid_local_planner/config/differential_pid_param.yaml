@@ -1,0 +1,24 @@
+differential_pid_local_planner:
+  ros__parameters:
+    LOOKAHEAD_DIST: 0.5         # 减小前瞻，提前转向
+    GOAL_TOL: 0.05
+
+    MAX_VX: 1.4
+    MAX_WZ: 1.6
+
+    KP_X: 0.8
+    KD_X: 0.4
+
+    KP_YAW: 3.0                 # 提高角度增益
+    KD_YAW: 0.3                  # 增加微分阻尼
+
+    LATERAL_GAIN: 1.4            # 提高侧向比例增益
+    LATERAL_I_GAIN: 0.3         # 新增积分增益，消除稳态误差
+    LATERAL_I_LIMIT: 0.8         # 积分限幅
+
+    I_LIMIT_X: 0.6
+    I_LIMIT_YAW: 1.0
+
+    CMD_TIMEOUT: 0.5
+    PUB_HZ: 30.0
+    FILTER_ALPHA: 0.2

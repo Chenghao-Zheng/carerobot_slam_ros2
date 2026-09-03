@@ -1,0 +1,428 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found action_msgs: 1.2.3 (/opt/ros/humble/share/action_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zheng/carerobot_slam_ros2/build/robot_communication
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target ament_cmake_python_copy_robot_communication
+running egg_info
+creating robot_communication.egg-info
+writing robot_communication.egg-info/PKG-INFO
+writing dependency_links to robot_communication.egg-info/dependency_links.txt
+writing top-level names to robot_communication.egg-info/top_level.txt
+writing manifest file 'robot_communication.egg-info/SOURCES.txt'
+reading manifest file 'robot_communication.egg-info/SOURCES.txt'
+writing manifest file 'robot_communication.egg-info/SOURCES.txt'
+[  3%] Built target ament_cmake_python_build_robot_communication_egg
+[  3%] Built target robot_communication__rs
+[  6%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/localization_info_broadcast__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/chassis_control__functions.c.o[0m
+[  6%] Built target robot_communication__cpp
+[  7%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/bspline__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/sensor_data__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/goal__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/msg/detail/esdf_map__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_c.dir/rosidl_generator_c/robot_communication/action/detail/do_dishes__functions.c.o[0m
+[ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 17%] [32m[1mLinking C shared library librobot_communication__rosidl_generator_c.so[0m
+[ 17%] Built target robot_communication__rosidl_generator_c
+[ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/chassis_control__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/localization_info_broadcast__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/sensor_data__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/localization_info_broadcast__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/localization_info_broadcast__type_support.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/chassis_control__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/sensor_data__type_support.cpp.o[0m
+[ 32%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/localization_info_broadcast__type_support.c.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/chassis_control__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/bspline__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/esdf_map__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/msg/goal__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_communication/action/do_dishes__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/chassis_control__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/localization_info_broadcast__type_support_c.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/sensor_data__type_support.cpp.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/chassis_control__type_support.c.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/bspline__type_support.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/sensor_data__type_support.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/bspline__type_support.c.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/sensor_data__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/bspline__type_support.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/esdf_map__type_support.c.o[0m
+[ 52%] [32m[1mLinking CXX shared library librobot_communication__rosidl_typesupport_c.so[0m
+[ 53%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/msg/detail/goal__type_support.c.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/esdf_map__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/bspline__type_support.cpp.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_communication/action/detail/do_dishes__type_support.c.o[0m
+[ 57%] Built target robot_communication__rosidl_typesupport_c
+[ 58%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/esdf_map__type_support.cpp.o[0m
+[ 60%] [32m[1mLinking C shared library librobot_communication__rosidl_typesupport_introspection_c.so[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/chassis_control__type_support_c.cpp.o[0m
+[ 61%] Built target robot_communication__rosidl_typesupport_introspection_c
+[ 62%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/msg/detail/goal__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_communication/action/detail/do_dishes__type_support.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/esdf_map__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/msg/goal__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/sensor_data__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/msg/detail/dds_fastrtps/goal__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_communication/action/do_dishes__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/bspline__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_communication/action/detail/dds_fastrtps/do_dishes__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/esdf_map__type_support_c.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/msg/detail/goal__type_support_c.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_communication/action/detail/do_dishes__type_support_c.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library librobot_communication__rosidl_typesupport_cpp.so[0m
+[ 77%] Built target robot_communication__rosidl_typesupport_cpp
+[ 78%] [32m[1mLinking CXX shared library librobot_communication__rosidl_typesupport_introspection_cpp.so[0m
+[ 80%] [32m[1mLinking CXX shared library librobot_communication__rosidl_typesupport_fastrtps_c.so[0m
+[ 80%] Built target robot_communication__rosidl_typesupport_introspection_cpp
+[ 80%] Built target robot_communication__rosidl_typesupport_fastrtps_c
+[ 81%] [32m[1mLinking CXX shared library librobot_communication__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 81%] Built target robot_communication__rosidl_typesupport_fastrtps_cpp
+[ 81%] Built target robot_communication
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target robot_communication__py
+[ 83%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_chassis_control_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_sensor_data_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_bspline_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_esdf_map_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_goal_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/msg/_localization_info_broadcast_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_generator_py.dir/rosidl_generator_py/robot_communication/action/_do_dishes_s.c.o[0m
+[ 92%] [32m[1mLinking C shared library rosidl_generator_py/robot_communication/librobot_communication__rosidl_generator_py.so[0m
+[ 92%] Built target robot_communication__rosidl_generator_py
+[ 93%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/robot_communication__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target robot_communication__rosidl_typesupport_introspection_c__pyext
+[100%] Built target robot_communication__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target robot_communication__rosidl_typesupport_c__pyext
+-- Install configuration: ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rosidl_interfaces/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__functions.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/library_path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.c
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/do_dishes.hpp
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__struct.hpp
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/bspline.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/chassis_control.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/sensor_data.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/localization_info_broadcast.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/goal.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/esdf_map.hpp
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__builder.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__traits.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__struct.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.hpp
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/dds_fastrtps
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/dds_fastrtps
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/action/detail/do_dishes__type_support.cpp
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/bspline__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/sensor_data__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/chassis_control__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/esdf_map__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/localization_info_broadcast__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/include/robot_communication/robot_communication/msg/detail/goal__type_support.cpp
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/pythonpath.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/librobot_communication__rosidl_generator_py.so
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/_robot_communication_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline_s.c
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py
+Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/__init__.py'...
+Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/__init__.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/action/_do_dishes.py'...
+Listing '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/__init__.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_bspline.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_chassis_control.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_esdf_map.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_goal.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_localization_info_broadcast.py'...
+Compiling '/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/msg/_sensor_data.py'...
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/local/lib/python3.10/dist-packages/robot_communication/robot_communication_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/librobot_communication__rosidl_generator_py.so" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/rust_packages/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action/rmw.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/action.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/lib.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/src/msg/rmw.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/build.rs
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/rust/Cargo.toml
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.idl
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/LocalizationInfoBroadcast.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/ChassisControl.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/SensorData.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Bspline.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/EsdfMap.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/msg/Goal.msg
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/action/DoDishes.action
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/package_run_dependencies/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/parent_prefix_path/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/ament_prefix_path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/environment/path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.bash
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.zsh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/local_setup.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/ament_index/resource_index/packages/robot_communication
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_cppExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communication__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/export_robot_communication__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/rosidl_cmake_aggregate_target-extras.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake/robot_communicationConfig-version.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.xml
