@@ -140,15 +140,27 @@ void deal_all_map::ScanCallback(const sensor_msgs::msg::LaserScan::SharedPtr sca
 {
   assemDirect = false;
 
-  if(assemDirect)
-  {
+  if(assemDirect) {
     laser_max_theta = scan_msg->angle_max;
     laser_min_theta = scan_msg->angle_min;
-  }
-  else
-  {
+  } else {
     laser_max_theta = scan_msg->angle_min;
     laser_min_theta = scan_msg->angle_max;
+  }
+
+  // --- 新增：将 2D /scan 转换为 PCL 点云 ---
+  try {
+    sensor_msgs::msg::PointCloud2 cloud_msg;
+    // 将 LaserScan 转为 PointCloud2
+    projector_.projectLaser(*scan_msg, cloud_msg);
+    // 转为 PCL 格式赋值给 localcloud
+    pcl::fromROSMsg(cloud_msg, localcloud);
+
+    // 关键：解除 updateLocalMapCallback 的拦截！
+    has_rece_cloud = true; 
+  }
+  catch (const std::exception & e) {
+    RCLCPP_WARN(this->get_logger(), "Scan to PointCloud conversion failed: %s", e.what());
   }
 }
 

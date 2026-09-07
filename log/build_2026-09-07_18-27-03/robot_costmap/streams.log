@@ -1,0 +1,47 @@
+[0.059s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[1.690s] [ 66%] Built target robot_costmap
+[1.911s] [100%] Built target map_deal_node
+[1.923s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[1.957s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap
+[1.967s] -- Install configuration: "Debug"
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/global_map_deal.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/map_deal.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/signed_distance_field_2d.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/edt_environment.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/local_map_deal.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/grid_map_2d.h
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base
+[1.967s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/state.h
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/trajectory.h
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/type.h
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal.launch.py
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal_real.launch
+[1.968s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/librobot_costmap.a
+[2.056s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node
+[2.056s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.sh
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.dsv
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/package_run_dependencies/robot_costmap
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/parent_prefix_path/robot_costmap
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.sh
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.dsv
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.sh
+[2.057s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.dsv
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.bash
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.sh
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.zsh
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.dsv
+[2.058s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/packages/robot_costmap
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport.cmake
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport-debug.cmake
+[2.058s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_targets-extras.cmake
+[2.059s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.059s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.059s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig.cmake
+[2.059s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig-version.cmake
+[2.059s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.xml
+[2.061s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap

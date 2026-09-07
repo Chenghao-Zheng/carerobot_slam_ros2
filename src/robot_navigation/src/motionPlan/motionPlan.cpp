@@ -15,10 +15,6 @@ using namespace std::chrono_literals;
 motionPlan::motionPlan(const rclcpp::NodeOptions & options) 
 : Node("motion_plan_node", options)
 {
-  // 【关键修复】：构造函数中不能直接调用 motionInit()
-  // 必须在 main() 函数中 std::make_shared 完成后再手动调用！
-  // motionInit();
-
   double loop_period_sec = 1.0 / 50.0;
   timer_ = this->create_wall_timer(
     std::chrono::duration<double>(loop_period_sec),
@@ -27,6 +23,12 @@ motionPlan::motionPlan(const rclcpp::NodeOptions & options)
 
 motionPlan::~motionPlan()
 {
+}
+
+void motionPlan::on_init()
+{
+  // 在节点生成 shared_ptr 后调用 motionInit，安全使用 shared_from_this()
+  motionInit();
 }
 
 void motionPlan::controlLoop()
@@ -50,7 +52,6 @@ void motionPlan::motionInit(void)
   startPoint = Eigen::Vector2d(0.00f, 0.00f);
   endPoint = Eigen::Vector2d(0.00f, 0.00f);
 
-  // 【关键修复】：所有参数声明前添加 has_parameter 安全防护
   if (!this->has_parameter("motion_node.is_sim"))
     is_sim = this->declare_parameter<bool>("motion_node.is_sim", false);
   else
@@ -294,7 +295,7 @@ void motionPlan::visualPoints(rclcpp::Publisher<visualization_msgs::msg::Marker>
                             Eigen::Vector2d visitnodes, float a_set, float r_set, float g_set, float b_set, float length)
 {
   visualization_msgs::msg::Marker node_vis2;
-  node_vis2.header.frame_id = frame_id_name; // ✅ 改为读取配置变量
+  node_vis2.header.frame_id = frame_id_name;
   node_vis2.header.stamp = this->now();
   node_vis2.type = visualization_msgs::msg::Marker::CUBE_LIST;
   node_vis2.action = visualization_msgs::msg::Marker::ADD;
@@ -476,7 +477,7 @@ void motionPlan::visual_VisitedNode(rclcpp::Publisher<visualization_msgs::msg::M
                                     float a_set, float r_set, float g_set, float b_set, float length)
 {
   visualization_msgs::msg::Marker node_vis;
-  node_vis.header.frame_id = frame_id_name; // ✅ 改为读取配置变量
+  node_vis.header.frame_id = frame_id_name;
   node_vis.header.stamp = this->now();
 
   node_vis.color.a = a_set;

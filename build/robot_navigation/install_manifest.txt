@@ -23,10 +23,9 @@
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//path_follow/pid_follow.h
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/include//local_plan/differential_dwa.h
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/dwa_param.yaml
-/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/navigation_param.yaml
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/config/pid_param.yaml
+/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/differential_dwa.launch.py
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/motionPlan.launch.py
-/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/launch/Differential_DWA.launch
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/package_run_dependencies/robot_navigation
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/ament_index/resource_index/parent_prefix_path/robot_navigation
 /home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/environment/ament_prefix_path.sh

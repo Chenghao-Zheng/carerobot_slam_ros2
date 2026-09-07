@@ -1,0 +1,241 @@
+#!/usr/bin/env python3
+import math
+import numpy as np
+import rclpy
+from rclpy.node import Node
+
+from geometry_msgs.msg import Twist
+from nav_msgs.msg import Odometry, Path
+from sensor_msgs.msg import LaserScan
+from transforms3d.euler import quat2euler
+from visualization_msgs.msg import Marker
+
+
+class DWAPlanner(Node):
+
+    def __init__(self):
+        super().__init__('dwa_planner')
+
+        # 声明参数
+        self.declare_parameter('max_speed', 0.8)
+        self.declare_parameter('min_speed', 0.0)
+        self.declare_parameter('max_omega', 1.5)
+        self.declare_parameter('max_lin_accel', 0.6)
+        self.declare_parameter('max_omeg_accel', 3.0)
+        self.declare_parameter('robot_radius', 0.265)
+        self.declare_parameter('goal_tolerance', 0.2)
+        self.declare_parameter('lookahead_dist', 0.65)
+
+        # 优化后的代价函数权重
+        self.declare_parameter('to_goal_cost_gain', 1.5)
+        self.declare_parameter('speed_cost_gain', 1.0)
+        self.declare_parameter('obstacle_cost_gain', 10.0)
+
+        # 获取参数
+        self.max_speed = self.get_parameter('max_speed').value
+        self.min_speed = self.get_parameter('min_speed').value
+        self.max_omega = self.get_parameter('max_omega').value
+        self.max_lin_accel = self.get_parameter('max_lin_accel').value
+        self.max_omeg_accel = self.get_parameter('max_omeg_accel').value
+        self.robot_radius = self.get_parameter('robot_radius').value
+        self.goal_tolerance = self.get_parameter('goal_tolerance').value
+        self.lookahead_dist = self.get_parameter('lookahead_dist').value
+
+        self.to_goal_cost_gain = self.get_parameter('to_goal_cost_gain').value
+        self.speed_cost_gain = self.get_parameter('speed_cost_gain').value
+        self.obstacle_cost_gain = self.get_parameter('obstacle_cost_gain').value
+
+        self.pose = [0.0, 0.0, 0.0]
+        self.velocity = [0.0, 0.0]
+
+        self.scan_points = []
+        self.trajpath = []
+        self.current_path_index = 0
+
+        self.dt = 0.05
+        self.v_resolution = 0.05
+        self.omega_resolution = 0.05
+        self.predict_time = 2.0
+
+        # 订阅与发布器
+        self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 1)
+        self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, 1)
+        self.path_sub = self.create_subscription(Path, '/opt_path', self.path_callback, 10)
+        
+        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 1)
+        self.marker_pub = self.create_publisher(Marker, '/dwa_trajectories', 1)
+
+        timer_period = 0.05  # 20Hz
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+
+    def odom_callback(self, msg):
+        self.pose[0] = msg.pose.pose.position.x
+        self.pose[1] = msg.pose.pose.position.y
+        orientation = msg.pose.pose.orientation
+        _, _, yaw = quat2euler([orientation.w, orientation.x, orientation.y, orientation.z])
+        self.pose[2] = yaw
+        self.velocity[0] = msg.twist.twist.linear.x
+        self.velocity[1] = msg.twist.twist.angular.z
+
+    def scan_callback(self, msg):
+        self.scan_points.clear()
+        r_min, r_max = msg.range_min, msg.range_max
+        for i, r in enumerate(msg.ranges):
+            if math.isfinite(r) and r_min <= r <= r_max:
+                angle = msg.angle_min + i * msg.angle_increment
+                # 转换到机器人局部坐标系下
+                self.scan_points.append((r * math.cos(angle), r * math.sin(angle)))
+
+    def path_callback(self, msg):
+        if not msg.poses:
+            return
+        self.trajpath = [[p.pose.position.x, p.pose.position.y] for p in msg.poses]
+        self.current_path_index = 0
+
+    def compute_lookahead_target(self):
+        if not self.trajpath:
+            return None
+        
+        rx, ry = self.pose[0], self.pose[1]
+        start_idx = min(self.current_path_index, len(self.trajpath) - 1)
+        
+        accumulated = 0.0
+        target_idx = start_idx
+        lookahead = max(0.4, min(self.lookahead_dist + 0.5 * abs(self.velocity[0]), 1.5))
+
+        for i in range(start_idx, len(self.trajpath) - 1):
+            seg = math.hypot(self.trajpath[i+1][0] - self.trajpath[i][0],
+                             self.trajpath[i+1][1] - self.trajpath[i][1])
+            if accumulated + seg >= lookahead:
+                target_idx = i + 1
+                break
+            accumulated += seg
+            target_idx = i + 1
+
+        gx, gy = self.trajpath[target_idx]
+        
+        # 转为机器人局部坐标系下的 local goal
+        dx = gx - rx
+        dy = gy - ry
+        cos_yaw = math.cos(self.pose[2])
+        sin_yaw = math.sin(self.pose[2])
+        
+        local_x = dx * cos_yaw + dy * sin_yaw
+        local_y = -dx * sin_yaw + dy * cos_yaw
+        return [local_x, local_y]
+
+    def timer_callback(self):
+        if not self.trajpath:
+            return
+
+        local_goal = self.compute_lookahead_target()
+        if local_goal is None:
+            return
+
+        final_goal = self.trajpath[-1]
+        dist_to_final = math.hypot(final_goal[0] - self.pose[0], final_goal[1] - self.pose[1])
+
+        cmd = Twist()
+        if dist_to_final < self.goal_tolerance:
+            cmd.linear.x = 0.0
+            cmd.angular.z = 0.0
+            self.cmd_pub.publish(cmd)
+            self.get_logger().info("Goal Reached")
+            return
+
+        u, _ = self.dwa_control(local_goal)
+        cmd.linear.x = float(u[0])
+        cmd.angular.z = float(u[1])
+        self.cmd_pub.publish(cmd)
+
+    def dwa_control(self, local_goal):
+        v_min = max(self.min_speed, self.velocity[0] - self.max_lin_accel * self.dt)
+        v_max = min(self.max_speed, self.velocity[0] + self.max_lin_accel * self.dt)
+        omega_min = max(-self.max_omega, self.velocity[1] - self.max_omeg_accel * self.dt)
+        omega_max = min(self.max_omega, self.velocity[1] + self.max_omeg_accel * self.dt)
+
+        best_cost = float("inf")
+        best_u = [0.0, 0.0]
+        best_traj = []
+
+        for v in np.arange(v_min, v_max + 1e-5, self.v_resolution):
+            for omega in np.arange(omega_min, omega_max + 1e-5, self.omega_resolution):
+                traj = self.predict_trajectory(v, omega)
+
+                to_goal_cost = self.calc_to_goal_cost(traj, local_goal)
+                # 鼓励直行，惩罚低速度
+                speed_cost = (self.max_speed - v) / self.max_speed
+                obs_cost = self.calc_obstacle_cost(traj)
+
+                final_cost = (self.to_goal_cost_gain * to_goal_cost +
+                              self.speed_cost_gain * speed_cost +
+                              self.obstacle_cost_gain * obs_cost)
+
+                if final_cost < best_cost:
+                    best_cost = final_cost
+                    best_u = [v, omega]
+                    best_traj = traj
+
+        if best_cost == float("inf"):
+            best_u = [0.1, 0.0]  # 脱困基础速度
+
+        return best_u, best_traj
+
+    def predict_trajectory(self, v, omega):
+        x, y, yaw = 0.0, 0.0, 0.0
+        traj = []
+        t = 0.0
+        while t <= self.predict_time:
+            yaw += omega * self.dt
+            x += v * math.cos(yaw) * self.dt
+            y += v * math.sin(yaw) * self.dt
+            traj.append([x, y, yaw])
+            t += self.dt
+        return traj
+
+    def calc_obstacle_cost(self, traj):
+        if not self.scan_points:
+            return 0.0
+
+        total_cost = 0.0
+        safety_dist = self.robot_radius + 0.05
+
+        for state in traj:
+            min_dist = float("inf")
+            for ox, oy in self.scan_points:
+                dist = math.hypot(state[0] - ox, state[1] - oy)
+                if dist < min_dist:
+                    min_dist = dist
+
+            if min_dist < safety_dist:
+                total_cost += math.exp(-(min_dist / safety_dist)) * 10.0
+
+        return total_cost / len(traj)
+
+    def calc_to_goal_cost(self, traj, local_goal):
+        end_x, end_y, end_yaw = traj[-1][0], traj[-1][1], traj[-1][2]
+        
+        # 1. 距离代价：预测轨迹末端距离 local_goal 的距离
+        dx = local_goal[0] - end_x
+        dy = local_goal[1] - end_y
+        dist_cost = math.hypot(dx, dy)
+
+        # 2. 航向代价：轨迹末端面向 local_goal 的角度偏差（归一化到 0 ~ pi）
+        angle_to_goal = math.atan2(dy, dx)
+        heading_error = abs(angle_to_goal - end_yaw)
+        heading_error = math.atan2(math.sin(heading_error), math.cos(heading_error))
+
+        # 综合计算：适当降低航向代价占比，增加距离推进的权重
+        return dist_cost + 0.5 * abs(heading_error)
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = DWAPlanner()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

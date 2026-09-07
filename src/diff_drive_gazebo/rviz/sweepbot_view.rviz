@@ -1,0 +1,115 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.7
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 160
+      Enabled: true
+      Name: Grid
+      Plane: XY
+    - Class: rviz_default_plugins/RobotModel
+      Description Topic:
+        Value: /robot_description
+      Enabled: true
+      Name: RobotModel
+    - Alpha: 0.75
+      Class: rviz_default_plugins/Map
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map
+    - Alpha: 0.45
+      Class: rviz_default_plugins/Map
+      Color Scheme: costmap
+      Draw Behind: false
+      Enabled: true
+      Name: GlobalInflatedCostmap
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /inflated_map
+    - Alpha: 0.55
+      Class: rviz_default_plugins/Map
+      Color Scheme: costmap
+      Draw Behind: false
+      Enabled: true
+      Name: LocalLaserCostmap
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /local_costmap
+    - Alpha: 1
+      Class: rviz_default_plugins/LaserScan
+      Color: 255; 70; 50
+      Enabled: true
+      Name: LaserScan
+      Size (m): 0.03
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /scan
+    - Class: rviz_default_plugins/Path
+      Color: 45; 160; 255
+      Enabled: true
+      Line Style: Lines
+      Line Width: 0.04
+      Name: GlobalCoveragePath
+      Topic:
+        Value: /global_path
+    - Class: rviz_default_plugins/Path
+      Color: 255; 180; 30
+      Enabled: true
+      Line Style: Lines
+      Line Width: 0.06
+      Name: LocalAvoidanceTrajectory
+      Topic:
+        Value: /local_trajectory
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+  Enabled: true
+  Global Options:
+    Background Color: 42; 46; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Value: /goal_pose
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 7
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Name: Current View
+      Pitch: 1.1
+      Target Frame: map
+      Yaw: 0.75
+Window Geometry:
+  Height: 900
+  Width: 1400

@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target explore[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable explore[0m
+[100%] Built target explore
+-- Install configuration: ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/lib/explore_lite/explore
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/explore_lite/lib/explore_lite/explore" to ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch/explore.launch.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch/explore_costmap.launch
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.bash
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.zsh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.xml

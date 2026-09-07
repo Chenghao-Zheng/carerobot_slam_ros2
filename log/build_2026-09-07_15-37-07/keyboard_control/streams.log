@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/keyboard_control -- -j8 -l8
+[0.143s] [100%] Built target keyboard_control
+[0.171s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/keyboard_control -- -j8 -l8
+[0.177s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/keyboard_control
+[0.185s] -- Install configuration: ""
+[0.186s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/lib/keyboard_control/keyboard_control
+[0.186s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/launch
+[0.186s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/launch/keyboard_control.launch.py
+[0.186s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/ament_index/resource_index/package_run_dependencies/keyboard_control
+[0.187s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/ament_index/resource_index/parent_prefix_path/keyboard_control
+[0.187s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.sh
+[0.187s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.dsv
+[0.187s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/environment/path.sh
+[0.187s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/environment/path.dsv
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/local_setup.bash
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/local_setup.sh
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/local_setup.zsh
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/local_setup.dsv
+[0.188s] -- Installing: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.dsv
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/ament_index/resource_index/packages/keyboard_control
+[0.188s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig.cmake
+[0.189s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig-version.cmake
+[0.189s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.xml
+[0.191s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/keyboard_control

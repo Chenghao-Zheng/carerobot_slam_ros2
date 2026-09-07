@@ -1,0 +1,673 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.124s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74e1fcd1fbb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74e1fce51240>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74e1fce51240>>)
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.303s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zheng/carerobot_slam_ros2'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/diff_drive_gazebo) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diff_drive_gazebo' with type 'ros.ament_cmake' and name 'diff_drive_gazebo'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/explore_lite) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/explore_lite' with type 'ros.ament_cmake' and name 'explore_lite'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_control) by extension 'ros'
+[0.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/keyboard_control' with type 'ros.ament_cmake' and name 'keyboard_control'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/openslam_gmapping) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openslam_gmapping' with type 'ros.ament_cmake' and name 'openslam_gmapping'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_communication) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_communication' with type 'ros.ament_cmake' and name 'robot_communication'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_costmap) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_costmap' with type 'ros.ament_cmake' and name 'robot_costmap'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ros'
+[0.352s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_navigation' with type 'ros.ament_cmake' and name 'robot_navigation'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pid_local_planner) by extension 'ros'
+[0.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_pid_local_planner' with type 'ros.ament_cmake' and name 'robot_pid_local_planner'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_gmapping) by extension 'ros'
+[0.359s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_gmapping' with type 'ros.ament_cmake' and name 'slam_gmapping'
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.408s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/zheng/carerobot_slam_ros2/install
+[0.409s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 329 installed packages in /opt/ros/humble
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.489s] Level 5:colcon.colcon_core.verb:set package 'diff_drive_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.489s] DEBUG:colcon.colcon_core.verb:Building package 'diff_drive_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/diff_drive_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[0.490s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.491s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/explore_lite', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/explore_lite', 'symlink_install': False, 'test_result_base': None}
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/keyboard_control', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/keyboard_control', 'symlink_install': False, 'test_result_base': None}
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'openslam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.493s] DEBUG:colcon.colcon_core.verb:Building package 'openslam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/openslam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/openslam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_target' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_clean_cache' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_clean_first' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'cmake_force_configure' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'ament_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'catkin_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'robot_communication' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.495s] DEBUG:colcon.colcon_core.verb:Building package 'robot_communication' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/robot_communication', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/robot_communication', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/robot_communication', 'symlink_install': False, 'test_result_base': None}
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_target' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_clean_cache' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_clean_first' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'cmake_force_configure' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'ament_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'catkin_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'robot_costmap' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.496s] DEBUG:colcon.colcon_core.verb:Building package 'robot_costmap' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/robot_costmap', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/robot_costmap', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/robot_costmap', 'symlink_install': False, 'test_result_base': None}
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_target' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'robot_pid_local_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.497s] DEBUG:colcon.colcon_core.verb:Building package 'robot_pid_local_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/robot_pid_local_planner', 'symlink_install': False, 'test_result_base': None}
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_args' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target' from command line to 'None'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'slam_gmapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.499s] DEBUG:colcon.colcon_core.verb:Building package 'slam_gmapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/slam_gmapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/slam_gmapping', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/slam_gmapping', 'symlink_install': False, 'test_result_base': None}
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.500s] DEBUG:colcon.colcon_core.verb:Building package 'robot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zheng/carerobot_slam_ros2/build/robot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zheng/carerobot_slam_ros2/install/robot_navigation', 'merge_install': False, 'path': '/home/zheng/carerobot_slam_ros2/src/robot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.500s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.505s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/robot_communication' with build type 'ament_cmake'
+[0.505s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/robot_communication'
+[0.508s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.509s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.519s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/openslam_gmapping' with build type 'ament_cmake'
+[0.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/openslam_gmapping'
+[0.520s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.520s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.526s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/diff_drive_gazebo' with build type 'ament_cmake'
+[0.526s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/diff_drive_gazebo'
+[0.526s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.531s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/explore_lite' with build type 'ament_cmake'
+[0.531s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/explore_lite'
+[0.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.538s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/keyboard_control' with build type 'ament_cmake'
+[0.538s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/keyboard_control'
+[0.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.538s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_communication -- -j8 -l8
+[0.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/openslam_gmapping -- -j8 -l8
+[0.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo -- -j8 -l8
+[0.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/explore_lite -- -j8 -l8
+[0.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/keyboard_control -- -j8 -l8
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo -- -j8 -l8
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo
+[0.716s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diff_drive_gazebo)
+[0.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo' for CMake module files
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo' for CMake config files
+[0.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('diff_drive_gazebo', 'cmake_prefix_path')
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.dsv'
+[0.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.sh'
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/bin'
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/lib/pkgconfig/diff_drive_gazebo.pc'
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/lib/python3.10/site-packages'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/bin'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.ps1'
+[0.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.sh'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.bash'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.zsh'
+[0.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/colcon-core/packages/diff_drive_gazebo)
+[0.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diff_drive_gazebo)
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo' for CMake module files
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo' for CMake config files
+[0.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('diff_drive_gazebo', 'cmake_prefix_path')
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.ps1'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.dsv'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/hook/cmake_prefix_path.sh'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/bin'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/lib/pkgconfig/diff_drive_gazebo.pc'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/lib/python3.10/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.dsv'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.sh'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.bash'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.zsh'
+[0.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/colcon-core/packages/diff_drive_gazebo)
+[0.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/keyboard_control -- -j8 -l8
+[0.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/keyboard_control
+[0.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control' for CMake module files
+[0.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/keyboard_control
+[0.795s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control' for CMake config files
+[0.795s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'cmake_prefix_path')
+[0.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.ps1'
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.sh'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/bin'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib/python3.10/site-packages'
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/bin'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.ps1'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.dsv'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.sh'
+[0.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.bash'
+[0.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.zsh'
+[0.803s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[0.804s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[0.805s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control' for CMake module files
+[0.805s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control' for CMake config files
+[0.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'cmake_prefix_path')
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.ps1'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.dsv'
+[0.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.sh'
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/bin'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/lib/python3.10/site-packages'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/keyboard_control/bin'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.ps1'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.dsv'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.sh'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.bash'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/keyboard_control/package.zsh'
+[0.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[0.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/openslam_gmapping -- -j8 -l8
+[0.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/openslam_gmapping': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/openslam_gmapping
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping' for CMake module files
+[0.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/openslam_gmapping' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/openslam_gmapping
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping' for CMake config files
+[0.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/bin'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib/python3.10/site-packages'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/bin'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.854s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openslam_gmapping)
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping' for CMake module files
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping' for CMake config files
+[0.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('openslam_gmapping', 'cmake_prefix_path')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/hook/cmake_prefix_path.sh'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/bin'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib/pkgconfig/openslam_gmapping.pc'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib/python3.10/site-packages'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/bin'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.sh'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.bash'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/openslam_gmapping/package.zsh'
+[0.865s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/share/colcon-core/packages/openslam_gmapping)
+[0.865s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/slam_gmapping' with build type 'ament_cmake'
+[0.866s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/slam_gmapping'
+[0.866s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.866s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/slam_gmapping -- -j8 -l8
+[0.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/slam_gmapping -- -j8 -l8
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/slam_gmapping': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/slam_gmapping
+[1.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping' for CMake module files
+[1.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/slam_gmapping' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/slam_gmapping
+[1.003s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping' for CMake config files
+[1.003s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/bin'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/python3.10/site-packages'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/bin'
+[1.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.sh'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.bash'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[1.011s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[1.011s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_gmapping)
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping' for CMake module files
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping' for CMake config files
+[1.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_gmapping', 'cmake_prefix_path')
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.ps1'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.dsv'
+[1.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/hook/cmake_prefix_path.sh'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/bin'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/pkgconfig/slam_gmapping.pc'
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/python3.10/site-packages'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/bin'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.sh'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.bash'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.zsh'
+[1.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/colcon-core/packages/slam_gmapping)
+[1.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_communication -- -j8 -l8
+[1.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_communication
+[1.217s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_communication)
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication' for CMake module files
+[1.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_communication
+[1.220s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication' for CMake config files
+[1.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_communication', 'cmake_prefix_path')
+[1.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.ps1'
+[1.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.dsv'
+[1.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.sh'
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib'
+[1.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_communication', 'ld_library_path_lib')
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.ps1'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.dsv'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.sh'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/bin'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/pkgconfig/robot_communication.pc'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/python3.10/site-packages'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/bin'
+[1.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.ps1'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.sh'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.bash'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.zsh'
+[1.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_communication/share/colcon-core/packages/robot_communication)
+[1.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_communication)
+[1.230s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication' for CMake module files
+[1.231s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication' for CMake config files
+[1.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_communication', 'cmake_prefix_path')
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.ps1'
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.dsv'
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/cmake_prefix_path.sh'
+[1.235s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib'
+[1.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_communication', 'ld_library_path_lib')
+[1.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.ps1'
+[1.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/hook/ld_library_path_lib.sh'
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/bin'
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/pkgconfig/robot_communication.pc'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/lib/python3.10/site-packages'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_communication/bin'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.dsv'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.sh'
+[1.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.bash'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/package.zsh'
+[1.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_communication/share/colcon-core/packages/robot_communication)
+[1.243s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/robot_costmap' with build type 'ament_cmake'
+[1.243s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/robot_costmap'
+[1.243s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.243s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.250s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/robot_pid_local_planner' with build type 'ament_cmake'
+[1.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/robot_pid_local_planner'
+[1.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[1.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner -- -j8 -l8
+[1.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner -- -j8 -l8
+[1.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner
+[1.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pid_local_planner)
+[1.375s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner' for CMake module files
+[1.376s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner' for CMake config files
+[1.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pid_local_planner', 'cmake_prefix_path')
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.ps1'
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.dsv'
+[1.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_pid_local_planner
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.sh'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/bin'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib/pkgconfig/robot_pid_local_planner.pc'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib/python3.10/site-packages'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/bin'
+[1.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.ps1'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.dsv'
+[1.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.sh'
+[1.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.bash'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.zsh'
+[1.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/colcon-core/packages/robot_pid_local_planner)
+[1.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pid_local_planner)
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner' for CMake module files
+[1.386s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner' for CMake config files
+[1.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pid_local_planner', 'cmake_prefix_path')
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.ps1'
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.dsv'
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/hook/cmake_prefix_path.sh'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/bin'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib/pkgconfig/robot_pid_local_planner.pc'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/lib/python3.10/site-packages'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/bin'
+[1.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.dsv'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.sh'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.bash'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/robot_pid_local_planner/package.zsh'
+[1.393s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner/share/colcon-core/packages/robot_pid_local_planner)
+[1.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[1.432s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap
+[1.448s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_costmap)
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap' for CMake module files
+[1.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap
+[1.451s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap' for CMake config files
+[1.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_costmap', 'cmake_prefix_path')
+[1.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.ps1'
+[1.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.dsv'
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.sh'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/bin'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/pkgconfig/robot_costmap.pc'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/python3.10/site-packages'
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/bin'
+[1.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.ps1'
+[1.456s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv'
+[1.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.sh'
+[1.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.bash'
+[1.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.zsh'
+[1.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/colcon-core/packages/robot_costmap)
+[1.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_costmap)
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap' for CMake module files
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap' for CMake config files
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_costmap', 'cmake_prefix_path')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.ps1'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/hook/cmake_prefix_path.sh'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/bin'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/pkgconfig/robot_costmap.pc'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/python3.10/site-packages'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_costmap/bin'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.ps1'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.sh'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.bash'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.zsh'
+[1.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_costmap/share/colcon-core/packages/robot_costmap)
+[1.469s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zheng/carerobot_slam_ros2/src/robot_navigation' with build type 'ament_cmake'
+[1.469s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zheng/carerobot_slam_ros2/src/robot_navigation'
+[1.469s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.469s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[1.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[1.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_navigation
+[1.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[1.685s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation' for CMake module files
+[1.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_navigation
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation' for CMake config files
+[1.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'cmake_prefix_path')
+[1.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.ps1'
+[1.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.dsv'
+[1.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.sh'
+[1.691s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib'
+[1.691s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/bin'
+[1.691s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/python3.10/site-packages'
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/bin'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.ps1'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.dsv'
+[1.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.sh'
+[1.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.bash'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.zsh'
+[1.695s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[1.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[1.696s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation' for CMake module files
+[1.696s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation' for CMake config files
+[1.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'cmake_prefix_path')
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.ps1'
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.dsv'
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.sh'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/bin'
+[1.699s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/lib/python3.10/site-packages'
+[1.700s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/robot_navigation/bin'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.dsv'
+[1.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.sh'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.bash'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/robot_navigation/package.zsh'
+[1.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[9.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/explore_lite -- -j8 -l8
+[9.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zheng/carerobot_slam_ros2/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/explore_lite
+[9.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[9.827s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite' for CMake module files
+[9.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zheng/carerobot_slam_ros2/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/explore_lite
+[9.828s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite' for CMake config files
+[9.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[9.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[9.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[9.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[9.830s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib'
+[9.830s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/bin'
+[9.830s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[9.830s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib/python3.10/site-packages'
+[9.830s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/bin'
+[9.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.ps1'
+[9.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.dsv'
+[9.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.sh'
+[9.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.bash'
+[9.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.zsh'
+[9.833s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/explore_lite/share/colcon-core/packages/explore_lite)
+[9.834s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[9.834s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite' for CMake module files
+[9.834s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite' for CMake config files
+[9.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[9.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[9.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[9.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib'
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/bin'
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[9.837s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/lib/python3.10/site-packages'
+[9.838s] Level 1:colcon.colcon_core.environment:checking '/home/zheng/carerobot_slam_ros2/install/explore_lite/bin'
+[9.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.ps1'
+[9.839s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.dsv'
+[9.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.sh'
+[9.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.bash'
+[9.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.zsh'
+[9.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zheng/carerobot_slam_ros2/install/explore_lite/share/colcon-core/packages/explore_lite)
+[9.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.841s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.846s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.846s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.846s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.873s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.873s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zheng/carerobot_slam_ros2/install/local_setup.ps1'
+[9.874s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zheng/carerobot_slam_ros2/install/_local_setup_util_ps1.py'
+[9.876s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zheng/carerobot_slam_ros2/install/setup.ps1'
+[9.877s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zheng/carerobot_slam_ros2/install/local_setup.sh'
+[9.877s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zheng/carerobot_slam_ros2/install/_local_setup_util_sh.py'
+[9.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zheng/carerobot_slam_ros2/install/setup.sh'
+[9.879s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zheng/carerobot_slam_ros2/install/local_setup.bash'
+[9.879s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zheng/carerobot_slam_ros2/install/setup.bash'
+[9.880s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zheng/carerobot_slam_ros2/install/local_setup.zsh'
+[9.881s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zheng/carerobot_slam_ros2/install/setup.zsh'

@@ -109,6 +109,7 @@ map_deal_node: CMakeFiles/map_deal_node.dir/src/nodes/map_deal_node.cpp.o
 map_deal_node: CMakeFiles/map_deal_node.dir/src/map_deal/map_deal.cpp.o
 map_deal_node: CMakeFiles/map_deal_node.dir/build.make
 map_deal_node: /opt/ros/humble/lib/libpcl_ros_tf.a
+map_deal_node: /opt/ros/humble/lib/liblaser_geometry.so
 map_deal_node: /opt/ros/humble/lib/libmessage_filters.so
 map_deal_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 map_deal_node: /opt/ros/humble/lib/librmw.so

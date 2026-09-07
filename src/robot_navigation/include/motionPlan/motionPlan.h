@@ -69,7 +69,7 @@ private:
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr firstPointPub;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr secondPointPub;
 
-  rclcpp::TimerBase::SharedPtr timer_;            // 修复 1：补齐 timer_ 声明[cite: 8, 9]
+  rclcpp::TimerBase::SharedPtr timer_;            
   rclcpp::TimerBase::SharedPtr safety_timer_;       
   bool Replan_Path_Flag;          
 
@@ -115,7 +115,7 @@ private:
   rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr clickSub;     
   void clickCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg); 
   rclcpp::Subscription<robot_communication::msg::LocalizationInfoBroadcast>::SharedPtr localizationSub;  
-  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odomSub;                  // 修复 2：分离 odom 订阅类型，解决赋值不匹配[cite: 8, 9]
+  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odomSub;                  
   void localizationCallback(const robot_communication::msg::LocalizationInfoBroadcast::SharedPtr msg); 
   rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr dynamicMap;   
   void dynamicMapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr map); 
@@ -176,8 +176,8 @@ private:
   bool worldToMap(double wx, double wy, int &mx, int &my) const;
 
 public:
-  // 修复 3：消除无参和带参构造函数的二义性，仅保留带默认参数的构造函数[cite: 8]
   explicit motionPlan(const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+  void on_init(); // 修复：补充成员函数 on_init() 声明
   void controlLoop();
   ~motionPlan();
   

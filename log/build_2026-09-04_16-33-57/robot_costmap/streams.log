@@ -1,0 +1,150 @@
+[0.020s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zheng/carerobot_slam_ros2/src/robot_costmap -DCMAKE_INSTALL_PREFIX=/home/zheng/carerobot_slam_ros2/install/robot_costmap
+[0.142s] -- The C compiler identification is GNU 11.4.0
+[0.229s] -- The CXX compiler identification is GNU 11.4.0
+[0.239s] -- Detecting C compiler ABI info
+[0.347s] -- Detecting C compiler ABI info - done
+[0.362s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.362s] -- Detecting C compile features
+[0.366s] -- Detecting C compile features - done
+[0.367s] -- Detecting CXX compiler ABI info
+[0.542s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.573s] -- Detecting CXX compile features
+[0.573s] -- Detecting CXX compile features - done
+[0.613s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.914s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.217s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.306s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.315s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.329s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.489s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.493s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.625s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.655s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.700s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.712s] -- Looking for pthread.h
+[1.822s] -- Looking for pthread.h - found
+[1.822s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.941s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.941s] -- Found Threads: TRUE  
+[2.053s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.092s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.113s] -- Found tf2: 0.25.22 (/opt/ros/humble/share/tf2/cmake)
+[2.124s] -- Found tf2_ros: 0.25.22 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.257s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.310s] -- Checking for module 'eigen3'
+[2.332s] --   Found eigen3, version 3.4.0
+[2.372s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.372s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.445s] -- Checking for module 'flann'
+[2.459s] --   Found flann, version 1.9.1
+[2.512s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.513s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.744s] -- Checking for module 'libusb-1.0'
+[3.765s] --   Found libusb-1.0, version 1.0.25
+[3.824s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.825s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.914s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.164s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.170s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.180s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.337s] -- Found Qhull version 8.0.2
+[4.496s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.644s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.658s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.659s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.660s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.661s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.662s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.662s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.663s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.664s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.665s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.666s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.667s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.668s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.669s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.670s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.671s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.672s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.673s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.675s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.677s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.678s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.679s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.681s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.683s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.685s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.688s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[4.707s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.708s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.709s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.720s] -- Found robot_communication: 0.0.0 (/home/zheng/carerobot_slam_ros2/install/robot_communication/share/robot_communication/cmake)
+[4.752s] -- Found OpenCV: /usr (found version "4.5.4") 
+[5.013s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[5.138s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[5.139s] -- Found OpenMP: TRUE (found version "4.5")  
+[5.148s] -- Found laser_geometry: 2.4.1 (/opt/ros/humble/share/laser_geometry/cmake)
+[5.268s] -- Configuring done
+[5.395s] -- Generating done
+[5.419s] -- Build files have been written to: /home/zheng/carerobot_slam_ros2/build/robot_costmap
+[5.441s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/zheng/carerobot_slam_ros2/src/robot_costmap -DCMAKE_INSTALL_PREFIX=/home/zheng/carerobot_slam_ros2/install/robot_costmap
+[5.443s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[5.507s] [ 22%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/signed_distance_field_2d.cpp.o[0m
+[5.507s] [ 22%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/grid_map_2d.cpp.o[0m
+[5.507s] [ 33%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/global_map_deal.cpp.o[0m
+[5.507s] [ 44%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/local_map_deal.cpp.o[0m
+[5.510s] [ 55%] [32mBuilding CXX object CMakeFiles/robot_costmap.dir/src/map_deal/edt_environment.cpp.o[0m
+[24.235s] [ 66%] [32m[1mLinking CXX static library librobot_costmap.a[0m
+[25.092s] [ 66%] Built target robot_costmap
+[25.126s] [ 77%] [32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/nodes/map_deal_node.cpp.o[0m
+[25.126s] [ 88%] [32mBuilding CXX object CMakeFiles/map_deal_node.dir/src/map_deal/map_deal.cpp.o[0m
+[54.523s] [100%] [32m[1mLinking CXX executable map_deal_node[0m
+[58.200s] [100%] Built target map_deal_node
+[58.210s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_costmap -- -j8 -l8
+[58.212s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap
+[58.219s] -- Install configuration: "Debug"
+[58.219s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/global_map_deal.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/map_deal.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/signed_distance_field_2d.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/edt_environment.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/local_map_deal.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/map_deal/grid_map_2d.h
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base
+[58.220s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/state.h
+[58.232s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/trajectory.h
+[58.232s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/include/common/base/type.h
+[58.233s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch
+[58.234s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal.launch.py
+[58.234s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/launch/map_deal_real.launch
+[58.234s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/librobot_costmap.a
+[58.272s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node
+[58.320s] -- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib/robot_costmap/map_deal_node" to ""
+[58.320s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.sh
+[58.320s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/library_path.dsv
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/package_run_dependencies/robot_costmap
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/parent_prefix_path/robot_costmap
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.sh
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/ament_prefix_path.dsv
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.sh
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/environment/path.dsv
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.bash
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.sh
+[58.321s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.zsh
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/local_setup.dsv
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.dsv
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/ament_index/resource_index/packages/robot_costmap
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport.cmake
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/export_robot_costmapExport-debug.cmake
+[58.322s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_targets-extras.cmake
+[58.323s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.323s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/ament_cmake_export_dependencies-extras.cmake
+[58.323s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig.cmake
+[58.323s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/cmake/robot_costmapConfig-version.cmake
+[58.323s] -- Installing: /home/zheng/carerobot_slam_ros2/install/robot_costmap/share/robot_costmap/package.xml
+[58.325s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_costmap' returned '0': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/robot_costmap

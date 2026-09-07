@@ -1,7 +1,7 @@
 Differential_DWA_node:
   ros__parameters:
     # 核心参数调整
-    HZ: 20
+    HZ: 20.0
     PREDICT_TIME: 2.0
     VELOCITY_RESOLUTION: 0.05
     YAWRATE_RESOLUTION: 0.1

@@ -30,6 +30,7 @@ find_package(PCL REQUIRED) # 查找 PCL 库
 find_package(robot_communication REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(OpenMP REQUIRED) # 【新增】查找 OpenMP 库
+find_package(laser_geometry REQUIRED)
 
 # PCL 头文件路径引入
 include_directories(${PCL_INCLUDE_DIRS})
@@ -91,6 +92,7 @@ ament_target_dependencies(map_deal_node
   pcl_conversions
   pcl_ros
   robot_communication
+  laser_geometry
 )
 
 # 直接链接打好的库 robot_costmap

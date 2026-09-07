@@ -12,16 +12,10 @@ git commit -m "更新说明"
 git push
 
 # 查看tf树
-rosrun rqt_tf_tree rqt_tf_tree
-# 查看 tf位姿 变化
-rosrun tf tf_echo map base_footprint
-rosrun tf tf_echo map livox_frame
+ros2 run tf2_tools view_frames
+# 查看 各个节点间的通讯
+rqt_graph
 
-
-rosrun tri_steer_gazebo odom_tf_basefootprint
-
-rostopic echo -n 1 /joint_states
-rosrun tf tf_echo base_link turn1
 
 # 当ros topic list等无法进行时
 ros2 daemon stop
@@ -30,6 +24,6 @@ ros2 daemon start
 
 <!-- 编译 -->
 # 先编译robot_communication
-catkin_make  --pkg robot_communication
+colcon build --packages-select robot_communication
 # 再编译其他的
-catkin_make
+colcon  build

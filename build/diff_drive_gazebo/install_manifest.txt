@@ -1,4 +1,4 @@
-/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz_gamapping.launch
+/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz_gmapping.launch.py
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz.launch.py
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/urdf/robot2.urdf
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/wheel2.STL
@@ -26,6 +26,7 @@
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_map.yaml
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapb.yaml
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz/diff_drive.rviz
+/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz/sweepbot_view.rviz
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/package_run_dependencies/diff_drive_gazebo
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/parent_prefix_path/diff_drive_gazebo
 /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/ament_prefix_path.sh

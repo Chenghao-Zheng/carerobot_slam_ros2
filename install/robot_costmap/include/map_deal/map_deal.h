@@ -29,6 +29,8 @@
 // 引入自定义 ESDF 消息头文件
 #include "robot_communication/msg/esdf_map.hpp"
 
+#include <laser_geometry/laser_geometry.hpp> // 新增
+
 namespace map_deal
 {
 
@@ -57,6 +59,8 @@ public:
 
 private:
   // ROS 2 订阅者与发布者
+  laser_geometry::LaserProjection projector_; // 新增雷达转换器
+
   rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_subscriber;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr localizationSub;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointCloud2Sub;
