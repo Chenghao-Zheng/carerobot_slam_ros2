@@ -4,10 +4,8 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
 
 def generate_launch_description():
-    # 声明并统一设置 simulation time 变量
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
     # 1. Gazebo + Robot + RViz 启动文件
@@ -22,7 +20,19 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
 
-    # 2. Gmapping 建图节点
+    # 2. 双雷达融合节点 (read_laser_data)
+    laser_merge_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(
+                get_package_share_directory('read_laser_data'),
+                'launch',
+                'scan_merge.launch.py'
+            )
+        ]),
+        launch_arguments={'use_sim_time': use_sim_time}.items()
+    )
+
+    # 3. Gmapping 建图节点
     gmapping_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(
@@ -33,18 +43,6 @@ def generate_launch_description():
         ]),
         launch_arguments={'use_sim_time': use_sim_time}.items()
     )
-
-    # 3. 雷达点云转换节点 (read_laser_data)
-    # laser_to_cloud_launch = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource([
-    #         os.path.join(
-    #             get_package_share_directory('read_laser_data'),
-    #             'launch',
-    #             'laser_to_cloud.launch.py'
-    #         )
-    #     ]),
-    #     launch_arguments={'use_sim_time': use_sim_time}.items()
-    # )
 
     # 4. 代价地图 / 地图处理节点 (robot_costmap)
     map_deal_launch = IncludeLaunchDescription(
@@ -101,8 +99,8 @@ def generate_launch_description():
             description='Use simulation (Gazebo) clock if true'
         ),
         gazebo_rviz_launch,
+        laser_merge_launch,
         gmapping_launch,
-        # laser_to_cloud_launch,
         map_deal_launch,
         motion_plan_launch,
         local_planner_launch,

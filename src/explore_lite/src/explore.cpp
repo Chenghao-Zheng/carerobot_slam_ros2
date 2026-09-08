@@ -154,11 +154,7 @@ void Explore::visualizeFrontiers(
 
 void Explore::makePlan()
 {
-  // 必须确保已经初始化，否则报错返回
-  if (!costmap_client_ || !search_) {
-    RCLCPP_ERROR(get_logger(), "costmap_client_ not initialized! Call init() before spin.");
-    return;
-  }
+  if (!costmap_client_ || !search_) return;
 
   auto pose = costmap_client_->getRobotPose();
 
@@ -175,19 +171,19 @@ void Explore::makePlan()
     } else {
       if (prev_distance_ < 0) {
         prev_distance_ = dist;
+        last_movement_time_ = now();
       } else {
         double dist_change = prev_distance_ - dist;
-        prev_distance_ = dist;
-
-        if (dist_change < 0.01) {
-          if (now() - last_movement_time_ > rclcpp::Duration::from_seconds(movement_timeout_)) {
-            RCLCPP_WARN(get_logger(), "Robot stuck (no movement) for %.2f sec, abandoning goal", movement_timeout_);
-            frontier_blacklist_.push_back(current_goal_.pose.position);
-            current_goal_.header.frame_id = "";
-            is_goal_reached = true;
-          }
-        } else {
+        // 只有当小车明显靠近目标时才更新 last_movement_time_
+        if (dist_change > 0.05) { 
           last_movement_time_ = now();
+          prev_distance_ = dist;
+        } else if (now() - last_movement_time_ > rclcpp::Duration::from_seconds(movement_timeout_)) {
+          // 真正卡住超时才拉黑
+          RCLCPP_WARN(get_logger(), "Robot stuck (no movement) for %.2f sec, abandoning goal", movement_timeout_);
+          frontier_blacklist_.push_back(current_goal_.pose.position);
+          current_goal_.header.frame_id = "";
+          is_goal_reached = true;
         }
       }
     }
@@ -203,7 +199,7 @@ void Explore::makePlan()
         prev_distance_ = -1.0;
         RCLCPP_WARN(get_logger(), "Goal timed out, blacklisting and clearing.");
       } else {
-        return; // 还在导航中，继续执行
+        return; // 还在导航中，继续等待
       }
     }
   }
@@ -244,6 +240,11 @@ void Explore::makePlan()
   current_goal_ = goal_msg;
   last_progress_ = now();
   last_movement_time_ = now();
+  
+  // 关键修复：发布新目标时，计算并赋予初始距离！
+  double dx = pose.position.x - target_position.x;
+  double dy = pose.position.y - target_position.y;
+  prev_distance_ = std::hypot(dx, dy);
 
   goal_pub_->publish(goal_msg);
   RCLCPP_INFO(get_logger(), "Published frontier goal to motionPlan: (%.2f, %.2f)", target_position.x, target_position.y);

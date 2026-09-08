@@ -1,0 +1,121 @@
+[0.040s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zheng/carerobot_slam_ros2/src/read_laser_data -DCMAKE_INSTALL_PREFIX=/home/zheng/carerobot_slam_ros2/install/read_laser_data
+[2.069s] -- The C compiler identification is GNU 11.4.0
+[2.182s] -- The CXX compiler identification is GNU 11.4.0
+[2.227s] -- Detecting C compiler ABI info
+[2.355s] -- Detecting C compiler ABI info - done
+[2.366s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.366s] -- Detecting C compile features
+[2.570s] -- Detecting C compile features - done
+[2.616s] -- Detecting CXX compiler ABI info
+[2.718s] -- Detecting CXX compiler ABI info - done
+[2.729s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.729s] -- Detecting CXX compile features
+[2.730s] -- Detecting CXX compile features - done
+[2.825s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.153s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.020s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[4.211s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.228s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.279s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.356s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.480s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.485s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.733s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.760s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.804s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.869s] -- Looking for pthread.h
+[4.970s] -- Looking for pthread.h - found
+[4.970s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.054s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.055s] -- Found Threads: TRUE  
+[5.256s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.336s] -- Found laser_geometry: 2.4.1 (/opt/ros/humble/share/laser_geometry/cmake)
+[5.464s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[5.557s] -- Checking for module 'eigen3'
+[5.587s] --   Found eigen3, version 3.4.0
+[5.622s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[5.622s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.738s] -- Checking for module 'flann'
+[5.763s] --   Found flann, version 1.9.1
+[5.803s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[5.803s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[7.366s] -- Checking for module 'libusb-1.0'
+[7.389s] --   Found libusb-1.0, version 1.0.25
+[7.426s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[7.428s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.490s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.641s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[7.647s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.654s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.806s] -- Found Qhull version 8.0.2
+[7.949s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.121s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[8.123s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[8.124s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[8.125s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[8.127s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[8.128s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[8.129s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[8.129s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[8.130s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[8.131s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[8.132s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[8.134s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[8.136s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[8.137s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[8.138s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[8.139s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[8.140s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[8.141s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[8.142s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[8.143s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[8.144s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[8.144s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[8.164s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[8.167s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[8.169s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[8.171s] [33mCMake Warning (dev) at CMakeLists.txt:14 (find_package):
+[8.171s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[8.171s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[8.171s]   command to set the policy and suppress this warning.
+[8.171s] 
+[8.172s]   CMake variable PCL_ROOT is set to:
+[8.172s] 
+[8.172s]     /usr
+[8.172s] 
+[8.172s]   For compatibility, CMake is ignoring the variable.
+[8.172s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[8.172s] [0m
+[8.179s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.279s] -- Configuring done
+[8.478s] -- Generating done
+[8.488s] -- Build files have been written to: /home/zheng/carerobot_slam_ros2/build/read_laser_data
+[8.505s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zheng/carerobot_slam_ros2/src/read_laser_data -DCMAKE_INSTALL_PREFIX=/home/zheng/carerobot_slam_ros2/install/read_laser_data
+[8.506s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/read_laser_data -- -j8 -l8
+[8.558s] [ 50%] [32mBuilding CXX object CMakeFiles/merger_node.dir/src/laser_scan_merge.cpp.o[0m
+[22.857s] [100%] [32m[1mLinking CXX executable merger_node[0m
+[23.992s] [100%] Built target merger_node
+[24.002s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/read_laser_data -- -j8 -l8
+[24.004s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/read_laser_data
+[24.011s] -- Install configuration: ""
+[24.011s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/lib/read_laser_data/merger_node
+[24.015s] -- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/read_laser_data/lib/read_laser_data/merger_node" to ""
+[24.015s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/launch
+[24.015s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/launch/sacn_merge.launch.py
+[24.015s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/package_run_dependencies/read_laser_data
+[24.015s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/parent_prefix_path/read_laser_data
+[24.016s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/ament_prefix_path.sh
+[24.016s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/ament_prefix_path.dsv
+[24.016s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/path.sh
+[24.016s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/path.dsv
+[24.016s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.bash
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.sh
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.zsh
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.dsv
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/package.dsv
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/packages/read_laser_data
+[24.017s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/cmake/read_laser_dataConfig.cmake
+[24.018s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/cmake/read_laser_dataConfig-version.cmake
+[24.018s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/package.xml
+[24.020s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/read_laser_data

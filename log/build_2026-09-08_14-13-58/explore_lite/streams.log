@@ -1,0 +1,26 @@
+[0.368s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/explore_lite -- -j8 -l8
+[1.561s] [35m[1mConsolidate compiler generated dependencies of target explore[0m
+[1.619s] [100%] Built target explore
+[1.633s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/explore_lite -- -j8 -l8
+[1.635s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/explore_lite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/explore_lite
+[1.648s] -- Install configuration: ""
+[1.714s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/lib/explore_lite/explore
+[1.715s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch
+[1.716s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch/explore.launch.py
+[1.716s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/launch/explore_costmap.launch
+[1.716s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+[1.716s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/path.sh
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/environment/path.dsv
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.bash
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.sh
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.zsh
+[1.717s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/local_setup.dsv
+[1.717s] -- Installing: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.dsv
+[1.821s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+[1.821s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+[1.822s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+[1.822s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/explore_lite/share/explore_lite/package.xml
+[2.122s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/explore_lite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/explore_lite

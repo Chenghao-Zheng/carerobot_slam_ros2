@@ -1,0 +1,27 @@
+[0.041s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/read_laser_data -- -j8 -l8
+[0.233s] [ 50%] [32mBuilding CXX object CMakeFiles/merger_node.dir/src/laser_scan_merge.cpp.o[0m
+[20.942s] [100%] [32m[1mLinking CXX executable merger_node[0m
+[23.917s] [100%] Built target merger_node
+[23.928s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/read_laser_data -- -j8 -l8
+[23.930s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/read_laser_data
+[23.938s] -- Install configuration: ""
+[23.939s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/lib/read_laser_data/merger_node
+[23.944s] -- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/read_laser_data/lib/read_laser_data/merger_node" to ""
+[23.944s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/launch
+[23.944s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/launch/scan_merge.launch.py
+[23.944s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/package_run_dependencies/read_laser_data
+[23.944s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/parent_prefix_path/read_laser_data
+[23.944s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/ament_prefix_path.sh
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/ament_prefix_path.dsv
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/path.sh
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/environment/path.dsv
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.bash
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.sh
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.zsh
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/local_setup.dsv
+[23.945s] -- Installing: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/package.dsv
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/ament_index/resource_index/packages/read_laser_data
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/cmake/read_laser_dataConfig.cmake
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/cmake/read_laser_dataConfig-version.cmake
+[23.945s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/read_laser_data/share/read_laser_data/package.xml
+[23.947s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/read_laser_data' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/read_laser_data

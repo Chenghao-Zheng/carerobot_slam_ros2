@@ -1,0 +1,55 @@
+[0.365s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo -- -j8 -l8
+[1.252s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo -- -j8 -l8
+[1.262s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo
+[1.271s] -- Install configuration: ""
+[1.271s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch
+[1.271s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz_gmapping.launch.py
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/launch/sim_gazebo_rviz.launch.py
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/urdf
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/urdf/robot2.urdf
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/wheel2.STL
+[1.272s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/wheel1.STL
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/meshes/base_link.STL
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/test_world01.world
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/big_house.world
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/Realworld.dae
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/tri_steer.world
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/worlds/kexueguan205.world
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map
+[1.273s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/kexueguan205.pgm
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapf.pgm
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_map.pgm
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/big_house.pgm
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapf.yaml
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/kexueguan205.yaml
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mape.pgm
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/test_world01.yaml
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapc.yaml
+[1.274s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapb.pgm
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mape.yaml
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapc.pgm
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/big_house.yaml
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/test_world01.pgm
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_map.yaml
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/map/carto_mapb.yaml
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz/diff_drive.rviz
+[1.275s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/rviz/sweepbot_view.rviz
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/package_run_dependencies/diff_drive_gazebo
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/parent_prefix_path/diff_drive_gazebo
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/ament_prefix_path.sh
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/ament_prefix_path.dsv
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/path.sh
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/environment/path.dsv
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.bash
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.sh
+[1.276s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.zsh
+[1.277s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/local_setup.dsv
+[1.277s] -- Installing: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.dsv
+[1.339s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/ament_index/resource_index/packages/diff_drive_gazebo
+[1.339s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/cmake/diff_drive_gazeboConfig.cmake
+[1.339s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/cmake/diff_drive_gazeboConfig-version.cmake
+[1.340s] -- Up-to-date: /home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo/share/diff_drive_gazebo/package.xml
+[1.356s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zheng/carerobot_slam_ros2/build/diff_drive_gazebo
