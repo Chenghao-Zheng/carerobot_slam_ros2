@@ -1,0 +1,120 @@
+[0.018s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/read_laser_data:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target motionPlan_node[0m
+[0.117s] [35m[1mConsolidate compiler generated dependencies of target Differential_DWA_node[0m
+[0.256s] [  2%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[0.261s] [  4%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[4.946s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:[m[K In member function ‘[01m[Kstd::vector<Differential_DWAPlanner::State> Differential_DWAPlanner::dwa_planning(Differential_DWAPlanner::Window, Eigen::Vector3d, const std::vector<std::pair<double, double> >&, double)[m[K’:
+[4.946s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmax(double&, float)[m[K’
+[4.946s]   312 |   float min_v_sample = [01;31m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[4.946s]       |                        [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.947s] In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+[4.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.947s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.947s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.947s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:254:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)[m[K’
+[4.947s]   254 |     [01;36m[Kmax[m[K(const _Tp& __a, const _Tp& __b)
+[4.947s]       |     [01;36m[K^~~[m[K
+[4.947s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:254:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.948s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[4.948s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[4.948s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.948s] In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+[4.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.948s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.948s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.948s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:300:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)[m[K’
+[4.948s]   300 |     [01;36m[Kmax[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[4.949s]       |     [01;36m[K^~~[m[K
+[4.949s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:300:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.949s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[4.949s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[4.949s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.949s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[4.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[4.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.950s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.950s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.950s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3461:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)[m[K’
+[4.950s]  3461 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l)
+[4.950s]       |     [01;36m[K^~~[m[K
+[4.950s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3461:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.950s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[4.950s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[4.950s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.951s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[4.951s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[4.951s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.951s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.951s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.951s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.951s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.951s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)[m[K’
+[4.951s]  3467 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[4.951s]       |     [01;36m[K^~~[m[K
+[4.952s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.952s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[4.952s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[4.952s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.165s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:[m[K In member function ‘[01m[Kstd::vector<Differential_DWAPlanner::State> Differential_DWAPlanner::dwa_planning(Differential_DWAPlanner::Window, Eigen::Vector3d, const std::vector<std::pair<double, double> >&, double)[m[K’:
+[5.165s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmax(double&, float)[m[K’
+[5.165s]   312 |   float min_v_sample = [01;31m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[5.165s]       |                        [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.166s] In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+[5.166s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.166s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[5.166s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[5.166s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:254:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)[m[K’
+[5.166s]   254 |     [01;36m[Kmax[m[K(const _Tp& __a, const _Tp& __b)
+[5.166s]       |     [01;36m[K^~~[m[K
+[5.166s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:254:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.166s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[5.166s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[5.166s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.166s] In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+[5.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.167s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[5.167s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[5.167s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:300:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)[m[K’
+[5.167s]   300 |     [01;36m[Kmax[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[5.167s]       |     [01;36m[K^~~[m[K
+[5.167s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:300:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.167s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[5.167s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[5.167s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.167s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[5.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[5.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.168s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[5.168s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[5.168s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3461:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)[m[K’
+[5.168s]  3461 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l)
+[5.168s]       |     [01;36m[K^~~[m[K
+[5.168s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3461:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.168s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[5.169s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[5.169s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.169s] In file included from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[5.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[5.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[5.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[5.169s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.170s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[5.170s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[5.170s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)[m[K’
+[5.170s]  3467 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[5.170s]       |     [01;36m[K^~~[m[K
+[5.170s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3467:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.170s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:312:32:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[5.170s]   312 |   float min_v_sample = [01;36m[Kstd::max(dynamic_window.min_velocity, 0.1f)[m[K;
+[5.170s]       |                        [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.017s] gmake[2]: *** [CMakeFiles/Differential_DWA_node.dir/build.make:90：CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o] 错误 1
+[14.017s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/Differential_DWA_node.dir/all] 错误 2
+[14.017s] gmake[1]: *** 正在等待未完成的任务....
+[14.207s] gmake[2]: *** [CMakeFiles/motionPlan_node.dir/build.make:90：CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o] 错误 1
+[14.207s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/motionPlan_node.dir/all] 错误 2
+[14.207s] gmake: *** [Makefile:146：all] 错误 2
+[14.210s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '2': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/read_laser_data:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8

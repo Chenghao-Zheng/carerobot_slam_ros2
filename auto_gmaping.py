@@ -14,7 +14,7 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory('diff_drive_gazebo'),
                 'launch',
-                'sim_gazebo_rviz_gamapping.launch.py'
+                'sim_gazebo_rviz_gmapping.launch.py'
             )
         ]),
         launch_arguments={'use_sim_time': use_sim_time}.items()

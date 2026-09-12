@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess, OpaqueFunction
@@ -6,6 +7,10 @@ from launch.substitutions import LaunchConfiguration
 
 def save_map_action(context, *args, **kwargs):
     map_name = LaunchConfiguration('map_name').perform(context)
+
+    # 如果用户没指定名字，就用时间戳自动命名
+    if not map_name or map_name.strip() == '':
+        map_name = datetime.now().strftime('map_%Y%m%d_%H%M%S')
 
     # 1. 获取 install 目录路径
     install_share = get_package_share_directory('slam_gmapping')
@@ -33,8 +38,8 @@ def save_map_action(context, *args, **kwargs):
 def generate_launch_description():
     map_name_arg = DeclareLaunchArgument(
         'map_name',
-        default_value='my_map',
-        description='Saved map file name (without extension)'
+        default_value='',       # 默认空，触发时间戳命名
+        description='Saved map file name (without extension). Leave empty to use timestamp.'
     )
 
     return LaunchDescription([

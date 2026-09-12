@@ -1,0 +1,46 @@
+[0.017s] Invoking command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/read_laser_data:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target motionPlan_node[0m
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target Differential_DWA_node[0m
+[0.207s] [  2%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[0.221s] [  4%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o[0m
+[4.888s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.889s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.889s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.889s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.889s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:[m[K In member function ‘[01m[Kvoid Differential_DWAPlanner::process()[m[K’:
+[4.889s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:503:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kremaining_path_dist[m[K’ was not declared in this scope
+[4.889s]   503 |           current_path_index_, trajpath.size(), [01;31m[Kremaining_path_dist[m[K, stuck_counter,
+[4.889s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.931s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.931s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.932s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/include/local_plan/differential_dwa.h:4[m[K,
+[4.932s]                  from [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:1[m[K:
+[4.932s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:[m[K In member function ‘[01m[Kvoid Differential_DWAPlanner::process()[m[K’:
+[4.932s] [01m[K/home/zheng/carerobot_slam_ros2/src/robot_navigation/src/local_plan/differential_dwa.cpp:503:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kremaining_path_dist[m[K’ was not declared in this scope
+[4.932s]   503 |           current_path_index_, trajpath.size(), [01;31m[Kremaining_path_dist[m[K, stuck_counter,
+[4.932s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.837s] gmake[2]: *** [CMakeFiles/motionPlan_node.dir/build.make:90：CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o] 错误 1
+[14.838s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/motionPlan_node.dir/all] 错误 2
+[14.838s] gmake[1]: *** 正在等待未完成的任务....
+[14.851s] gmake[2]: *** [CMakeFiles/Differential_DWA_node.dir/build.make:90：CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o] 错误 1
+[14.852s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/Differential_DWA_node.dir/all] 错误 2
+[14.852s] gmake: *** [Makefile:146：all] 错误 2
+[14.854s] Invoked command in '/home/zheng/carerobot_slam_ros2/build/robot_navigation' returned '2': CMAKE_PREFIX_PATH=/home/zheng/carerobot_slam_ros2/install/robot_costmap:/home/zheng/carerobot_slam_ros2/install/robot_communication:/home/zheng/carerobot_slam_ros2/install/slam_gmapping:/home/zheng/carerobot_slam_ros2/install/robot_pid_local_planner:/home/zheng/carerobot_slam_ros2/install/robot_navigation:/home/zheng/carerobot_slam_ros2/install/read_laser_data:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping:/home/zheng/carerobot_slam_ros2/install/keyboard_control:/home/zheng/carerobot_slam_ros2/install/explore_lite:/home/zheng/carerobot_slam_ros2/install/diff_drive_gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/zheng/carerobot_slam_ros2/install/robot_communication/lib:/home/zheng/carerobot_slam_ros2/install/robot_costmap/lib:/home/zheng/carerobot_slam_ros2/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/zheng/carerobot_slam_ros2/build/robot_navigation -- -j8 -l8

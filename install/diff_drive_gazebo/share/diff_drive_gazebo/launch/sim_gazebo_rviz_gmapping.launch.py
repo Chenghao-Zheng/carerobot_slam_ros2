@@ -16,7 +16,7 @@ def generate_launch_description():
     # 文件路径
     urdf_file = os.path.join(diff_drive_gazebo_share, 'urdf', 'robot2.urdf')
     rviz_config_file = os.path.join(diff_drive_gazebo_share, 'rviz', 'diff_drive.rviz')
-    world_file = os.path.join(diff_drive_gazebo_share, 'worlds', 'kexueguan205.world')
+    world_file = os.path.join(diff_drive_gazebo_share, 'worlds', 'big_house.world')
 
     # 读取 URDF 内容
     with open(urdf_file, 'r') as infp:

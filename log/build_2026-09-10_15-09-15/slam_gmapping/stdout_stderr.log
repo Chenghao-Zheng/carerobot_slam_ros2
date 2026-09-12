@@ -1,0 +1,22 @@
+[100%] Built target slam_gmapping
+-- Install configuration: ""
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+-- Set runtime path of "/home/zheng/carerobot_slam_ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping" to ""
+-- Up-to-date: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/launch
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/launch/map_save.launch.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.dsv
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+-- Installing: /home/zheng/carerobot_slam_ros2/install/slam_gmapping/share/slam_gmapping/package.xml

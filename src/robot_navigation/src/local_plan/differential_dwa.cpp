@@ -25,7 +25,6 @@ Differential_DWAPlanner::Differential_DWAPlanner()
       current_path_index_(0),
       final_reached_(false)
 {
-  // 加载参数
   HZ = this->declare_parameter<double>("HZ", 20.0);
   ROBOT_FRAME = this->declare_parameter<std::string>("ROBOT_FRAME", "base_link");
   TARGET_VELOCITY = this->declare_parameter<double>("TARGET_VELOCITY", 0.6);
@@ -38,13 +37,13 @@ Differential_DWAPlanner::Differential_DWAPlanner()
   VELOCITY_RESOLUTION = this->declare_parameter<double>("VELOCITY_RESOLUTION", 0.05);
   YAWRATE_RESOLUTION = this->declare_parameter<double>("YAWRATE_RESOLUTION", 0.05);
   ANGLE_RESOLUTION = this->declare_parameter<double>("ANGLE_RESOLUTION", 0.0087);
-  PREDICT_TIME = this->declare_parameter<double>("PREDICT_TIME", 1.5);
-  TO_GOAL_COST_GAIN = this->declare_parameter<double>("TO_GOAL_COST_GAIN", 1.5);
-  SPEED_COST_GAIN = this->declare_parameter<double>("SPEED_COST_GAIN", 0.5);
+  PREDICT_TIME = this->declare_parameter<double>("PREDICT_TIME", 2.0);
+  TO_GOAL_COST_GAIN = this->declare_parameter<double>("TO_GOAL_COST_GAIN", 1.0);
+  SPEED_COST_GAIN = this->declare_parameter<double>("SPEED_COST_GAIN", 1.0);
   OBSTACLE_COST_GAIN = this->declare_parameter<double>("OBSTACLE_COST_GAIN", 1.0);
   GOAL_THRESHOLD = this->declare_parameter<double>("GOAL_THRESHOLD", 0.15);
   TURN_DIRECTION_THRESHOLD = this->declare_parameter<double>("TURN_DIRECTION_THRESHOLD", 0.1);
-  TEMP_GOAL_RADIUS = this->declare_parameter<double>("TEMP_GOAL_RADIUS", 1.2);
+  TEMP_GOAL_RADIUS = this->declare_parameter<double>("TEMP_GOAL_RADIUS", 1.5);
   ROBOT_RADIUS = this->declare_parameter<double>("ROBOT_RADIUS", 0.265);
   SAFETY_MARGIN = this->declare_parameter<double>("SAFETY_MARGIN", 0.05);
   laser_max_range_ = this->declare_parameter<double>("LASER_MAX_RANGE", 3.0);
@@ -52,14 +51,12 @@ Differential_DWAPlanner::Differential_DWAPlanner()
 
   DT = 1.0 / HZ;
 
-  // 发布器
   candidate_trajectories_pub = this->create_publisher<visualization_msgs::msg::MarkerArray>("candidate_trajectories", 1);
   selected_trajectory_pub = this->create_publisher<visualization_msgs::msg::Marker>("selected_trajectory", 1);
   localPathPub = this->create_publisher<nav_msgs::msg::Path>("/local_path", 1);
   chassCtlPub = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel_auto", 1);
   localgoalPub = this->create_publisher<visualization_msgs::msg::Marker>("/local_goal_vis", 10);
 
-  // 订阅
   local_goal_sub = this->create_subscription<robot_communication::msg::Goal>(
       "/local_goal", 1, std::bind(&Differential_DWAPlanner::local_goal_callback, this, std::placeholders::_1));
   local_map_sub = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
@@ -73,12 +70,11 @@ Differential_DWAPlanner::Differential_DWAPlanner()
   scan_sub = this->create_subscription<sensor_msgs::msg::LaserScan>(
       "/scan", 1, std::bind(&Differential_DWAPlanner::scan_callback, this, std::placeholders::_1));
 
-  // PID 初始化
   pidFollow.Init();
   anglePID[0] = 10.0; anglePID[1] = 0.0; anglePID[2] = 0.0; anglePID[3] = 3.0; anglePID[4] = -3.0; anglePID[5] = 0.05;
   pidFollow.SetPIDParameter(&pidFollow.gyro_pid, anglePID);
 
-  RCLCPP_INFO(this->get_logger(), "DWA local planner (ROS2 C++ with fixed trajectory evaluation) started.");
+  RCLCPP_INFO(this->get_logger(), "DWA local planner (ROS2 with min-distance goal cost) started.");
 }
 
 void Differential_DWAPlanner::local_goal_callback(const robot_communication::msg::Goal::SharedPtr msg) {
@@ -111,9 +107,7 @@ void Differential_DWAPlanner::scan_callback(const sensor_msgs::msg::LaserScan::S
   for (size_t i = 0; i < msg->ranges.size(); ++i) {
     double r = msg->ranges[i];
     if (!std::isfinite(r) || r < range_min || r > laser_max_range_) continue;
-    
-    // 过滤掉盲区及小车本体内部的雷达点
-    if (r < ROBOT_RADIUS) continue; 
+    if (r < ROBOT_RADIUS) continue;
 
     double angle = msg->angle_min + i * msg->angle_increment;
     scan_points_.push_back({r * cos(angle), r * sin(angle)});
@@ -160,9 +154,6 @@ void Differential_DWAPlanner::pathCallback(const nav_msgs::msg::Path::SharedPtr 
                              localposition[0], localposition[1], localposition[2]);
     local_goal_subscribed = true;
   }
-
-  vector<Vector2d> tempvec = {Vector2d(localposition[0], localposition[1])};
-  visual_VisitedNode(localgoalPub, tempvec, 1.0, 0.0, 1.0, 0.5, 5.0);
 }
 
 void Differential_DWAPlanner::update_path_index(double rx, double ry) {
@@ -245,7 +236,7 @@ void Differential_DWAPlanner::compute_lookahead_target(double rx, double ry,
 
 Differential_DWAPlanner::Window Differential_DWAPlanner::calc_dynamic_window(const geometry_msgs::msg::Twist &cur_velocity) {
   Window window(MIN_VELOCITY, MAX_VELOCITY, -MAX_YAWRATE, MAX_YAWRATE);
-  double eval_dt = 0.2; // 采样窗口更短，加快动态响应能力
+  double eval_dt = 0.4;
   double accel_v = MAX_ACCELERATION * eval_dt;
   double accel_w = MAX_D_YAWRATE * eval_dt;
 
@@ -257,53 +248,48 @@ Differential_DWAPlanner::Window Differential_DWAPlanner::calc_dynamic_window(con
   return window;
 }
 
-// 修正：计算到达目标的 Cost，结合距离和车头方向角偏差
+// ============================================================
+// ★★★ 核心修复 1：用"轨迹上到目标的最小距离"替换"末端距离" ★★★
+// 关键：轨迹经过目标就算距离为 0，不再惩罚"过冲"
+// 彻底解决 PREDICT_TIME 大时机器人走慢的问题
+// 参考 dwa_planner.cpp 里 cal_to_goal_cost 的思路
+// ============================================================
 float Differential_DWAPlanner::calc_to_goal_cost(const std::vector<State> &traj, const Eigen::Vector3d &goal) {
-  double end_x = traj.back().x;
-  double end_y = traj.back().y;
-  double dist_cost = hypot(goal[0] - end_x, goal[1] - end_y);
-
-  // 计算轨迹末端指向目标的夹角与末端车体姿态的差距
-  double target_angle = atan2(goal[1] - end_y, goal[0] - end_x);
-  double error_angle = angles::shortest_angular_distance(traj.back().yaw, target_angle);
-
-  return dist_cost + 0.5 * fabs(error_angle);
+  float min_dist = 1e6f;
+  for (const auto &state : traj) {
+    float d = hypot(goal[0] - state.x, goal[1] - state.y);
+    if (d < min_dist) min_dist = d;
+  }
+  return min_dist;
 }
 
 float Differential_DWAPlanner::calc_speed_cost(const std::vector<State> &traj, const float target_velocity) {
-  return fabs(target_velocity - traj.back().velocity);
+  // 与参考代码一致，用轨迹起点速度
+  return fabs(target_velocity - traj.front().velocity);
 }
 
-// 修正：优化后的雷达碰撞检查 Cost
+// ============================================================
+// ★★★ 核心修复 2：线性避障代价 + 只在真实穿透时硬拒绝 ★★★
+// 参考 dwa_planner.cpp 里 cal_obs_cost 的公式
+// ============================================================
 float Differential_DWAPlanner::calc_obstacle_cost(std::vector<State> &traj,
                                                   const std::vector<std::pair<double,double>> &scan_points) {
   if (scan_points.empty()) return 0.0f;
 
-  const float min_safety_dist = ROBOT_RADIUS + SAFETY_MARGIN;
-  float min_dist_all = 100.0f;
-
+  float min_dist = 1e6f;
   for (const auto &state : traj) {
     for (const auto &pt : scan_points) {
-      double dx = state.x - pt.first;
-      double dy = state.y - pt.second;
-      double dist = hypot(dx, dy);
-
-      // 如果发生了绝对碰撞（小于车体半径），才放弃
-      if (dist < ROBOT_RADIUS) {
-        return 999.0f;
-      }
-      if (dist < min_dist_all) {
-        min_dist_all = dist;
-      }
+      // 减去机器人半径，得到"车体边缘到障碍物"的净距离
+      float dist = hypot(state.x - pt.first, state.y - pt.second) - ROBOT_RADIUS;
+      if (dist < min_dist) min_dist = dist;
     }
   }
 
-  // 处于安全缓冲区 (ROBOT_RADIUS ~ ROBOT_RADIUS + SAFETY_MARGIN) 时给予高惩罚而非直接丢弃
-  if (min_dist_all < min_safety_dist) {
-    return 100.0f / (min_dist_all + 1e-4);
-  }
+  // 真实穿透：障碍物进入车体内部，硬拒绝
+  if (min_dist < 0.0f) return 1e6f;
 
-  return 1.0f / (min_dist_all + 1e-4);
+  // 否则：离障碍物越近代价越高，线性增长，范围 [0, laser_max_range_]
+  return laser_max_range_ - min_dist;
 }
 
 void Differential_DWAPlanner::motion(State &state, const double velocity, const double yawrate) {
@@ -314,6 +300,9 @@ void Differential_DWAPlanner::motion(State &state, const double velocity, const 
   state.yawrate = yawrate;
 }
 
+// ============================================================
+// ★★★ 核心修复 3：恢复碰撞丢弃（配合新避障代价的 1e6 返回） ★★★
+// ============================================================
 std::vector<Differential_DWAPlanner::State>
 Differential_DWAPlanner::dwa_planning(Window dynamic_window,
                                       Eigen::Vector3d goal,
@@ -322,11 +311,13 @@ Differential_DWAPlanner::dwa_planning(Window dynamic_window,
   float min_cost = 1e6;
   std::vector<State> best_traj;
 
-  for (float v = dynamic_window.min_velocity; v <= dynamic_window.max_velocity; v += VELOCITY_RESOLUTION) {
-    for (float w = dynamic_window.min_yawrate; w <= dynamic_window.max_yawrate; w += YAWRATE_RESOLUTION) {
+  double min_v_sample = std::max(dynamic_window.min_velocity, 0.1);
+
+  for (double v = min_v_sample; v <= dynamic_window.max_velocity; v += VELOCITY_RESOLUTION) {
+    for (double w = dynamic_window.min_yawrate; w <= dynamic_window.max_yawrate; w += YAWRATE_RESOLUTION) {
       State state(0.0, 0.0, 0.0, current_velocity.linear.x, current_velocity.angular.z);
       std::vector<State> traj;
-      for (float t = 0; t <= PREDICT_TIME; t += DT) {
+      for (double t = 0; t <= PREDICT_TIME; t += DT) {
         motion(state, v, w);
         traj.push_back(state);
       }
@@ -335,8 +326,8 @@ Differential_DWAPlanner::dwa_planning(Window dynamic_window,
       float speed = calc_speed_cost(traj, target_velocity);
       float obstacle = calc_obstacle_cost(traj, scan_points);
 
-      // 放弃碰撞轨迹
-      if (obstacle >= 999.0f) continue;
+      // 真实穿透 → 丢弃
+      if (obstacle >= 1e5f) continue;
 
       float final_cost = TO_GOAL_COST_GAIN * to_goal
                        + SPEED_COST_GAIN * speed
@@ -349,74 +340,150 @@ Differential_DWAPlanner::dwa_planning(Window dynamic_window,
     }
   }
 
-  // 若没有找到绝佳轨迹，则进行兜底保护
   if (best_traj.empty()) {
-    State state(0.0, 0.0, 0.0, 0.0, 0.0);
+    State state(0.0, 0.0, 0.0, 0.1, 0.0);
     best_traj.push_back(state);
-    RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "No safe trajectory found, stopping robot!");
+    RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                         "No valid trajectory found, using default speed 0.1 m/s!");
   }
   return best_traj;
 }
 
+// ============================================================
+// process()：每周期推进路径索引 + 前瞻点可视化 + 剩余路径减速
+// ============================================================
 void Differential_DWAPlanner::process(void) {
   rclcpp::Rate loop_rate(HZ);
+
+  static bool rotating_mode = false;
+  static int stuck_counter = 0;
+
+  const double ANGLE_A = 1.0;
+  const double ANGLE_B = 0.15;
+  const int STUCK_THRESHOLD = 20;
+  const int STUCK_MAX = 60;
 
   while (rclcpp::ok()) {
     if (!local_goal_subscribed && !trajpath.empty()) {
         local_goal_subscribed = true;
     }
 
+    // 每周期推进路径索引 + 前瞻点可视化
+    if (!trajpath.empty()) {
+      update_path_index(nowposition[0], nowposition[1]);
+      compute_lookahead_target(nowposition[0], nowposition[1],
+                               localposition[0], localposition[1], localposition[2]);
+
+      std::vector<Vector2d> tempvec = {Vector2d(localposition[0], localposition[1])};
+      visual_VisitedNode(localgoalPub, tempvec, 1.0, 0.0, 1.0, 0.5, 5.0);
+    }
+
     if (local_map_updated && local_goal_subscribed && odom_updated && scan_updated) {
       Window dynamic_window = calc_dynamic_window(current_velocity);
 
-      // 将局域全局目标转换到车体当前局部坐标系 (base_link)
       double cos_yaw = cos(nowposition[2]);
       double sin_yaw = sin(nowposition[2]);
       double dx = localposition[0] - nowposition[0];
       double dy = localposition[1] - nowposition[1];
       double local_goal_x =  dx * cos_yaw + dy * sin_yaw;
       double local_goal_y = -dx * sin_yaw + dy * cos_yaw;
-      
       double local_goal_yaw = atan2(local_goal_y, local_goal_x);
 
       Eigen::Vector3d goal(local_goal_x, local_goal_y, local_goal_yaw);
       double dist_to_goal = hypot(goal[0], goal[1]);
+      double angle_error = fabs(local_goal_yaw);
+
+      // ★ 修复：remaining_path_dist 提到最外层作用域 ★
+      double remaining_path_dist = 0.0;
+      if (!trajpath.empty()) {
+        int end_idx = (int)trajpath.size() - 1;
+        for (int i = current_path_index_; i < end_idx; ++i) {
+          remaining_path_dist += hypot(trajpath[i + 1][0] - trajpath[i][0],
+                                        trajpath[i + 1][1] - trajpath[i][1]);
+          if (remaining_path_dist > 2.0) break;
+        }
+      }
+
+      // 检查"到局部目标方向"是否被障碍物堵住
+      bool path_to_goal_blocked = false;
+      for (const auto &pt : scan_points_) {
+        double pt_angle = atan2(pt.second, pt.first);
+        double pt_dist  = hypot(pt.first, pt.second);
+        double ang_diff = fabs(angles::shortest_angular_distance(pt_angle, local_goal_yaw));
+        if (ang_diff < 0.7 && pt_dist < 1.2) {
+          path_to_goal_blocked = true;
+          break;
+        }
+      }
+
+      if (angle_error > ANGLE_A && dist_to_goal > 0.5 && !path_to_goal_blocked) {
+        rotating_mode = true;
+      } else if (angle_error < ANGLE_B || dist_to_goal <= 0.1 || path_to_goal_blocked) {
+        rotating_mode = false;
+      }
 
       geometry_msgs::msg::Twist cmd_vel;
 
-      // 1. 到达终点后的调整判断
-      if (dist_to_goal < GOAL_THRESHOLD) {
+      if (dist_to_goal < GOAL_THRESHOLD && !rotating_mode) {
         cmd_vel.linear.x = 0.0;
-        if (fabs(local_goal_yaw) < 0.1) {
-          cmd_vel.angular.z = 0.0;
-        } else {
-          cmd_vel.angular.z = std::min(std::max(local_goal_yaw * 1.2, -MAX_YAWRATE), MAX_YAWRATE);
-        }
-      } 
-      // 2. 车头偏差极大 (> 1.2 rad) 时的平滑转向，不进入死锁循环
-      else if (fabs(local_goal_yaw) > 1.2 && dist_to_goal > 0.4) {
-        cmd_vel.linear.x = 0.05; // 保持微小向前速度，防止 stuck 判定
-        cmd_vel.angular.z = std::min(std::max(local_goal_yaw * 1.0, -MAX_YAWRATE), MAX_YAWRATE);
+        if (fabs(local_goal_yaw) < 0.1) cmd_vel.angular.z = 0.0;
+        else cmd_vel.angular.z = std::min(std::max(local_goal_yaw * 1.2, -MAX_YAWRATE), MAX_YAWRATE);
+        stuck_counter = 0;
       }
-      // 3. 正常 DWA 规划行驶
+      else if (rotating_mode) {
+        cmd_vel.linear.x = 0.0;
+        cmd_vel.angular.z = std::min(std::max(local_goal_yaw * 1.5, -MAX_YAWRATE), MAX_YAWRATE);
+        stuck_counter = 0;
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+            "Hysteresis rotating, angle_error=%.3f", angle_error);
+      }
+      else if (stuck_counter > STUCK_THRESHOLD) {
+        cmd_vel.linear.x = 0.0;
+        double turn_dir = (local_goal_yaw > 0.05) ? 1.0
+                        : ((local_goal_yaw < -0.05) ? -1.0 : 1.0);
+        cmd_vel.angular.z = turn_dir * MAX_YAWRATE * 0.6;
+        stuck_counter++;
+        if (stuck_counter > STUCK_MAX) stuck_counter = 0;
+        RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 500,
+            "Escape rotation, stuck=%d", stuck_counter);
+      }
       else {
+        // 正常 DWA 规划
         double current_target_vel = TARGET_VELOCITY;
-        if (dist_to_goal < 0.5) {   
-          current_target_vel = std::min(TARGET_VELOCITY, 0.1 + 0.5 * (dist_to_goal / 0.5));  
+
+        // 剩余路径长度过短 → 减速，准备等待新目标
+        if (remaining_path_dist < 0.3) {
+          current_target_vel = std::min(current_target_vel, 0.15);
         }
-        
+
+        // 接近局部目标时也减速
+        if (dist_to_goal < 0.5) {
+          current_target_vel = std::min(current_target_vel, 0.1 + 0.5 * (dist_to_goal / 0.5));
+        }
+        dynamic_window.max_velocity = std::min(dynamic_window.max_velocity,
+                                               std::max(current_target_vel, 0.1));
+
         std::vector<State> best_traj = dwa_planning(dynamic_window, goal, scan_points_, current_target_vel);
         if (!best_traj.empty()) {
           cmd_vel.linear.x = best_traj.back().velocity;
           cmd_vel.angular.z = best_traj.back().yawrate;
           visualize_trajectory(best_traj, 1.0, 0.0, 0.0, selected_trajectory_pub);
+
+          if (fabs(cmd_vel.linear.x) < 0.02) stuck_counter++;
+          else stuck_counter = 0;
         } else {
           cmd_vel.linear.x = 0.0;
           cmd_vel.angular.z = 0.0;
+          stuck_counter++;
         }
       }
 
-      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "cmd_vel: v=%.3f, w=%.3f", cmd_vel.linear.x, cmd_vel.angular.z);
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+          "cmd_vel: v=%.3f, w=%.3f, dist=%.2f, idx=%d/%zu, remain=%.2f, stuck=%d, rot=%d, ang_err=%.2f, blocked=%d",
+          cmd_vel.linear.x, cmd_vel.angular.z, dist_to_goal,
+          current_path_index_, trajpath.size(), remaining_path_dist, stuck_counter,
+          (int)rotating_mode, angle_error, (int)path_to_goal_blocked);
+
       chassCtlPub->publish(cmd_vel);
     }
 
@@ -425,7 +492,7 @@ void Differential_DWAPlanner::process(void) {
   }
 }
 
-// 占位空实现
+// ========== 占位空实现 ==========
 std::vector<std::vector<float>> Differential_DWAPlanner::raycast() { return std::vector<std::vector<float>>(); }
 void Differential_DWAPlanner::GetRobotVelocity(Vector3d, Vector3d, Vector3d&) {}
 void Differential_DWAPlanner::Deal_Super_Circle(double*, double*) {}
