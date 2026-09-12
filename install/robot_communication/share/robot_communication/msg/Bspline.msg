@@ -1,5 +1,0 @@
-int32 order
-int64 traj_id
-float64[] knots
-geometry_msgs/Point[] pts
-builtin_interfaces/Time start_time

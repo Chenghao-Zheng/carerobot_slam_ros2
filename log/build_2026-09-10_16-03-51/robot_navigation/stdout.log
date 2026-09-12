@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target motionPlan_node[0m
-[35m[1mConsolidate compiler generated dependencies of target Differential_DWA_node[0m
-[  2%] [32mBuilding CXX object CMakeFiles/motionPlan_node.dir/src/local_plan/differential_dwa.cpp.o[0m
-[  4%] [32mBuilding CXX object CMakeFiles/Differential_DWA_node.dir/src/local_plan/differential_dwa.cpp.o[0m
