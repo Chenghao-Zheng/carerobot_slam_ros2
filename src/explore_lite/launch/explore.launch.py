@@ -39,7 +39,7 @@ def generate_launch_description():
                 'potential_scale': 3.0,
                 'orientation_scale': 0.0,
                 'gain_scale': 1.0,
-                'transform_tolerance': 0.5,
+                'transform_tolerance': 1.0,
                 'min_frontier_size': 0.3,
                 'goal_topic': '/goal_pose',
                 'goal_tolerance': 0.3,

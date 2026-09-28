@@ -66,20 +66,32 @@ def generate_launch_description():
         ),
 
         # 4. 在 Gazebo 中 Spawn 机器人模型
+        #    用 -file 直接读 URDF 文件，避免等 robot_description 话题
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
             arguments=[
                 '-entity', 'diff_drive',
-                '-topic', 'robot_description',
-                '-x', '1.0',
+                '-file', urdf_file,
+                '-x', '0.0',
                 '-y', '0.0',
                 '-z', '0.0'
             ],
             output='screen'
         ),
 
-        # 5. ROS 2 Nav2 Map Server + Lifecycle Manager 节点
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='base_link_to_imu',
+            arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'imu_frame'],
+            parameters=[{'use_sim_time': True}]
+        ),
+
+        # ============================================================
+        # 5. Nav2 Map Server + Lifecycle Manager
+        #    已启用：由 nav2_map_server 统一发布静态 /map 话题，解决阴影干扰问题
+        # ============================================================
         Node(
             package='nav2_map_server',
             executable='map_server',
@@ -102,14 +114,17 @@ def generate_launch_description():
             }]
         ),
 
+        # ============================================================
         # 6. 静态 TF 广播 (map -> odom)
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='link_broadcaster',
-            arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
-            parameters=[{'use_sim_time': True}]
-        ),
+        #    保持注释：map -> odom 由 Cartographer 动态发布，避免冲突
+        # ============================================================
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='link_broadcaster',
+        #     arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        #     parameters=[{'use_sim_time': True}]
+        # ),
 
         # 7. 启动 RViz2
         Node(

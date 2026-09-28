@@ -94,7 +94,17 @@ void deal_all_map::InitParams(void)
   this->get_parameter_or("local_map/virtual_map", virtual_map, 1.5);
   this->get_parameter_or("local_map/is_use_sim", is_use_sim, true);
 
-  // ---------- 新增：读取局部代价地图参数 ----------
+  // ---------- 读取全局代价地图参数 ----------
+  if (!this->has_parameter("global_cost_map/costdownvalue"))
+      this->declare_parameter<int>("global_cost_map/costdownvalue", 90);
+  if (!this->has_parameter("global_cost_map/costupvalue"))
+      this->declare_parameter<int>("global_cost_map/costupvalue", 97);
+  if (!this->has_parameter("global_cost_map/costdownk"))
+      this->declare_parameter<double>("global_cost_map/costdownk", 0.0);
+  if (!this->has_parameter("global_cost_map/costupk"))
+      this->declare_parameter<double>("global_cost_map/costupk", 0.5);
+
+  // ---------- 读取局部代价地图参数 ----------
   if (!this->has_parameter("local_cost_map/costdownvalue"))
       this->declare_parameter<int>("local_cost_map/costdownvalue", 40);
   if (!this->has_parameter("local_cost_map/costupvalue"))
@@ -116,7 +126,11 @@ void deal_all_map::InitParams(void)
   local_map_.reset(new local_map_deal);
   edt_environment.reset(new EDTEnvironment);
 
-  // 全局代价地图参数
+  // 全局代价地图参数设置（赋值给全局地图对象的成员变量后调用初始化）
+  this->get_parameter("global_cost_map/costdownvalue", global_map_->costdownvalue);
+  this->get_parameter("global_cost_map/costupvalue", global_map_->costupvalue);
+  this->get_parameter("global_cost_map/costdownk", global_map_->costdownk);
+  this->get_parameter("global_cost_map/costupk", global_map_->costupk);
   global_map_->Set_CostMaparams();
 
   // 局部代价地图参数传递
@@ -144,11 +158,15 @@ void deal_all_map::ScanCallback(const sensor_msgs::msg::LaserScan::SharedPtr sca
     laser_max_theta = scan_msg->angle_max;
     laser_min_theta = scan_msg->angle_min;
   } else {
-    laser_max_theta = scan_msg->angle_min;
-    laser_min_theta = scan_msg->angle_max;
+    laser_max_theta = scan_msg->angle_max;
+    laser_min_theta = scan_msg->angle_min;
   }
 
-  // --- 新增：将 2D /scan 转换为 PCL 点云 ---
+  // 同步更新 local_map_ 角度参数
+  local_map_->laser_max_theta = laser_max_theta;
+  local_map_->laser_min_theta = laser_min_theta;
+
+  // 将 2D /scan 转换为 PCL 点云
   try {
     sensor_msgs::msg::PointCloud2 cloud_msg;
     // 将 LaserScan 转为 PointCloud2
@@ -156,7 +174,7 @@ void deal_all_map::ScanCallback(const sensor_msgs::msg::LaserScan::SharedPtr sca
     // 转为 PCL 格式赋值给 localcloud
     pcl::fromROSMsg(cloud_msg, localcloud);
 
-    // 关键：解除 updateLocalMapCallback 的拦截！
+    // 解除 updateLocalMapCallback 的拦截
     has_rece_cloud = true; 
   }
   catch (const std::exception & e) {
@@ -436,4 +454,4 @@ void deal_all_map::updateLocalMapCallback()
   local_esdf_map_publisher->publish(localesdftest);
 }
 
-} // namespace map_dealyy
+} // namespace map_deal

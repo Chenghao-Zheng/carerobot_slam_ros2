@@ -231,41 +231,41 @@ void global_map_deal::Set_Cost_Map(Vector2i mapSize, vector<int8_t> inflatemap, 
   // 初始化代价地图为膨胀地图（100为障碍）
   costmap = inflatemap;
 
-  // ---- 第一层膨胀，代价设为95（紧邻障碍物） ----
-  for (size_t i = 0; i < obstacle.size(); i++) {
-    for (int x = -1; x <= 1; ++x) {
-      for (int y = -1; y <= 1; ++y) {
-        int nx = obstacle[i][0] + x;
-        int ny = obstacle[i][1] + y;
-        if (nx < 0 || nx >= x_size || ny < 0 || ny >= y_size) continue;
-        int idx = nx + ny * x_size;
-        if (costmap[idx] == 100) continue;
-        costmap[idx] = 90;
-      }
+// ---- 第一层膨胀，代价设为 95 ----
+for (size_t i = 0; i < obstacle.size(); i++) {
+  for (int x = -1; x <= 1; ++x) {
+    for (int y = -1; y <= 1; ++y) {
+      int nx = obstacle[i][0] + x;
+      int ny = obstacle[i][1] + y;
+      if (nx < 0 || nx >= x_size || ny < 0 || ny >= y_size) continue;
+      int idx = nx + ny * x_size;
+      if (costmap[idx] == 100) continue;
+      costmap[idx] = 95;  // 【修改处】原代码为 90，导致下方的 == 95 永远找不到目标
     }
   }
+}
 
-  // ---- 第二层膨胀，代价设为85 ----
-  vector<Vector2i> cost95;
-  for (int x = 0; x < x_size; x++) {
-    for (int y = 0; y < y_size; y++) {
-      if (costmap[x + y * x_size] == 95) {
-        cost95.push_back(Vector2i(x, y));
-      }
+// ---- 第二层膨胀，代价设为 85 ----
+vector<Vector2i> cost95;
+for (int x = 0; x < x_size; x++) {
+  for (int y = 0; y < y_size; y++) {
+    if (costmap[x + y * x_size] == 95) {
+      cost95.push_back(Vector2i(x, y));
     }
   }
-  for (size_t i = 0; i < cost95.size(); i++) {
-    for (int x = -1; x <= 1; ++x) {
-      for (int y = -1; y <= 1; ++y) {
-        int nx = cost95[i][0] + x;
-        int ny = cost95[i][1] + y;
-        if (nx < 0 || nx >= x_size || ny < 0 || ny >= y_size) continue;
-        int idx = nx + ny * x_size;
-        if (costmap[idx] == 100 || costmap[idx] == 95) continue;
-        costmap[idx] = 80;
-      }
+}
+for (size_t i = 0; i < cost95.size(); i++) {
+  for (int x = -1; x <= 1; ++x) {
+    for (int y = -1; y <= 1; ++y) {
+      int nx = cost95[i][0] + x;
+      int ny = cost95[i][1] + y;
+      if (nx < 0 || nx >= x_size || ny < 0 || ny >= y_size) continue;
+      int idx = nx + ny * x_size;
+      if (costmap[idx] == 100 || costmap[idx] == 95) continue;
+      costmap[idx] = 85;  // 【修改处】原代码为 80，与下一梯度的判断保持一致
     }
   }
+}
 
   // ---- 第三层膨胀，代价设为70 ----
   vector<Vector2i> cost85;
